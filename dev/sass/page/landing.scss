@@ -1,0 +1,179 @@
+.banner-holder {
+	max-width: 788px;
+	margin: auto;
+	padding: 50px 15px 0;
+	width: 100%;
+
+	@include media('>=tablet') {
+		padding: 15px 15px 0;
+	}
+}
+
+a.terms {
+	color: $color;
+	text-decoration: underline;
+	font-size: 20px;
+
+	&:hover {
+		text-decoration: none;
+	}
+}
+
+.airplane-holder {
+	position: absolute;
+	width: 100%;
+	bottom: 0;
+	padding: 0 100px 0 0;
+
+	@include media('>=tablet') {
+		position: static;
+		margin: -120px 0 0;
+		padding: 0 200px;
+	}
+}
+
+.airplane-box {
+	max-width: 1232px;
+	width: 100%;
+	margin: 0;
+	position: relative;
+
+	@include media('>=tablet') {
+		margin: auto;
+	}
+}
+
+.airplane {
+	width: 96px;
+	height: 50px;
+	position: absolute;
+	bottom: 100%;
+	left: 100%;
+	background-image: url('./assets/img/airplane.svg');
+	background-repeat: no-repeat;
+	background-position: 0 0;
+	background-size: contain;
+	animation: flight 2s cubic-bezier(0, 0, 0, 0);
+
+	@include media('>=tablet') {
+		width: 194px;
+		height: 100px;
+	}
+
+}
+
+@keyframes flight {
+	0% {
+		left: 0;
+		bottom: 6%;
+	}
+
+	6% {
+		left: 6%;
+		bottom: 7%;
+		transform: rotate(-1deg);
+	}
+
+	14% {
+		left: 14%;
+		bottom: 10%;
+		transform: rotate(-2deg);
+	}
+
+	24% {
+		left: 24%;
+		bottom: 16%;
+		transform: rotate(-6deg);
+	}
+
+	32% {
+		left: 32%;
+		bottom: 22%;
+		transform: rotate(-8deg);
+	}
+
+	40% {
+		left: 40%;
+		bottom: 29%;
+		transform: rotate(-11deg);
+	}
+
+	47% {
+		left: 47%;
+		bottom: 36%;
+		transform: rotate(-14deg);
+
+	}
+
+	53% {
+		left: 53%;
+		bottom: 44%;
+		transform: rotate(-16deg);
+	}
+
+	59% {
+		left: 59%;
+		bottom: 52%;
+		transform: rotate(-18deg);
+	}
+
+	65% {
+		left: 65%;
+		bottom: 60%;
+		transform: rotate(-20deg);
+	}
+
+	70% {
+		left: 70%;
+		bottom: 68%;
+		transform: rotate(-21deg);
+	}
+
+	75% {
+		left: 75%;
+		bottom: 75%;
+		transform: rotate(-22deg);
+	}
+
+	78% {
+		left: 78%;
+		bottom: 81%;
+		transform: rotate(-22deg);
+	}
+
+	80% {
+		left: 80%;
+		bottom: 84%;
+		transform: rotate(-23deg);
+	}
+
+	83% {
+		left: 83%;
+		bottom: 90%;
+		transform: rotate(-23deg);
+	}
+
+	85% {
+		left: 85%;
+		bottom: 95%;
+		transform: rotate(-24deg);
+	}
+
+	90% {
+		left: 90%;
+		bottom: 100%;
+		transform: rotate(-24deg);
+	}
+
+	95% {
+		left: 95%;
+		bottom: 102%;
+		transform: rotate(-12deg);
+	}
+
+	100% {
+		left: 98%;
+		bottom: 102%;
+		transform: rotate(-7deg);
+	}
+}

@@ -490,7 +490,7 @@ $screen-large 1280px
 .main-holder {
   max-width: 788px;
   margin: -36% auto 0;
-  padding: 50px 15px 0;
+  padding: 0 15px 0;
   width: 100%; }
   @media (min-width: 768px) {
     .main-holder {
@@ -526,7 +526,7 @@ a.terms {
     .airplane-holder {
       margin: -120px 0 0;
       padding: 0 200px; } }
-  @media (max-height: 768px) {
+  @media (max-height: 700px) {
     .airplane-holder {
       margin: -100px 0 0; } }
 

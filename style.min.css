@@ -421,13 +421,14 @@ input[type=radio] {
 .btn-area {
   display: flex;
   flex-direction: column;
-  align-items: center; }
+  align-items: center;
+  margin: auto; }
   .btn-area .btn-primary {
     box-shadow: 0 0 #e40539;
     animation: pulse 1s infinite cubic-bezier(0.6, 0, 0, 1); }
   @media (min-width: 768px) {
     .btn-area {
-      margin-bottom: -28px; } }
+      margin: 0 0 -28px; } }
 
 @keyframes pulse {
   to {

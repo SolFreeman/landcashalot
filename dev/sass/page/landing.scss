@@ -1,4 +1,4 @@
-.banner-holder {
+.main-holder {
 	max-width: 788px;
 	margin: auto;
 	padding: 50px 15px 0;
@@ -6,6 +6,11 @@
 
 	@include media('>=tablet') {
 		padding: 15px 15px 0;
+	}
+
+	@media (max-height: 768px) {
+		transform:  scale(0.6);
+		transition: all .3s ease-in-out;
 	}
 }
 
@@ -29,6 +34,10 @@ a.terms {
 		position: static;
 		margin: -120px 0 0;
 		padding: 0 200px;
+	}
+
+	@media (max-height: 768px) {
+		margin: -70px 0 0;
 	}
 }
 

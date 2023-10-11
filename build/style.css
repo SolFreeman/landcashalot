@@ -9,7 +9,7 @@ html {
   justify-content: space-between; }
   @media (min-width: 768px) {
     .wrapper {
-      height: calc(100vh - 120px); } }
+      height: 100vh; } }
 
 body {
   color: #000;
@@ -388,19 +388,20 @@ input[type="radio"] {
   content: "\e918"; }
 
 .header {
-  padding: 30px 0 0; }
+  padding: 20px 0 0; }
   @media (min-width: 768px) {
     .header {
-      padding: 60px 0 0; } }
+      padding: 40px 0 0; } }
   .header .container {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    align-items: flex-end; }
+    align-items: center; }
     @media (min-width: 768px) {
       .header .container {
         justify-content: space-between;
-        flex-direction: row; } }
+        flex-direction: row;
+        align-items: flex-end; } }
   .header .btn-primary {
     margin-bottom: 24px; }
   .header .logo-box {
@@ -475,14 +476,18 @@ $screen-large 1280px
     font-size: 16px; } }
 
 /* === END MEDIA === */
-.banner-holder {
+.main-holder {
   max-width: 788px;
   margin: auto;
   padding: 50px 15px 0;
   width: 100%; }
   @media (min-width: 768px) {
-    .banner-holder {
+    .main-holder {
       padding: 15px 15px 0; } }
+  @media (max-height: 768px) {
+    .main-holder {
+      transform: scale(0.6);
+      transition: all .3s ease-in-out; } }
 
 a.terms {
   color: #021909;
@@ -501,6 +506,9 @@ a.terms {
       position: static;
       margin: -120px 0 0;
       padding: 0 200px; } }
+  @media (max-height: 768px) {
+    .airplane-holder {
+      margin: -70px 0 0; } }
 
 .airplane-box {
   max-width: 1232px;

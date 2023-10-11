@@ -9,7 +9,7 @@ html {
 	justify-content: space-between;
 
 	@include media('>=tablet') {
-		height: calc(100vh - 120px);
+		height: 100vh;
 	}
 }
 

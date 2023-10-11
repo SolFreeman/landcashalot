@@ -526,7 +526,7 @@ a.terms {
     .airplane-holder {
       margin: -120px 0 0;
       padding: 0 200px; } }
-  @media (max-height: 768px) {
+  @media (max-height: 700px) {
     .airplane-holder {
       margin: -100px 0 0; } }
 

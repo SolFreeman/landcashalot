@@ -396,7 +396,7 @@ input[type=radio] {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    align-items: center; }
+    align-items: flex-end; }
     @media (min-width: 768px) {
       .header .container {
         justify-content: space-between;
@@ -425,6 +425,9 @@ input[type=radio] {
   .btn-area .btn-primary {
     box-shadow: 0 0 #e40539;
     animation: pulse 1s infinite cubic-bezier(0.6, 0, 0, 1); }
+  @media (min-width: 768px) {
+    .btn-area {
+      margin-bottom: -28px; } }
 
 @keyframes pulse {
   to {
@@ -517,7 +520,7 @@ a.terms {
   background-repeat: no-repeat;
   background-position: 0 0;
   background-size: contain;
-  animation: flight 2s cubic-bezier(0, 0, 0, 0); }
+  animation: flight 4s cubic-bezier(0, 0, 0, 0); }
   @media (min-width: 768px) {
     .airplane {
       width: 194px;

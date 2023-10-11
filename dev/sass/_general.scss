@@ -7,10 +7,17 @@ html {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
-	height: 100vh;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	overflow-y: auto;
 
 	@include media('>=tablet') {
 		height: 100vh;
+		position: static;
 	}
 }
 

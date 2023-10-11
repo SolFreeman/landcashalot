@@ -9,7 +9,7 @@
 		display: flex;
 		flex-direction: column;
 		flex-wrap: wrap;
-		align-items: center;
+		align-items: flex-end;
 		
 		@include media('>=tablet') {
 			justify-content: space-between;
@@ -50,6 +50,10 @@
 	.btn-primary {
 		box-shadow: 0 0 $red;
     	animation: pulse 1s infinite cubic-bezier(.6,0,0,1);
+	}
+
+	@include media('>=tablet') {
+		margin-bottom: -28px;
 	}
 }
 

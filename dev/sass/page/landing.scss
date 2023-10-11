@@ -53,7 +53,7 @@ a.terms {
 	background-repeat: no-repeat;
 	background-position: 0 0;
 	background-size: contain;
-	animation: flight 2s cubic-bezier(0, 0, 0, 0);
+	animation: flight 4s cubic-bezier(0, 0, 0, 0);
 
 	@include media('>=tablet') {
 		width: 194px;

@@ -3,6 +3,7 @@
 	margin: -36% auto 0;
 	padding: 0 15px 0;
 	width: 100%;
+	position: relative;
 
 	@include media('>=tablet') {
 		padding: 15px 15px 0;
@@ -10,12 +11,12 @@
 	}
 
 	@media (max-height: 720px) {
-		transform:  scale(0.6);
+		transform: scale(0.6);
 		transition: all .3s ease-in-out;
 	}
 
 	@media (max-height: 440px) {
-		transform:  scale(0.4);
+		transform: scale(0.4);
 		margin: -10% auto 0;
 	}
 }
@@ -202,26 +203,64 @@ a.terms {
 .bonus {
 	.main-holder {
 		max-width: 100%;
-		padding: 0 5%;
+		padding: 0 15px;
 		color: #75f79d;
+		z-index: 1;
+
+		@media (max-height: 720px) {
+			transform: scale(1);
+		}
+
+		@include media('>=tablet') {}
+
+		@include media('>=1460px') {
+			padding: 0 6.5%;
+		}
 	}
 
 	.main-content {
 		max-width: 1000px;
 		display: flex;
 		flex-direction: column;
-		align-items: flex-start;
+		align-items: center;
+		animation: fadeLeft 1s;
+		text-align: center;
+
+		@include media('>=tablet') {
+			align-items: flex-start;
+			text-align: left;
+		}
+
 	}
 
 	h1 {
-		font-size: 72px;
+		font-size: 22px;
 		color: #75f79d;
 		margin: 0;
+		padding: 0;
+		text-shadow: 1px 1px $black;
+		text-align: center;
+		
+		@include media('>=tablet') {
+			font-size: 50px;
+			text-align: left;
+		}
+		
+		@include media('>=1500px') {
+			padding: 0;
+			font-size: 72px;
+		}
+
+		@media (max-height: 720px) and (max-width:768px) {
+			font-size: 22px;
+		}
+
 	}
 
 	.sub-title {
 		font-size: 22px;
 		margin-bottom: 40px;
+		text-shadow: 1px 1px $black;
 
 		strong {
 			font-size: 32px;
@@ -230,8 +269,13 @@ a.terms {
 
 	.promo-list {
 		display: flex;
-		font-size: 22px;
+		font-size: 16px;
 		line-height: 24px;
+
+		@include media('>=tablet') {
+			font-size: 22px;
+
+		}
 	}
 
 	.promo-list li {
@@ -261,14 +305,165 @@ a.terms {
 		background: #73f89b;
 		color: $black;
 		font-weight: 800;
-		font-size: 40px;
+		font-size: 24px;
 		border-radius: 40px;
-		
+		animation: pulse-2 1s infinite cubic-bezier(.6, 0, 0, 1);
+
+
+		&:hover {
+			opacity: .8;
+		}
+
 
 		@include media('>=tablet') {
 			padding: 20px 56px;
 			margin-bottom: 90px;
+			font-size: 40px;
 		}
 	}
 
+	.chip-holder {
+		overflow: hidden;
+		position: absolute;
+		height: 100%;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		z-index: 0;
+
+
+	}
+
+	.chip {
+		@media (max-height: 720px) {
+			// transform: scale(0.6);
+		}
+	}
+
+}
+
+.animate-area {
+	.chip {
+		img {
+			@media (max-height: 720px) {
+				max-width: 100px;
+			}
+
+			@include media('<=1400px') {
+				max-width: 100px;
+			}
+
+			@include media('<=768px') {
+				max-width: 50px;
+			}
+
+		}
+	}
+}
+
+.chip_1,
+.chip_2,
+.chip_3 {
+	animation: motionLeft 7s infinite;
+}
+
+.chip_4,
+.chip_5,
+.chip_6,
+.chip_7,
+.chip_8 {
+	animation: motionTopLeft 9s infinite;
+}
+
+.chip_9,
+.chip_10,
+.chip_11,
+.chip_12,
+.chip_13,
+.chip_14,
+.chip_15,
+.chip_16 {
+	animation: motionLeft 10s infinite;
+}
+
+@keyframes motionLeft {
+	0% {
+		transform: translateX(0);
+	}
+
+	50% {
+		transform: translateX(-40px);
+	}
+
+	100% {
+		transform: translateX(0);
+	}
+}
+
+@keyframes motionTopLeft {
+	0% {
+		transform: translate(0, 0);
+	}
+
+	50% {
+		transform: translate(-30px, -30px);
+	}
+
+	100% {
+		transform: translateX(0, 0);
+	}
+}
+
+
+html[lang="hi"] [data-locale="promocod"] {
+	display: none;
+}
+
+@keyframes pulse-2 {
+	0% {
+		box-shadow: 0 0 0 1px rgba(115, 248, 155, 1);
+
+	}
+
+	100% {
+		box-shadow: 0 0 0 22px rgba(115, 248, 155, 0);
+
+	}
+}
+
+@keyframes fadeLeft {
+	0% {
+		transform: translateX(-100%);
+		opacity: 0;
+
+	}
+
+	100% {
+		transform: translateX(0);
+		opacity: 1;
+
+	}
+}
+
+.roullete {
+	position: absolute;
+	right: 0;
+	bottom: 50%;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	transform: translateY(50%);
+
+	.img-holder {
+		// width: 100%;
+	}
+
+	@include media('>=tablet') {
+		width: 50%;
+
+	}
+}
+
+.chip {
+	position: absolute;
 }

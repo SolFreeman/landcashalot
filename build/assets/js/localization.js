@@ -24,6 +24,7 @@ const translateMessages = {
         "registration": "Sign in",
         "login": "Log in",
     },
+
     'de': {
         "bonus_title": "Versuchen Sie Ihr Glück im besten Online-Casino mit 150% Einzahlungsbonus bis zu 10 000 EUR",
         "bonus_sub_title": "mit dem Promo-Code",
@@ -38,55 +39,107 @@ const translateMessages = {
     },
 
     'it': {
-        "hero_title": "Bonus di benvenuto",
-        "hero_sub_title_1": "100% fino a 100€",
+        "bonus_title": "Tentate la fortuna nel miglior casinò online con il 150% di bonus sul deposito fino a 10 000 EUR",
+        "bonus_sub_title": "utilizzando il codice promozionale",
 
-        "promocode": "Promo: ",
-        "btn": "ottieni il tuo bonus",
+        "promocode": "WELC15",
+        "btn_bonus": "Ottieni un bonus",
 
-        "step_one": "Iscriviti ",
-        "step_two": "Inserisci il codice promozionale",
-        "step_three": "Effettua un deposito",
-        "step_four": "Ottieni il tuo bonus",
+        "promotions": "Promozioni",
+        "terms_conditions": "Termini e condizioni",
+        "registration": "Registrazione",
+        "login": "Ingresso",
 
     },
     'es': {
-        "hero_title": "Bonificación de bienvenida",
-        "hero_sub_title_1": "100% hasta 100€",
+        "bonus_title": "Pruebe suerte en el mejor casino en línea con un bono de depósito del 150% hasta 10 000 EUR",
+        "bonus_sub_title": "utilizando el código promocional",
 
-        "promocode": "Promoción: ",
-        "btn": "Consigue tu bonificación",
+        "promocode": "WELC15",
+        "btn_bonus": "Consigue una bonificación",
 
-        "step_one": "Regístrate",
-        "step_two": "Introduce el código promocional",
-        "step_three": "Haz un ingreso",
-        "step_four": "Consigue tu bonificación",
+        "promotions": "Promociones",
+        "terms_conditions": "Condiciones generales",
+        "registration": "Registración",
+        "login": "Entrada",
     },
 
     'hu': {
-        "hero_title": "Üdvözlő bónusz",
-        "hero_sub_title_1": "100% akár 100€",
+        "bonus_title": "Próbáljon szerencsét a legjobb online kaszinó 150% -os befizetési bónusz akár 3 883 530HUF",
+        "bonus_sub_title": "a promóciós kód",
 
-        "promocode": "Promo: ",
-        "btn": "Szerezd meg a bónuszodat",
+        "promocode": "WELC15",
+        "btn_bonus": "Szerezzen bónuszt",
 
-        "step_one": "Regisztrálj",
-        "step_two": "Ird be a promóciós kódot",
-        "step_three": "Tégy befizetést",
-        "step_four": "Szerezd meg a bónuszt!",
+        "promotions": "Promóciók",
+        "terms_conditions": "Feltételek és feltételek",
+        "registration": "Regisztráció",
+        "login": "Belépés",
     },
 
     'pt': {
-        "hero_title": "Bónus de boas-vindas",
-        "hero_sub_title_1": "100% até 100€",
+        "bonus_title": "Tente a sua sorte no melhor casino online com um bónus de depósito de 150% até 10.000 EUR",
+        "bonus_sub_title": "utilizando o código promocional",
 
-        "promocode": "Promoção: ",
-        "btn": "Receba o seu bónus",
+        "promocode": "WELC15",
+        "btn_bonus": "Receber um bónus",
 
-        "step_one": "Inscreva-se",
-        "step_two": " Introduza o código promocional ",
-        "step_three": "Faça um depósito",
-        "step_four": "Receba o seu bónus",
+        "promotions": "Promoções",
+        "terms_conditions": "Termos e condições",
+        "registration": "Cadastro",
+        "login": "Entrada",
+    },
+
+    'pt-br': {
+        "bonus_title": "Tente a sua sorte no melhor casino online com um bónus de depósito de 150% até 54105BRL",
+        "bonus_sub_title": "utilizando o código promocional",
+
+        "promocode": "WELC15",
+        "btn_bonus": "Receba um bônus",
+
+        "promotions": "Promoções",
+        "terms_conditions": "Termos e condições",
+        "registration": "Registo",
+        "login": "Entrada",
+    },
+
+    'pl': {
+        "bonus_title": "Spróbuj szczęścia w najlepszym kasynie online z 150% bonusem od depozytu do 46 000 PLN",
+        "bonus_sub_title": "przy użyciu kodu promocyjnego",
+
+        "promocode": "WELC15",
+        "btn_bonus": "Zdobądź bonus",
+
+        "promotions": "Promocje",
+        "terms_conditions": "Zasady i warunki",
+        "registration": "Rejestracja",
+        "login": "Wejście",
+    },
+
+    'fr': {
+        "bonus_title": "tentez votre chance sur le meilleur casino en ligne avec un bonus de dépôt de 150% jusqu'à 14398CAD",
+        "bonus_sub_title": "en utilisant le code promo",
+
+        "promocode": "WELC15",
+        "btn_bonus": "Obtenez un bonus",
+
+        "promotions": "Promotions",
+        "terms_conditions": "Termes et conditions",
+        "registration": "Inscription",
+        "login": "Entrée",
+    },
+
+    'hi': {
+        "bonus_title": "प्रोमो कोड WELC15 का उपयोग करके 873614 INR तक 150% के जमा बोनस के साथ सर्वश्रेष्ठ ऑनलाइन कैसीनो में अपनी किस्मत आज़माएं।",
+        "bonus_sub_title": "",
+
+        "promocode": "",
+        "btn_bonus": "बोनस प्राप्त करें",
+
+        "promotions": "प्रचार",
+        "terms_conditions": "नियम और शर्तें",
+        "registration": "पंजीकरण",
+        "login": "प्रवेश द्वार",
     },
 
 };
@@ -112,8 +165,23 @@ switch (window.__countryCode) {
     case 'pt':
         language = 'pt';
         break;
+    case 'pl':
+        language = 'pl';
+        break;
+    case 'hi':
+        language = 'hi';
+        break;
+    case 'fr':
+        language = 'fr';
+        break;
+    case 'pt-br':
+        language = 'pt-br';
+        break;
+    case 'ru':
+        language = 'pt-br';
+        break;
     default:
-        language = 'en';
+        language = 'ru';
         break;
 }
 
@@ -122,7 +190,7 @@ function setLanguage(language) {
 
     $('html').attr('lang', language);
 
-    let langImg = 'img/flags-language/' + language + '.svg';
+    let langImg = './assets/img/' + language + '.svg';
     let langActiveImg = $('.lang-active-img');
 
     $('.lang-active').text(language);

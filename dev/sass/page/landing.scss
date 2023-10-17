@@ -240,12 +240,12 @@ a.terms {
 		padding: 0;
 		text-shadow: 1px 1px $black;
 		text-align: center;
-		
+
 		@include media('>=tablet') {
 			font-size: 50px;
 			text-align: left;
 		}
-		
+
 		@include media('>=1500px') {
 			padding: 0;
 			font-size: 72px;
@@ -259,11 +259,15 @@ a.terms {
 
 	.sub-title {
 		font-size: 22px;
-		margin-bottom: 40px;
 		text-shadow: 1px 1px $black;
+		margin-bottom: 10px;
 
 		strong {
 			font-size: 32px;
+		}
+
+		@include media('>=tablet') {
+			margin-bottom: 40px;
 		}
 	}
 
@@ -307,13 +311,12 @@ a.terms {
 		font-weight: 800;
 		font-size: 24px;
 		border-radius: 40px;
+		margin-bottom: 40px;
 		animation: pulse-2 1s infinite cubic-bezier(.6, 0, 0, 1);
-
 
 		&:hover {
 			opacity: .8;
 		}
-
 
 		@include media('>=tablet') {
 			padding: 20px 56px;

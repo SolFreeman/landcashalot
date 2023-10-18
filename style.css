@@ -20,7 +20,8 @@ html {
       height: 100vh;
       position: static; } }
   .wrapper.bonus {
-    background: url("./assets/img/bonus-bg.jpg"); }
+    background: url("./assets/img/bonus-bg.jpg");
+    justify-content: flex-start; }
 
 body {
   color: #000;
@@ -423,7 +424,11 @@ input[type="radio"] {
     box-shadow: 0 0 0 22px #ef239100; } }
 
 .bonus .header {
-  z-index: 2; }
+  z-index: 2;
+  padding: 0; }
+  @media (min-width: 768px) {
+    .bonus .header {
+      padding: 40px 0 0; } }
   .bonus .header .container {
     align-items: center;
     flex-direction: column-reverse; }
@@ -432,15 +437,19 @@ input[type="radio"] {
         flex-direction: row; } }
 
 .bonus .logo-box {
-  max-width: 290px;
-  margin-right: 0; }
+  max-width: 260px;
+  margin: 0 0 18px; }
+  @media (min-width: 768px) {
+    .bonus .logo-box {
+      margin: 0; } }
   @media (min-width: 992px) {
     .bonus .logo-box {
-      max-width: 392px; } }
+      max-width: 392px;
+      margin: 0; } }
 
 .bonus .btn-area {
   flex-direction: row;
-  margin: 0 0 20px;
+  margin: 0 0 10px;
   align-items: center;
   justify-content: space-between; }
   @media (min-width: 768px) {
@@ -828,13 +837,14 @@ a.terms {
   padding: 0 15px;
   color: #75f79d;
   z-index: 1;
-  height: calc(100% - 290px); }
+  margin: 0;
+  height: 100%; }
   @media (max-height: 720px) {
     .bonus .main-holder {
       transform: scale(1); } }
   @media (min-width: 768px) {
     .bonus .main-holder {
-      height: auto; } }
+      height: 100%; } }
   @media (min-width: 1460px) {
     .bonus .main-holder {
       padding: 0 6.5%; } }
@@ -854,11 +864,10 @@ a.terms {
   @media (min-width: 768px) {
     .bonus .main-content {
       align-items: flex-start;
-      text-align: left;
-      height: auto; } }
+      text-align: left; } }
 
 .bonus h1 {
-  font-size: 22px;
+  font-size: 18px;
   color: #75f79d;
   margin: 0;
   padding: 0;
@@ -866,25 +875,34 @@ a.terms {
   text-align: center; }
   @media (min-width: 768px) {
     .bonus h1 {
-      font-size: 50px;
-      text-align: left; } }
+      font-size: 40px;
+      text-align: left;
+      max-width: 50%;
+      margin-top: 25px; } }
   @media (min-width: 1500px) {
     .bonus h1 {
       padding: 0;
-      font-size: 72px; } }
+      font-size: 72px;
+      max-width: 100%;
+      margin-top: 0; } }
   @media (max-height: 720px) and (max-width: 768px) {
     .bonus h1 {
-      font-size: 22px; } }
+      font-size: 18px; } }
 
 .bonus .sub-title {
-  font-size: 22px;
+  font-size: 18px;
   text-shadow: 1px 1px #000;
-  margin-bottom: 10px; }
+  margin-bottom: 10px;
+  display: block; }
   .bonus .sub-title strong {
-    font-size: 32px; }
+    font-size: 20px; }
   @media (min-width: 768px) {
     .bonus .sub-title {
-      margin-bottom: 40px; } }
+      margin-bottom: 40px;
+      margin-top: 12px;
+      font-size: 22px; }
+      .bonus .sub-title strong {
+        font-size: 32px; } }
 
 .bonus .promo-list {
   display: flex;
@@ -914,7 +932,7 @@ a.terms {
   font-weight: 800;
   font-size: 24px;
   border-radius: 40px;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
   text-transform: uppercase;
   animation: pulse-2 1s infinite cubic-bezier(0.6, 0, 0, 1); }
   .bonus .btn-bonus:hover {
@@ -934,39 +952,27 @@ a.terms {
   bottom: 0;
   z-index: 0; }
 
-@media (max-height: 720px) {
-  .animate-area .chip img {
-    max-width: 100px; } }
+.animate-area .chip {
+  position: absolute;
+  right: 0;
+  width: 50%;
+  height: 50%;
+  right: 50%;
+  margin-right: -25%;
+  bottom: 0; }
+  @media (min-width: 768px) {
+    .animate-area .chip {
+      right: 0;
+      width: 50%;
+      height: 79%;
+      bottom: 0;
+      margin-right: 0; } }
 
-@media (max-width: 1400px) {
-  .animate-area .chip img {
-    max-width: 100px; } }
-
-@media (max-width: 768px) {
-  .animate-area .chip img {
-    max-width: 50px; } }
-
-.chip_1,
-.chip_2,
-.chip_3 {
+.chip_1 {
   animation: motionLeft 7s infinite; }
 
-.chip_4,
-.chip_5,
-.chip_6,
-.chip_7,
-.chip_8 {
+.chip_2 {
   animation: motionTopLeft 9s infinite; }
-
-.chip_9,
-.chip_10,
-.chip_11,
-.chip_12,
-.chip_13,
-.chip_14,
-.chip_15,
-.chip_16 {
-  animation: motionLeft 10s infinite; }
 
 @keyframes motionLeft {
   0% {
@@ -1003,17 +1009,17 @@ html[lang="hi"] [data-locale="promocod"] {
 
 .roullete {
   position: absolute;
-  right: 0;
-  bottom: 50%;
-  width: 100%;
+  right: 50%;
+  bottom: 36%;
+  width: 50%;
   display: flex;
   justify-content: center;
-  transform: translateY(50%); }
+  transform: translate(50%, 50%); }
   @media (min-width: 768px) {
     .roullete {
-      width: 50%; } }
-
-.chip {
-  position: absolute; }
+      width: 50%;
+      right: 0;
+      bottom: 50%;
+      transform: translate(0, 50%); } }
 
 /*# sourceMappingURL=style.css.map */

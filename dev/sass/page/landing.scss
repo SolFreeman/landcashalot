@@ -206,15 +206,22 @@ a.terms {
 		padding: 0 15px;
 		color: #75f79d;
 		z-index: 1;
+		height: calc(100% - 290px);
 
 		@media (max-height: 720px) {
 			transform: scale(1);
 		}
 
-		@include media('>=tablet') {}
+		@include media('>=tablet') {
+			height: auto;
+		}
 
 		@include media('>=1460px') {
 			padding: 0 6.5%;
+		}
+
+		@media (max-height: 440px) {
+			margin: 0;
 		}
 	}
 
@@ -225,12 +232,14 @@ a.terms {
 		align-items: center;
 		animation: fadeLeft 1s;
 		text-align: center;
+		height: 100%;
+		justify-content: space-between;
 
 		@include media('>=tablet') {
 			align-items: flex-start;
 			text-align: left;
+			height: auto;
 		}
-
 	}
 
 	h1 {

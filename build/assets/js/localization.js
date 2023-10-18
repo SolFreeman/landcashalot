@@ -210,11 +210,13 @@ function setLanguage(language) {
 
 $('.lang-toggle').click(function () {
     $('.lang-list').toggleClass('active');
+    $('.lang').toggleClass('opened');
 });
 
 $('.translate').click(function () {
     setLanguage($(this).attr('id'));
     $('.lang-list').removeClass('active');
+    $('.lang').removeClass('opened');
 });
 
 setLanguage(language);

@@ -432,8 +432,9 @@ input[type=radio] {
         flex-direction: row; } }
 
 .bonus .logo-box {
-  max-width: 300px; }
-  @media (min-width: 768px) {
+  max-width: 290px;
+  margin-right: 0; }
+  @media (min-width: 992px) {
     .bonus .logo-box {
       max-width: 392px; } }
 
@@ -455,8 +456,11 @@ input[type=radio] {
   padding: 15px; }
   @media (min-width: 768px) {
     .bonus .btn {
-      margin: 0 42px 0 0;
+      margin: 0 14px 0 0;
       font-size: 22px; } }
+  @media (min-width: 992px) {
+    .bonus .btn {
+      margin: 0 42px 0 0; } }
   .bonus .btn.btn-transparent {
     background: none;
     border: 1px solid #73f89b;
@@ -493,9 +497,11 @@ input[type=radio] {
   padding: 12px 0;
   border-radius: 21px;
   background-clip: padding-box;
-  background: #0a1f16;
+  background: transparent;
   border: 1px solid #73f89b;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), inset -5px 5px 20px rgba(0, 0, 0, 0.25); }
+  .lang.opened {
+    background: #0a1f16; }
   @media (min-width: 768px) {
     .lang {
       padding: 19px 0;
@@ -547,7 +553,7 @@ input[type=radio] {
   min-width: 20px;
   transition: 0.2s; }
   .lang-cc.lang-active {
-    color: #FFD762; }
+    color: #73f89b; }
   @media (min-width: 768px) {
     .lang-cc {
       font-size: 22px;
@@ -812,13 +818,20 @@ a.terms {
   max-width: 100%;
   padding: 0 15px;
   color: #75f79d;
-  z-index: 1; }
+  z-index: 1;
+  height: calc(100% - 290px); }
   @media (max-height: 720px) {
     .bonus .main-holder {
       transform: scale(1); } }
+  @media (min-width: 768px) {
+    .bonus .main-holder {
+      height: auto; } }
   @media (min-width: 1460px) {
     .bonus .main-holder {
       padding: 0 6.5%; } }
+  @media (max-height: 440px) {
+    .bonus .main-holder {
+      margin: 0; } }
 
 .bonus .main-content {
   max-width: 1000px;
@@ -826,11 +839,14 @@ a.terms {
   flex-direction: column;
   align-items: center;
   animation: fadeLeft 1s;
-  text-align: center; }
+  text-align: center;
+  height: 100%;
+  justify-content: space-between; }
   @media (min-width: 768px) {
     .bonus .main-content {
       align-items: flex-start;
-      text-align: left; } }
+      text-align: left;
+      height: auto; } }
 
 .bonus h1 {
   font-size: 22px;

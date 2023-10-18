@@ -206,14 +206,15 @@ a.terms {
 		padding: 0 15px;
 		color: #75f79d;
 		z-index: 1;
-		height: calc(100% - 290px);
+		margin: 0;
+		height: 100%;
 
 		@media (max-height: 720px) {
 			transform: scale(1);
 		}
 
 		@include media('>=tablet') {
-			height: auto;
+			height: 100%;
 		}
 
 		@include media('>=1460px') {
@@ -238,12 +239,11 @@ a.terms {
 		@include media('>=tablet') {
 			align-items: flex-start;
 			text-align: left;
-			height: auto;
 		}
 	}
 
 	h1 {
-		font-size: 22px;
+		font-size: 18px;
 		color: #75f79d;
 		margin: 0;
 		padding: 0;
@@ -251,32 +251,47 @@ a.terms {
 		text-align: center;
 
 		@include media('>=tablet') {
-			font-size: 50px;
+			font-size: 40px;
 			text-align: left;
+			max-width: 50%;
+			margin-top: 25px;
 		}
+
+		@include media('>=992px') {}
+
+		@include media('>=1024px') {}
 
 		@include media('>=1500px') {
 			padding: 0;
 			font-size: 72px;
+			max-width: 100%;
+			margin-top: 0;
 		}
 
 		@media (max-height: 720px) and (max-width:768px) {
-			font-size: 22px;
+			font-size: 18px;
 		}
 
 	}
 
 	.sub-title {
-		font-size: 22px;
+		font-size: 18px;
 		text-shadow: 1px 1px $black;
 		margin-bottom: 10px;
+		display: block;
 
 		strong {
-			font-size: 32px;
+			font-size: 20px;
 		}
 
 		@include media('>=tablet') {
 			margin-bottom: 40px;
+			margin-top: 12px;
+			font-size: 22px;
+
+			strong {
+				font-size: 32px;
+			}
 		}
 	}
 
@@ -320,7 +335,7 @@ a.terms {
 		font-weight: 800;
 		font-size: 24px;
 		border-radius: 40px;
-		margin-bottom: 40px;
+		margin-bottom: 20px;
 		text-transform: uppercase;
 		animation: pulse-2 1s infinite cubic-bezier(.6, 0, 0, 1);
 
@@ -343,61 +358,53 @@ a.terms {
 		right: 0;
 		bottom: 0;
 		z-index: 0;
-
-
-	}
-
-	.chip {
-		@media (max-height: 720px) {
-			// transform: scale(0.6);
-		}
 	}
 
 }
 
 .animate-area {
 	.chip {
+		position: absolute;
+		right: 0;
+		width: 50%;
+		height: 50%;
+		right: 50%;
+		margin-right: -25%;
+		bottom: 0;
+
+		@include media('>=tablet') {
+			right: 0;
+			width: 50%;
+			height: 79%;
+			bottom: 0;
+			margin-right: 0;
+		}
+
 		img {
 			@media (max-height: 720px) {
-				max-width: 100px;
+				// max-width: 100px;
 			}
 
 			@include media('<=1400px') {
-				max-width: 100px;
+				// max-width: 100px;
 			}
 
 			@include media('<=768px') {
-				max-width: 50px;
+				// max-width: 50px;
 			}
 
 		}
 	}
 }
 
-.chip_1,
-.chip_2,
-.chip_3 {
+.chip_1 {
 	animation: motionLeft 7s infinite;
 }
 
-.chip_4,
-.chip_5,
-.chip_6,
-.chip_7,
-.chip_8 {
+.chip_2 {
 	animation: motionTopLeft 9s infinite;
 }
 
-.chip_9,
-.chip_10,
-.chip_11,
-.chip_12,
-.chip_13,
-.chip_14,
-.chip_15,
-.chip_16 {
-	animation: motionLeft 10s infinite;
-}
 
 @keyframes motionLeft {
 	0% {
@@ -460,12 +467,12 @@ html[lang="hi"] [data-locale="promocod"] {
 
 .roullete {
 	position: absolute;
-	right: 0;
-	bottom: 50%;
-	width: 100%;
+	right: 50%;
+	bottom: 36%;
+	width: 50%;
 	display: flex;
 	justify-content: center;
-	transform: translateY(50%);
+	transform: translate(50%, 50%);
 
 	.img-holder {
 		// width: 100%;
@@ -473,10 +480,9 @@ html[lang="hi"] [data-locale="promocod"] {
 
 	@include media('>=tablet') {
 		width: 50%;
+		right: 0;
+		bottom: 50%;
+		transform: translate(0, 50%);
 
 	}
-}
-
-.chip {
-	position: absolute;
 }

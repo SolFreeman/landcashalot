@@ -76,6 +76,11 @@
 .bonus {
 	.header {
 		z-index: 2;
+		padding: 0;
+
+		@include media('>=tablet') {
+			padding: 40px 0 0;
+		}
 
 		.container {
 			align-items: center;
@@ -88,17 +93,22 @@
 	}
 
 	.logo-box {
-		max-width: 290px;
-		margin-right: 0;
+		max-width: 260px;
+		margin: 0 0 18px;
+
+		@include media('>=tablet') {
+			margin: 0;
+		}
 
 		@include media('>=992px') {
 			max-width: 392px;
+			margin: 0;
 		}
 	}
 
 	.btn-area {
 		flex-direction: row;
-		margin: 0 0 20px;
+		margin: 0 0 10px;
 		align-items: center;
 		justify-content: space-between;
 
@@ -106,7 +116,6 @@
 			align-items: center;
 			justify-content: flex-start;
 			margin: 0;
-
 		}
 	}
 

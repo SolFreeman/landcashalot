@@ -22,6 +22,9 @@ html {
   .wrapper.bonus {
     background: url(./assets/img/bonus-bg.jpg);
     justify-content: flex-start; }
+  .wrapper.bonus-2 {
+    background: url(./assets/img/bg-bonus-2.jpg);
+    overflow: hidden; }
 
 body {
   color: #000;
@@ -488,6 +491,17 @@ input[type=radio] {
     .bonus .btn.btn-registration:hover {
       background: none;
       color: #73f89b; }
+
+.bonus-2 .header {
+  margin-bottom: 20px; }
+
+@media (min-width: 640px) {
+  .bonus-2 .logo-box {
+    max-width: 300px; } }
+
+@media (min-width: 992px) {
+  .bonus-2 .logo-box {
+    max-width: 360px; } }
 
 .nav {
   position: relative;
@@ -1055,5 +1069,85 @@ html[lang=hi] [data-locale=promocod] {
       width: 50%;
       bottom: 44%;
       transform: translate(0, 50%); } }
+
+.bonus-2 .main-holder {
+  display: flex;
+  flex-direction: column;
+  max-width: 1680px;
+  padding: 0 15px;
+  margin: auto; }
+
+.bonus-2 .person,
+.bonus-2 .main-content {
+  width: 100%; }
+
+.bonus-2 .main-content {
+  justify-content: center; }
+
+.bonus-2 .person {
+  display: flex;
+  justify-content: center; }
+
+.bonus-2 .img-holder {
+  max-width: 188px; }
+  .bonus-2 .img-holder img {
+    animation: motionPerson 20s ease-in-out infinite forwards; }
+  @media (min-width: 640px) {
+    .bonus-2 .img-holder {
+      max-width: 240px; } }
+  @media (min-width: 900px) {
+    .bonus-2 .img-holder {
+      max-width: 400px; } }
+  @media (min-width: 1500px) {
+    .bonus-2 .img-holder {
+      max-width: 500px; } }
+
+@media (min-width: 900px) {
+  .bonus-2 .main-holder {
+    flex-direction: row;
+    justify-content: center; }
+  .bonus-2 .person,
+  .bonus-2 .main-content {
+    width: 50%; }
+  .bonus-2 .person {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end; }
+  .bonus-2 .main-content {
+    justify-content: center; } }
+
+.bonus-2 .btn-bonus {
+  margin: 0 0 20px; }
+  @media (min-width: 768px) {
+    .bonus-2 .btn-bonus {
+      padding: 16px 46px; } }
+
+.bonus-2 h1 {
+  margin: 0 0 29px;
+  font-size: 22px;
+  line-height: 1.7; }
+  @media (min-width: 768px) {
+    .bonus-2 h1 {
+      max-width: 100%;
+      margin: 0 0 40px;
+      font-size: 30px; } }
+  @media (min-width: 900px) {
+    .bonus-2 h1 {
+      max-width: 100%;
+      margin: 0 0 58px;
+      font-size: 40px; } }
+  @media (min-width: 1500px) {
+    .bonus-2 h1 {
+      max-width: 100%;
+      margin: 0 0 58px;
+      font-size: 52px; } }
+
+@keyframes motionPerson {
+  0% {
+    transform: translateX(0) scale(1); }
+  50% {
+    transform: translateX(-40px) scale(1.1); }
+  100% {
+    transform: translateX(0) scale(1); } }
 
 /*# sourceMappingURL=style.css.map */

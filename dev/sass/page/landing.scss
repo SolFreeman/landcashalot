@@ -218,6 +218,10 @@ a.terms {
 		}
 
 		@include media('>=1460px') {
+			padding: 0 15px;
+		}
+
+		@include media('>=1680px') {
 			padding: 0 6.5%;
 		}
 

@@ -847,6 +847,9 @@ a.terms {
       height: 100%; } }
   @media (min-width: 1460px) {
     .bonus .main-holder {
+      padding: 0 15px; } }
+  @media (min-width: 1680px) {
+    .bonus .main-holder {
       padding: 0 6.5%; } }
   @media (max-height: 440px) {
     .bonus .main-holder {

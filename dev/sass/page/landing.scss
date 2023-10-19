@@ -398,13 +398,41 @@ a.terms {
 }
 
 .chip_1 {
-	animation: motionLeft 7s infinite;
+	animation: infinite_scale 14s ease-in infinite forwards
+	// animation: motionLeft 7s infinite;
 }
 
 .chip_2 {
-	animation: motionTopLeft 9s infinite;
+	// animation: motionTopLeft 9s infinite;
+	animation: rotating 20s ease-in-out infinite forwards;
 }
 
+@keyframes rotating {
+	0% {
+		transform: rotate(0);
+	}
+	50% {
+		transform: rotate(5deg);
+	}
+	
+	100% {
+		transform: rotate(0);
+	}
+}
+
+@keyframes infinite_scale {
+	0% {
+		transform: scale(1);
+	}
+
+	50% {
+		transform: scale(1.2)
+	}
+
+	100% {
+		transform: scale(1);
+	}
+}
 
 @keyframes motionLeft {
 	0% {

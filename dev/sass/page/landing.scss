@@ -402,7 +402,7 @@ a.terms {
 }
 
 .chip_1 {
-	animation: infinite_scale 14s ease-in infinite forwards
+	animation: rotating 20s ease-in-out infinite forwards;
 	// animation: motionLeft 7s infinite;
 }
 
@@ -413,14 +413,14 @@ a.terms {
 
 @keyframes rotating {
 	0% {
-		transform: rotate(0);
+		transform: rotate(0) scale(1);
 	}
 	50% {
-		transform: rotate(5deg);
+		transform: rotate(5deg) scale(1.1);
 	}
 	
 	100% {
-		transform: rotate(0);
+		transform: rotate(0) scale(1);
 	}
 }
 

@@ -983,6 +983,9 @@ a.terms {
     .chip {
       height: 90%; } }
 
+.chip_1 {
+  animation: rotating 20s ease-in-out infinite forwards; }
+
 @keyframes rotating {
   0% {
     transform: rotate(0); }

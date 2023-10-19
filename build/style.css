@@ -444,7 +444,7 @@ input[type="radio"] {
       margin: 0; } }
   @media (min-width: 992px) {
     .bonus .logo-box {
-      max-width: 392px;
+      max-width: 360px;
       margin: 0; } }
 
 .bonus .btn-area {
@@ -878,10 +878,13 @@ a.terms {
   text-align: center; }
   @media (min-width: 768px) {
     .bonus h1 {
-      font-size: 40px;
+      font-size: 35px;
       text-align: left;
       max-width: 50%;
       margin-top: 25px; } }
+  @media (min-width: 992px) {
+    .bonus h1 {
+      font-size: 40px; } }
   @media (min-width: 1500px) {
     .bonus h1 {
       padding: 0;
@@ -955,7 +958,7 @@ a.terms {
   bottom: 0;
   z-index: 0; }
 
-.animate-area .chip {
+.chip {
   position: absolute;
   right: 0;
   width: 50%;
@@ -964,26 +967,29 @@ a.terms {
   margin-right: -25%;
   bottom: 0; }
   @media (min-width: 768px) {
-    .animate-area .chip {
+    .chip {
       right: 0;
-      width: 50%;
-      height: 79%;
+      width: 54%;
+      height: 83%;
       bottom: 0;
       margin-right: 0; } }
-
-.chip_1 {
-  animation: rotating 20s ease-in-out infinite forwards; }
-
-.chip_2 {
-  animation: rotating 20s ease-in-out infinite forwards; }
+  @media (min-width: 992px) {
+    .chip {
+      right: -100px; } }
+  @media (min-width: 1200px) {
+    .chip {
+      height: 83%; } }
+  @media (min-width: 1500px) {
+    .chip {
+      height: 90%; } }
 
 @keyframes rotating {
   0% {
-    transform: rotate(0) scale(1); }
+    transform: rotate(0); }
   50% {
-    transform: rotate(5deg) scale(1.1); }
+    transform: rotate(5deg); }
   100% {
-    transform: rotate(0) scale(1); } }
+    transform: rotate(0); } }
 
 @keyframes infinite_scale {
   0% {
@@ -1036,9 +1042,15 @@ html[lang="hi"] [data-locale="promocod"] {
   transform: translate(50%, 50%); }
   @media (min-width: 768px) {
     .roullete {
-      width: 50%;
+      top: 20%;
       right: 0;
-      bottom: 50%;
+      bottom: auto;
+      transform: translate(0); } }
+  @media (min-width: 1024px) {
+    .roullete {
+      top: auto;
+      width: 50%;
+      bottom: 44%;
       transform: translate(0, 50%); } }
 
 /*# sourceMappingURL=style.css.map */

@@ -255,13 +255,15 @@ a.terms {
 		text-align: center;
 
 		@include media('>=tablet') {
-			font-size: 40px;
+			font-size: 35px;
 			text-align: left;
 			max-width: 50%;
 			margin-top: 25px;
 		}
 
-		@include media('>=992px') {}
+		@include media('>=992px') {
+			font-size: 40px;
+		}
 
 		@include media('>=1024px') {}
 
@@ -366,61 +368,67 @@ a.terms {
 
 }
 
-.animate-area {
-	.chip {
-		position: absolute;
+.chip {
+	position: absolute;
+	right: 0;
+	width: 50%;
+	height: 50%;
+	right: 50%;
+	margin-right: -25%;
+	bottom: 0;
+
+	@include media('>=tablet') {
 		right: 0;
-		width: 50%;
-		height: 50%;
-		right: 50%;
-		margin-right: -25%;
+		width: 54%;
+		height: 83%;
 		bottom: 0;
+		margin-right: 0;
+	}
 
-		@include media('>=tablet') {
-			right: 0;
-			width: 50%;
-			height: 79%;
-			bottom: 0;
-			margin-right: 0;
+	@include media('>=992px') {
+		right: -100px;
+	}
+
+	@include media('>=1200px') {
+		height: 83%;
+	}
+
+	@include media('>=1500px') {
+		height: 90%;
+	}
+
+	img {
+		@media (max-height: 720px) {
+			// max-width: 100px;
 		}
 
-		img {
-			@media (max-height: 720px) {
-				// max-width: 100px;
-			}
-
-			@include media('<=1400px') {
-				// max-width: 100px;
-			}
-
-			@include media('<=768px') {
-				// max-width: 50px;
-			}
-
+		@include media('<=1400px') {
+			// max-width: 100px;
 		}
+
+		@include media('<=768px') {
+			// max-width: 50px;
+		}
+
 	}
 }
 
 .chip_1 {
-	animation: rotating 20s ease-in-out infinite forwards;
+	// animation: rotating 20s ease-in-out infinite forwards;
 	// animation: motionLeft 7s infinite;
-}
-
-.chip_2 {
-	// animation: motionTopLeft 9s infinite;
-	animation: rotating 20s ease-in-out infinite forwards;
 }
 
 @keyframes rotating {
 	0% {
-		transform: rotate(0) scale(1);
+		transform: rotate(0);
 	}
+
 	50% {
-		transform: rotate(5deg) scale(1.1);
+		transform: rotate(5deg);
 	}
-	
+
 	100% {
-		transform: rotate(0) scale(1);
+		transform: rotate(0);
 	}
 }
 
@@ -511,10 +519,17 @@ html[lang="hi"] [data-locale="promocod"] {
 	}
 
 	@include media('>=tablet') {
-		width: 50%;
+		top: 20%;
 		right: 0;
-		bottom: 50%;
-		transform: translate(0, 50%);
+		bottom: auto;
+		transform: translate(0);
 
+	}
+
+	@include media('>=1024px') {
+		top: auto;
+		width: 50%;
+		bottom: 44%;
+		transform: translate(0, 50%);
 	}
 }

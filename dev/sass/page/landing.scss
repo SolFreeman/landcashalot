@@ -365,7 +365,6 @@ a.terms {
 		bottom: 0;
 		z-index: 0;
 	}
-
 }
 
 .chip {
@@ -523,7 +522,6 @@ html[lang="hi"] [data-locale="promocod"] {
 		right: 0;
 		bottom: auto;
 		transform: translate(0);
-
 	}
 
 	@include media('>=1024px') {
@@ -531,5 +529,132 @@ html[lang="hi"] [data-locale="promocod"] {
 		width: 50%;
 		bottom: 44%;
 		transform: translate(0, 50%);
+	}
+}
+
+.bonus-2 {
+	.main-holder {
+		display: flex;
+		flex-direction: column;
+		max-width: 1680px;
+		padding: 0 15px;
+		margin: auto;
+	}
+
+	.person,
+	.main-content {
+		width: 100%;
+	}
+
+	.main-content {
+		justify-content: center;
+	}
+
+	.person {
+		display: flex;
+		justify-content: center;
+		
+	}
+
+	.img-holder {
+		max-width: 188px;
+
+		img {
+			animation: motionPerson 20s ease-in-out infinite forwards;
+		}
+
+		@include media('>=640px') {
+			max-width: 240px;
+		}
+
+		@include media('>=900px') {
+			max-width: 400px;
+		}
+
+		@include media('>=1500px') {
+			max-width: 500px;
+		}
+	}
+
+
+
+	@include media('>=900px') {
+		.main-holder {
+			flex-direction: row;
+			justify-content: center;
+		}
+
+		.person,
+		.main-content {
+			width: 50%;
+		}
+
+		.person {
+			display: flex;
+			justify-content: center;
+			align-items: flex-end;
+		}
+
+		.main-content {
+			justify-content: center;
+		}
+	}
+
+
+
+	.btn-bonus {
+		margin: 0 0 20px;
+
+		@include media('>=tablet') {
+			padding: 16px 46px;
+		}
+	}
+
+	h1 {
+		margin: 0 0 29px;
+		font-size: 22px;
+		line-height: 1.7;
+
+		@include media('>=tablet') {
+			max-width: 100%;
+			margin: 0 0 40px;
+			font-size: 30px;
+		}
+
+		@include media('>=900px') {
+			max-width: 100%;
+			margin: 0 0 58px;
+			font-size: 40px;
+		}
+
+		@include media('>=1500px') {
+			max-width: 100%;
+			margin: 0 0 58px;
+			font-size: 52px;
+
+		}
+	}
+
+	// @media (max-height: 900px) {
+	// 	.person {
+	// 		.img-holder {
+	// 			max-width: 400px;
+	// 		}
+	// 	}
+	// }
+
+}
+
+@keyframes motionPerson {
+	0% {
+		transform: translateX(0) scale(1);
+	}
+
+	50% {
+		transform: translateX(-40px) scale(1.1);
+	}
+
+	100% {
+		transform: translateX(0) scale(1);
 	}
 }

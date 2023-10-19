@@ -168,6 +168,23 @@
 			}
 		}
 	}
+
+}
+
+.bonus-2 {
+	.header {
+		margin-bottom: 20px;
+	}
+
+	.logo-box {
+		@include media('>=640px') {
+			max-width: 300px;
+		}
+
+		@include media('>=992px') {
+			max-width: 360px;
+		}
+	}
 }
 
 .nav {

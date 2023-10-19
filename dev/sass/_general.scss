@@ -89,6 +89,11 @@ html {
 		background: url('./assets/img/bonus-bg.jpg');
 		justify-content: flex-start;
 	}
+
+	&.bonus-2 {
+		background: url('./assets/img/bg-bonus-2.jpg');
+		overflow: hidden;
+	}
 }
 
 body {

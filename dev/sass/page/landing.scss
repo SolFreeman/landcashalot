@@ -615,22 +615,39 @@ html[lang="hi"] [data-locale="promocod"] {
 		font-size: 22px;
 		line-height: 1.7;
 
+		span {
+			display: block;
+			font-size: 16px;
+		}
+
 		@include media('>=tablet') {
 			max-width: 100%;
 			margin: 0 0 40px;
 			font-size: 30px;
+
+			span {
+				font-size: 20px;
+			}
 		}
 
 		@include media('>=900px') {
 			max-width: 100%;
 			margin: 0 0 58px;
 			font-size: 40px;
+
+			span {
+				font-size: 30px;
+			}
 		}
 
 		@include media('>=1500px') {
 			max-width: 100%;
 			margin: 0 0 58px;
 			font-size: 52px;
+
+			span {
+				font-size: 40px;
+			}
 
 		}
 	}

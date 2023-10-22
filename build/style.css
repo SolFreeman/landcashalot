@@ -23,8 +23,7 @@ html {
     background: url("./assets/img/bonus-bg.jpg");
     justify-content: flex-start; }
   .wrapper.bonus-2 {
-    background: url("./assets/img/bg-bonus-2.jpg");
-    overflow: hidden; }
+    background: url("./assets/img/bg-bonus-2.jpg"); }
 
 body {
   color: #000;
@@ -961,7 +960,8 @@ a.terms {
     .bonus .btn-bonus {
       padding: 20px 56px;
       margin-bottom: 90px;
-      font-size: 40px; } }
+      font-size: 48px;
+      border-radius: 50px; } }
 
 .bonus .chip-holder {
   overflow: hidden;
@@ -1100,7 +1100,7 @@ html[lang="hi"] [data-locale="promocod"] {
       max-width: 400px; } }
   @media (min-width: 1500px) {
     .bonus-2 .img-holder {
-      max-width: 500px; } }
+      max-width: 460px; } }
 
 @media (min-width: 900px) {
   .bonus-2 .main-holder {
@@ -1112,7 +1112,9 @@ html[lang="hi"] [data-locale="promocod"] {
   .bonus-2 .person {
     display: flex;
     justify-content: center;
-    align-items: flex-end; }
+    align-items: flex-end;
+    overflow: hidden;
+    padding-top: 40px; }
   .bonus-2 .main-content {
     justify-content: center; } }
 
@@ -1133,23 +1135,28 @@ html[lang="hi"] [data-locale="promocod"] {
     .bonus-2 h1 {
       max-width: 100%;
       margin: 0 0 40px;
-      font-size: 30px; }
+      font-size: 52px;
+      line-height: 2.2; }
       .bonus-2 h1 span {
-        font-size: 20px; } }
+        font-size: 34px;
+        margin-top: 10px; } }
   @media (min-width: 900px) {
     .bonus-2 h1 {
       max-width: 100%;
       margin: 0 0 58px;
-      font-size: 40px; }
+      font-size: 62px; }
       .bonus-2 h1 span {
-        font-size: 30px; } }
+        font-size: 40px;
+        margin-top: 20px; } }
   @media (min-width: 1500px) {
     .bonus-2 h1 {
       max-width: 100%;
       margin: 0 0 58px;
-      font-size: 52px; }
+      font-size: 72px; }
       .bonus-2 h1 span {
-        font-size: 40px; } }
+        font-size: 50px;
+        margin-top: 20px;
+        display: block; } }
 
 @keyframes motionPerson {
   0% {

@@ -352,7 +352,8 @@ a.terms {
 		@include media('>=tablet') {
 			padding: 20px 56px;
 			margin-bottom: 90px;
-			font-size: 40px;
+			font-size: 48px;
+			border-radius: 50px;
 		}
 	}
 
@@ -553,7 +554,6 @@ html[lang="hi"] [data-locale="promocod"] {
 	.person {
 		display: flex;
 		justify-content: center;
-		
 	}
 
 	.img-holder {
@@ -572,7 +572,7 @@ html[lang="hi"] [data-locale="promocod"] {
 		}
 
 		@include media('>=1500px') {
-			max-width: 500px;
+			max-width: 460px;
 		}
 	}
 
@@ -593,6 +593,8 @@ html[lang="hi"] [data-locale="promocod"] {
 			display: flex;
 			justify-content: center;
 			align-items: flex-end;
+			overflow: hidden;
+			padding-top: 40px;
 		}
 
 		.main-content {
@@ -623,30 +625,35 @@ html[lang="hi"] [data-locale="promocod"] {
 		@include media('>=tablet') {
 			max-width: 100%;
 			margin: 0 0 40px;
-			font-size: 30px;
+			font-size: 52px;
+			line-height: 2.2;
 
 			span {
-				font-size: 20px;
+				font-size: 34px;
+				margin-top: 10px;
 			}
 		}
 
 		@include media('>=900px') {
 			max-width: 100%;
 			margin: 0 0 58px;
-			font-size: 40px;
+			font-size: 62px;
 
 			span {
-				font-size: 30px;
+				font-size: 40px;
+				margin-top: 20px;
 			}
 		}
 
 		@include media('>=1500px') {
 			max-width: 100%;
 			margin: 0 0 58px;
-			font-size: 52px;
+			font-size: 72px;
 
 			span {
-				font-size: 40px;
+				font-size: 50px;
+				margin-top: 20px;
+				display: block;
 			}
 
 		}

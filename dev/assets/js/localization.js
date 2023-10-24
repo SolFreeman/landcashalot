@@ -10,6 +10,12 @@ const translateMessages = {
         "terms_conditions": "Правила и условия",
         "registration": "Регистрация",
         "login": "Логин",
+        "registration_link": "https://cashalot.bet/online-casino?register=true",
+        "login_link": "https://cashalot.bet/online-casino?login=true",
+        "logo_link": "https://cashalot.bet/ru/online-casino",
+        "bonus_link": "https://cashalot.bet/online-casino?register=true",
+        "promo_link": "https://cashalot.bet/ru/promotions",
+        "terms_link": "https://cashalot.bet/pages/terms-and-conditions",
     },
 
     'en': {
@@ -23,6 +29,12 @@ const translateMessages = {
         "terms_conditions": "Terms & Conditions",
         "registration": "Sign in",
         "login": "Log in",
+        "registration_link": "https://cashalot.bet/online-casino?register=true",
+        "login_link": "https://cashalot.bet/online-casino?login=true",
+        "logo_link": "https://cashalot.bet/online-casino",
+        "bonus_link": "https://cashalot.bet/online-casino?register=true",
+        "promo_link": "https://cashalot.bet/promotions",
+        "terms_link": "https://cashalot.bet/pages/terms-and-conditions",
     },
 
     'de': {
@@ -36,6 +48,12 @@ const translateMessages = {
         "terms_conditions": "Bedingungen und Konditionen",
         "registration": "Anmeldung",
         "login": "Einloggen",
+        "registration_link": "https://cashalot.bet/online-casino?register=true",
+        "login_link": "https://cashalot.bet/online-casino?login=true",
+        "logo_link": "https://cashalot.bet/de/online-casino",
+        "bonus_link": "https://cashalot.bet/online-casino?register=true",
+        "promo_link": "https://cashalot.bet/de/promotions",
+        "terms_link": "https://cashalot.bet/pages/terms-and-conditions",
     },
 
     'it': {
@@ -49,6 +67,12 @@ const translateMessages = {
         "terms_conditions": "Termini e condizioni",
         "registration": "Registrazione",
         "login": "Ingresso",
+        "registration_link": "https://cashalot1.bet/online-casino?register=true",
+        "login_link": "https://cashalot1.bet/online-casino?login=true",
+        "logo_link": "https://cashalot1.bet/it/online-casino",
+        "bonus_link": "https://cashalot1.bet/online-casino?register=true",
+        "promo_link": "https://cashalot1.bet/it/promotions",
+        "terms_link": "https://cashalot1.bet/pages/terms-and-conditions",
 
     },
     'es': {
@@ -62,6 +86,12 @@ const translateMessages = {
         "terms_conditions": "Condiciones generales",
         "registration": "Registración",
         "login": "Entrada",
+        "registration_link": "https://cashalot.bet/online-casino?register=true",
+        "login_link": "https://cashalot.bet/online-casino?login=true",
+        "logo_link": "https://cashalot.bet/es/online-casino",
+        "bonus_link": "https://cashalot.bet/online-casino?register=true",
+        "promo_link": "https://cashalot.bet/es/promotions",
+        "terms_link": "https://cashalot.bet/pages/terms-and-conditions",
     },
 
     'hu': {
@@ -75,6 +105,12 @@ const translateMessages = {
         "terms_conditions": "Feltételek és feltételek",
         "registration": "Regisztráció",
         "login": "Belépés",
+        "registration_link": "https://cashalot.bet/online-casino?register=true",
+        "login_link": "https://cashalot.bet/online-casino?login=true",
+        "logo_link": "https://cashalot.bet/hu/online-casino",
+        "bonus_link": "https://cashalot.bet/online-casino?register=true",
+        "promo_link": "https://cashalot.bet/hu/promotions",
+        "terms_link": "https://cashalot.bet/pages/terms-and-conditions",
     },
 
     'pt': {
@@ -88,6 +124,12 @@ const translateMessages = {
         "terms_conditions": "Termos e condições",
         "registration": "Cadastro",
         "login": "Entrada",
+        "registration_link": "https://cashalot.bet/online-casino?register=true",
+        "login_link": "https://cashalot.bet/online-casino?login=true",
+        "logo_link": "https://cashalot.bet/online-casino",
+        "bonus_link": "https://cashalot.bet/online-casino?register=true",
+        "promo_link": "https://cashalot.bet/promotions",
+        "terms_link": "https://cashalot.bet/pages/terms-and-conditions",
     },
 
     'pt-br': {
@@ -101,6 +143,12 @@ const translateMessages = {
         "terms_conditions": "Termos e condições",
         "registration": "Registo",
         "login": "Entrada",
+        "registration_link": "https://cashalot.bet/online-casino?register=true",
+        "login_link": "https://cashalot.bet/online-casino?login=true",
+        "logo_link": "https://cashalot.bet/br/online-casino",
+        "bonus_link": "https://cashalot.bet/online-casino?register=true",
+        "promo_link": "https://cashalot.bet/br/promotions",
+        "terms_link": "https://cashalot.bet/pages/terms-and-conditions",
     },
 
     'pl': {
@@ -114,6 +162,12 @@ const translateMessages = {
         "terms_conditions": "Zasady i warunki",
         "registration": "Rejestracja",
         "login": "Wejście",
+        "registration_link": "https://cashalot.bet/online-casino?register=true",
+        "login_link": "https://cashalot.bet/online-casino?login=true",
+        "logo_link": "https://cashalot.bet/online-casino",
+        "bonus_link": "https://cashalot.bet/online-casino?register=true",
+        "promo_link": "https://cashalot.bet/promotions",
+        "terms_link": "https://cashalot.bet/pages/terms-and-conditions",
     },
 
     'fr': {
@@ -127,6 +181,12 @@ const translateMessages = {
         "terms_conditions": "Termes et conditions",
         "registration": "Inscription",
         "login": "Entrée",
+        "registration_link": "https://cashalot.bet/online-casino?register=true",
+        "login_link": "https://cashalot.bet/online-casino?login=true",
+        "logo_link": "https://cashalot.bet/fr/online-casino",
+        "bonus_link": "https://cashalot.bet/online-casino?register=true",
+        "promo_link": "https://cashalot.bet/fr/promotions",
+        "terms_link": "https://cashalot.bet/pages/terms-and-conditions",
     },
 
     'hi': {
@@ -140,6 +200,12 @@ const translateMessages = {
         "terms_conditions": "नियम और शर्तें",
         "registration": "पंजीकरण",
         "login": "प्रवेश द्वार",
+        "registration_link": "https://cashalot.bet/online-casino?register=true",
+        "login_link": "https://cashalot.bet/online-casino?login=true",
+        "logo_link": "https://cashalot.bet/online-casino",
+        "bonus_link": "https://cashalot.bet/online-casino?register=true",
+        "promo_link": "https://cashalot.bet/promotions",
+        "terms_link": "https://cashalot.bet/pages/terms-and-conditions",
     },
 
 };
@@ -208,6 +274,15 @@ function setLanguage(language) {
     });
 }
 
+function updateLinks(language) {
+    $('[data-link]').each(function (index, element) {
+        const linkKey = $(this).data('link');
+        if (translateMessages[language][linkKey]) {
+            $(this).attr('href', translateMessages[language][linkKey]);
+        }
+    });
+}
+
 $('.lang-toggle').click(function () {
     $('.lang-list').toggleClass('active');
     $('.lang').toggleClass('opened');
@@ -215,8 +290,11 @@ $('.lang-toggle').click(function () {
 
 $('.translate').click(function () {
     setLanguage($(this).attr('id'));
+    updateLinks($(this).attr('id'));
     $('.lang-list').removeClass('active');
     $('.lang').removeClass('opened');
+    addParams();
 });
 
 setLanguage(language);
+updateLinks(language);

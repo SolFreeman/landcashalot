@@ -4,8 +4,8 @@
 	<header class="header">
 		<div class="container">
 			<div class="btn-area">
-				<a href="#" class="btn btn-registration"><span data-locale="registration">Регистрация</span></a>
-				<a href="#" class="btn btn-transparent"><span data-locale="login">Логин</span></a>
+				<a data-link="registration_link" href="https://cashalot.bet/online-casino?register=true" class="btn btn-registration"><span data-locale="registration">Регистрация</span></a>
+				<a data-link="login_link" href="https://cashalot.bet/online-casino?login=true" class="btn btn-transparent"><span data-locale="login">Логин</span></a>
 
 				<nav class="nav">
 					<div class="lang">
@@ -115,7 +115,7 @@
 				</nav>
 			</div>
 			<div class="logo-box">
-				<a href="https://cashalot.bet/online-casino" class="logo">
+				<a data-link="logo_link" href="https://cashalot.bet/online-casino" class="logo">
 					<img src="./assets/img/logo.svg" class="img-fluid" alt="Cashalot Bet">
 				</a>
 			</div>
@@ -131,10 +131,10 @@
 					<strong data-locale="promocod">WELC15</strong></span>
 			</div>
 			<div class="bottom-content">
-				<a href="#" class="btn btn-bonus"><span data-locale="btn_bonus">Получить бонус</span></a>
+				<a data-link="bonus_link" href="https://cashalot.bet/online-casino?register=true" class="btn btn-bonus"><span data-locale="btn_bonus">Получить бонус</span></a>
 				<ul class="promo-list">
-					<li><a href="#"><span data-locale="promotions">Промоакции</span></a></li>
-					<li><a href="#"><span data-locale="terms_conditions">Правила и условия</span></a></li>
+					<li><a data-link="promo_link" href="https://cashalot.bet/promotions"><span data-locale="promotions">Промоакции</span></a></li>
+					<li><a data-link="terms_link" href="https://cashalot.bet/pages/terms-and-conditions"><span data-locale="terms_conditions">Правила и условия</span></a></li>
 				</ul>
 			</div>
 		</div>
@@ -155,5 +155,6 @@
 </div>
 <script src="./assets/js/jquery-3.7.1.min.js"></script>
 <script async src="./assets/js/localization.js"></script>
+<script async src="./assets/js/global.js"></script>
 
 <!-- @@include('templates/footer.html') -->

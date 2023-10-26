@@ -799,43 +799,68 @@ html[lang="hi"] [data-locale="promocod"] {
 }
 
 .baccarat {
+	.container {
+		max-width: 1780px;
+	}
+
+	.main-holder {
+		max-width: 1780px;
+	}
+
 	h1 {
-		font-size: 34px;
+		font-size: 38px;
 		text-transform: uppercase;
 		color: $white;
 		margin: 0 0 20px;
-		line-height: 1.3;
+		line-height: 1.4;
 		font-weight: 800;
-		letter-spacing: 2px;
 
 		.light {
 			font-weight: 300;
-			font-size: 72px;
+			font-size: 38px;
 		}
 
 		@include media('>=tablet') {
 			font-size: 72px;
 			margin: 0 0 60px;
+			line-height: 1.2;
+
+			.light {
+				font-size: 72px;
+			}
+		}
+
+		@include media('>=1420px') {
+			font-size: 110px;
+
+			.light {
+				font-size: 110px;
+			}
+		}
+
+		@include media('>=1780px') {
+			font-size: 150px;
+
+			.light {
+				font-size: 150px;
+			}
 		}
 	}
 
 	.btn-bonus {
 		margin: 0 0 30px;
-		font-size: 24px;
 
 		@include media('>=tablet') {
-			padding: 12px 32px;
 			margin: 0 0 60px;
 		}
 	}
 
 	.promo-list {
-		font-size: 16px;
 
 		li {
 			a {
 				text-decoration: underline;
-	
+
 				&:hover {
 					text-decoration: none;
 				}
@@ -866,6 +891,10 @@ html[lang="hi"] [data-locale="promocod"] {
 		@include media('>=tablet') {
 			width: 50%;
 			padding: 0 15px;
+		}
+
+		@include media('>=992px') {
+			margin: -130px 0 0;
 		}
 
 	}

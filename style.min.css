@@ -26,6 +26,8 @@ html {
     background: url(./assets/img/bg-bonus-2.jpg); }
   .wrapper.live-casino {
     background: url(./assets/img/live-casino_bg.jpg); }
+  .wrapper.baccarat {
+    background: url(./assets/img/baccarat_bg.jpg); }
 
 body {
   color: #000;
@@ -1026,6 +1028,14 @@ a.terms {
   100% {
     transform: translateX(0); } }
 
+@keyframes motionLeft {
+  0% {
+    transform: translateX(0); }
+  50% {
+    transform: translateX(-20px); }
+  100% {
+    transform: translateX(0); } }
+
 @keyframes motionTopLeft {
   0% {
     transform: translate(0, 0); }
@@ -1252,5 +1262,57 @@ html[lang=hi] [data-locale=promocod] {
     .live-casino .cards .img-holder {
       max-width: 150px;
       margin: auto; } }
+
+.baccarat h1 {
+  font-size: 34px;
+  text-transform: uppercase;
+  color: #fff;
+  margin: 0 0 20px;
+  line-height: 1.3;
+  font-weight: 800;
+  letter-spacing: 2px; }
+  .baccarat h1 .light {
+    font-weight: 300;
+    font-size: 72px; }
+  @media (min-width: 768px) {
+    .baccarat h1 {
+      font-size: 72px;
+      margin: 0 0 60px; } }
+
+.baccarat .btn-bonus {
+  margin: 0 0 30px;
+  font-size: 24px; }
+  @media (min-width: 768px) {
+    .baccarat .btn-bonus {
+      padding: 12px 32px;
+      margin: 0 0 60px; } }
+
+.baccarat .promo-list {
+  font-size: 16px; }
+  .baccarat .promo-list li a {
+    text-decoration: underline; }
+    .baccarat .promo-list li a:hover {
+      text-decoration: none; }
+
+.baccarat .card-box {
+  align-items: center;
+  padding: 0 15px 20px;
+  width: 100%;
+  justify-content: center;
+  display: flex; }
+  .baccarat .card-box .img-holder {
+    max-width: 700px; }
+    .baccarat .card-box .img-holder img {
+      animation: motionLeft 10s ease-in-out infinite forwards; }
+    @media (max-width: 389px) {
+      .baccarat .card-box .img-holder {
+        max-width: 150px; } }
+  @media (min-width: 768px) {
+    .baccarat .card-box {
+      width: 50%;
+      padding: 0 15px; } }
+
+.baccarat .main-content {
+  padding: 0 15px; }
 
 /*# sourceMappingURL=style.css.map */

@@ -365,6 +365,7 @@ a.terms {
 		right: 0;
 		bottom: 0;
 		z-index: 0;
+		
 	}
 }
 
@@ -415,7 +416,6 @@ a.terms {
 
 .chip_1 {
 	animation: rotating 20s ease-in-out infinite forwards;
-	// animation: motionLeft 7s infinite;
 }
 
 @keyframes rotating {
@@ -446,13 +446,13 @@ a.terms {
 	}
 }
 
-@keyframes motionLeft {
+@keyframes motionRight {
 	0% {
 		transform: translateX(0);
 	}
 
 	50% {
-		transform: translateX(-40px);
+		transform: translateX(20px);
 	}
 
 	100% {
@@ -495,13 +495,23 @@ html[lang="hi"] [data-locale="promocod"] {
 	0% {
 		transform: translateX(-100%);
 		opacity: 0;
-
 	}
 
 	100% {
 		transform: translateX(0);
 		opacity: 1;
+	}
+}
 
+@keyframes fadeRight {
+	0% {
+		transform: translateX(100%);
+		opacity: 0;
+	}
+
+	100% {
+		transform: translateX(0);
+		opacity: 1;
 	}
 }
 
@@ -575,8 +585,6 @@ html[lang="hi"] [data-locale="promocod"] {
 			max-width: 460px;
 		}
 	}
-
-
 
 	@include media('>=900px') {
 		.main-holder {
@@ -658,15 +666,6 @@ html[lang="hi"] [data-locale="promocod"] {
 
 		}
 	}
-
-	// @media (max-height: 900px) {
-	// 	.person {
-	// 		.img-holder {
-	// 			max-width: 400px;
-	// 		}
-	// 	}
-	// }
-
 }
 
 @keyframes motionPerson {
@@ -680,5 +679,107 @@ html[lang="hi"] [data-locale="promocod"] {
 
 	100% {
 		transform: translateX(0) scale(1);
+	}
+}
+
+.live-casino {
+	.main-holder {
+		display: flex;
+		flex-direction: column;
+
+		@include media('>=tablet') {
+			flex-direction: row-reverse;
+		}
+	}
+
+	.main-content {
+		width: 100%;
+		align-items: center;
+		justify-content: center;
+		padding: 0 15px;
+		animation: fadeRight 1s;
+
+		.img-holder {
+			padding: 10px 60px 24px;
+		}
+
+		@include media('>=tablet') {
+			width: 50%;
+			padding: 0 15px 0 30px;
+
+			.img-holder {
+				padding: 24px;
+			}
+		}
+	}
+
+	.chip-holder {
+		position: static;
+		width: 100%;
+		padding: 15px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		overflow: visible;
+		animation: fadeLeft 1s;
+
+		@include media('>=tablet') {
+			width: 50%;
+			display: flex;
+			align-items: center;
+			padding: 0 15px;
+		}
+	}
+
+	h1 {
+		max-width: 100%;
+		color: $white;
+		text-align: center;
+		font-size: 22px;
+		margin: 0 0 25px;
+
+		@include media('>=tablet') {
+			font-size: 24px;
+			margin: 0 0 50px;
+		}
+
+		@include media('>=992px') {
+			font-size: 40px;
+		}
+	}
+
+	.btn-bonus {
+		font-size: 20px;
+		text-transform: capitalize;
+		margin: 0 0 30px;
+		padding: 14px 24px;
+
+		@include media('>=tablet') {
+			margin:0 0 60px;
+			padding: 20px 56px;
+		}
+
+		@include media('>=992px') {
+			font-size: 30px;
+		}
+	}
+
+	.cards {
+		.img-holder {
+			margin: auto;
+
+			img {
+				animation: motionRight 10s infinite;
+			}
+
+			@include media('>=tablet') {
+				max-width: 100%;
+			}
+
+			@include media('<390px') {
+				max-width: 150px;
+				margin: auto;
+			}
+		}
 	}
 }

@@ -16,6 +16,8 @@ const translateMessages = {
         "bonus_link": "https://cashalot.bet/online-casino?register=true",
         "promo_link": "https://cashalot.bet/ru/promotions",
         "terms_link": "https://cashalot.bet/pages/terms-and-conditions",
+        "diller_title": "Настоящие дилеры, <br>Настоящие развлечения",
+        "btn_register": "Зарегестрироваться",
     },
 
     'en': {
@@ -35,6 +37,8 @@ const translateMessages = {
         "bonus_link": "https://cashalot.bet/online-casino?register=true",
         "promo_link": "https://cashalot.bet/promotions",
         "terms_link": "https://cashalot.bet/pages/terms-and-conditions",
+        "diller_title": "Real Dealers, <br>Real Fun",
+        "btn_register": "SIGN UP",
     },
 
     'de': {
@@ -54,6 +58,8 @@ const translateMessages = {
         "bonus_link": "https://cashalot.bet/online-casino?register=true",
         "promo_link": "https://cashalot.bet/de/promotions",
         "terms_link": "https://cashalot.bet/pages/terms-and-conditions",
+        "diller_title": "Echte Händler, <br>echter Spaß",
+        "btn_register": "ANMELDEN",
     },
 
     'it': {
@@ -73,7 +79,8 @@ const translateMessages = {
         "bonus_link": "https://cashalot1.bet/online-casino?register=true",
         "promo_link": "https://cashalot1.bet/it/promotions",
         "terms_link": "https://cashalot1.bet/pages/terms-and-conditions",
-
+        "diller_title": "Concessionari veri, <br>divertimento vero",
+        "btn_register": "ISCRIVERSI",
     },
     'es': {
         "bonus_title": "Pruebe suerte en el mejor casino en línea con un bono de depósito del 150% hasta 10 000 EUR",
@@ -92,6 +99,8 @@ const translateMessages = {
         "bonus_link": "https://cashalot.bet/online-casino?register=true",
         "promo_link": "https://cashalot.bet/es/promotions",
         "terms_link": "https://cashalot.bet/pages/terms-and-conditions",
+        "diller_title": "Concesionarios reales, <br>diversión real",
+        "btn_register": "REGISTRO",
     },
 
     'hu': {
@@ -111,6 +120,8 @@ const translateMessages = {
         "bonus_link": "https://cashalot.bet/online-casino?register=true",
         "promo_link": "https://cashalot.bet/hu/promotions",
         "terms_link": "https://cashalot.bet/pages/terms-and-conditions",
+        "diller_title": "Igazi kereskedők, <br>igazi szórakozás",
+        "btn_register": "REGISZTRÁCIÓ",
     },
 
     'pt': {
@@ -130,6 +141,8 @@ const translateMessages = {
         "bonus_link": "https://cashalot.bet/online-casino?register=true",
         "promo_link": "https://cashalot.bet/promotions",
         "terms_link": "https://cashalot.bet/pages/terms-and-conditions",
+        "diller_title": "Negociantes reais, <br>diversão real",
+        "btn_register": "REGISTO",
     },
 
     'pt-br': {
@@ -149,6 +162,8 @@ const translateMessages = {
         "bonus_link": "https://cashalot.bet/online-casino?register=true",
         "promo_link": "https://cashalot.bet/br/promotions",
         "terms_link": "https://cashalot.bet/pages/terms-and-conditions",
+        "diller_title": "Comerciantes de verdade, <br>diversão de verdade",
+        "btn_register": "REGISTRE-SE",
     },
 
     'pl': {
@@ -168,6 +183,8 @@ const translateMessages = {
         "bonus_link": "https://cashalot.bet/online-casino?register=true",
         "promo_link": "https://cashalot.bet/promotions",
         "terms_link": "https://cashalot.bet/pages/terms-and-conditions",
+        "diller_title": "Prawdziwi dealerzy, <br>prawdziwa zabawa",
+        "btn_register": "ZAPISZ SIĘ",
     },
 
     'fr': {
@@ -187,6 +204,8 @@ const translateMessages = {
         "bonus_link": "https://cashalot.bet/online-casino?register=true",
         "promo_link": "https://cashalot.bet/fr/promotions",
         "terms_link": "https://cashalot.bet/pages/terms-and-conditions",
+        "diller_title": "De vrais concessionnaires, <br>un vrai plaisir",
+        "btn_register": "ENREGISTREMENT",
     },
 
     'hi': {
@@ -206,6 +225,9 @@ const translateMessages = {
         "bonus_link": "https://cashalot.bet/online-casino?register=true",
         "promo_link": "https://cashalot.bet/promotions",
         "terms_link": "https://cashalot.bet/pages/terms-and-conditions",
+
+        "diller_title": "असली व्यापारी, <br>असली मज़ा",
+        "btn_register": "पंजीकरण करवाना",
     },
 
 };

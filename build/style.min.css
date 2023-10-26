@@ -1276,6 +1276,10 @@ html[lang=hi] [data-locale=promocod] {
   margin: 0 0 20px;
   line-height: 1.4;
   font-weight: 800; }
+  .baccarat h1.online_title {
+    letter-spacing: 7px; }
+    .baccarat h1.online_title .light {
+      letter-spacing: 4px; }
   .baccarat h1 .light {
     font-weight: 300;
     font-size: 38px; }
@@ -1284,6 +1288,10 @@ html[lang=hi] [data-locale=promocod] {
       font-size: 72px;
       margin: 0 0 60px;
       line-height: 1.2; }
+      .baccarat h1.online_title {
+        letter-spacing: 10px; }
+        .baccarat h1.online_title .light {
+          letter-spacing: 0; }
       .baccarat h1 .light {
         font-size: 72px; } }
   @media (min-width: 1420px) {

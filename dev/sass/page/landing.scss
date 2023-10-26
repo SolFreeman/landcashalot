@@ -815,6 +815,14 @@ html[lang="hi"] [data-locale="promocod"] {
 		line-height: 1.4;
 		font-weight: 800;
 
+		&.online_title {
+			letter-spacing: 7px;
+
+			.light {
+				letter-spacing: 4px;
+			}
+		}
+
 		.light {
 			font-weight: 300;
 			font-size: 38px;
@@ -824,6 +832,13 @@ html[lang="hi"] [data-locale="promocod"] {
 			font-size: 72px;
 			margin: 0 0 60px;
 			line-height: 1.2;
+			&.online_title {
+				letter-spacing: 10px;
+	
+				.light {
+					letter-spacing: 0;
+				}
+			}
 
 			.light {
 				font-size: 72px;

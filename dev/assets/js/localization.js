@@ -18,6 +18,12 @@ const translateMessages = {
         "terms_link": "https://cashalot.bet/pages/terms-and-conditions",
         "diller_title": "Настоящие дилеры, <br>Настоящие развлечения",
         "btn_register": "Зарегестрироваться",
+
+        "live_registration_link": "https://cashalot.bet/live-casino?register=true",
+        "live_login_link": "https://cashalot.bet/live-casino?login=true",
+        "live_logo_link": "https://cashalot.bet/ru/live-casino",
+        "live_terms_link": "https://cashalot.bet/pages/terms-and-conditions",
+
     },
 
     'en': {
@@ -39,6 +45,11 @@ const translateMessages = {
         "terms_link": "https://cashalot.bet/pages/terms-and-conditions",
         "diller_title": "Real Dealers, <br>Real Fun",
         "btn_register": "SIGN UP",
+        
+        "live_registration_link": "https://cashalot.bet/live-casino?register=true",
+        "live_login_link": "https://cashalot.bet/live-casino?login=true",
+        "live_logo_link": "https://cashalot.bet/live-casino",
+        "live_terms_link": "https://cashalot.bet/pages/terms-and-conditions",
     },
 
     'de': {
@@ -60,6 +71,11 @@ const translateMessages = {
         "terms_link": "https://cashalot.bet/pages/terms-and-conditions",
         "diller_title": "Echte Händler, <br>echter Spaß",
         "btn_register": "ANMELDEN",
+
+        "live_registration_link": "https://cashalot.bet/live-casino?register=true",
+        "live_login_link": "https://cashalot.bet/live-casino?login=true",
+        "live_logo_link": "https://cashalot.bet/de/live-casino",
+        "live_terms_link": "https://cashalot.bet/pages/terms-and-conditions",
     },
 
     'it': {
@@ -81,6 +97,11 @@ const translateMessages = {
         "terms_link": "https://cashalot1.bet/pages/terms-and-conditions",
         "diller_title": "Concessionari veri, <br>divertimento vero",
         "btn_register": "ISCRIVERSI",
+
+        "live_registration_link": "https://cashalot1.bet/live-casino?register=true",
+        "live_login_link": "https://cashalot1.bet/live-casino?login=true",
+        "live_logo_link": "https://cashalot1.bet/it/live-casino",
+        "live_terms_link": "https://cashalot1.bet/pages/terms-and-conditions",
     },
     'es': {
         "bonus_title": "Pruebe suerte en el mejor casino en línea con un bono de depósito del 150% hasta 10 000 EUR",
@@ -101,6 +122,11 @@ const translateMessages = {
         "terms_link": "https://cashalot.bet/pages/terms-and-conditions",
         "diller_title": "Concesionarios reales, <br>diversión real",
         "btn_register": "REGISTRO",
+
+        "live_registration_link": "https://cashalot.bet/live-casino?register=true",
+        "live_login_link": "https://cashalot.bet/live-casino?login=true",
+        "live_logo_link": "https://cashalot.bet/es/live-casino",
+        "live_terms_link": "https://cashalot.bet/pages/terms-and-conditions",
     },
 
     'hu': {
@@ -122,6 +148,11 @@ const translateMessages = {
         "terms_link": "https://cashalot.bet/pages/terms-and-conditions",
         "diller_title": "Igazi kereskedők, <br>igazi szórakozás",
         "btn_register": "REGISZTRÁCIÓ",
+
+        "live_registration_link": "https://cashalot.bet/live-casino?register=true",
+        "live_login_link": "https://cashalot.bet/live-casino?login=true",
+        "live_logo_link": "https://cashalot.bet/hu/live-casino",
+        "live_terms_link": "https://cashalot.bet/pages/terms-and-conditions",
     },
 
     'pt': {
@@ -143,6 +174,11 @@ const translateMessages = {
         "terms_link": "https://cashalot.bet/pages/terms-and-conditions",
         "diller_title": "Negociantes reais, <br>diversão real",
         "btn_register": "REGISTO",
+
+        "live_registration_link": "https://cashalot.bet/live-casino?register=true",
+        "live_login_link": "https://cashalot.bet/live-casino?login=true",
+        "live_logo_link": "https://cashalot.bet/live-casino",
+        "live_terms_link": "https://cashalot.bet/pages/terms-and-conditions",
     },
 
     'pt-br': {
@@ -164,6 +200,11 @@ const translateMessages = {
         "terms_link": "https://cashalot.bet/pages/terms-and-conditions",
         "diller_title": "Comerciantes de verdade, <br>diversão de verdade",
         "btn_register": "REGISTRE-SE",
+
+        "live_registration_link": "https://cashalot.bet/live-casino?register=true",
+        "live_login_link": "https://cashalot.bet/live-casino?login=true",
+        "live_logo_link": "https://cashalot.bet/br/live-casino",
+        "live_terms_link": "https://cashalot.bet/pages/terms-and-conditions",
     },
 
     'pl': {
@@ -185,6 +226,11 @@ const translateMessages = {
         "terms_link": "https://cashalot.bet/pages/terms-and-conditions",
         "diller_title": "Prawdziwi dealerzy, <br>prawdziwa zabawa",
         "btn_register": "ZAPISZ SIĘ",
+
+        "live_registration_link": "https://cashalot01.bet/live-casino?register=true",
+        "live_login_link": "https://cashalot01.bet/live-casino?login=true",
+        "live_logo_link": "https://cashalot01.bet/live-casino",
+        "live_terms_link": "https://cashalot01.bet/pages/terms-and-conditions",
     },
 
     'fr': {
@@ -206,6 +252,11 @@ const translateMessages = {
         "terms_link": "https://cashalot.bet/pages/terms-and-conditions",
         "diller_title": "De vrais concessionnaires, <br>un vrai plaisir",
         "btn_register": "ENREGISTREMENT",
+
+        "live_registration_link": "https://cashalot.bet/live-casino?register=true",
+        "live_login_link": "https://cashalot.bet/live-casino?login=true",
+        "live_logo_link": "https://cashalot.bet/fr/live-casino",
+        "live_terms_link": "https://cashalot.bet/pages/terms-and-conditions",
     },
 
     'hi': {
@@ -228,6 +279,11 @@ const translateMessages = {
 
         "diller_title": "असली व्यापारी, <br>असली मज़ा",
         "btn_register": "पंजीकरण करवाना",
+
+        "live_registration_link": "https://cashalot.bet/live-casino?register=true",
+        "live_login_link": "https://cashalot.bet/live-casino?login=true",
+        "live_logo_link": "https://cashalot.bet/live-casino",
+        "live_terms_link": "https://cashalot.bet/pages/terms-and-conditions",
     },
 
 };

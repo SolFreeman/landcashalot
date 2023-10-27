@@ -983,7 +983,6 @@ html[lang="hi"] [data-locale="promocod"] {
 .sun-of-egypt {
 	.main-holder {
 		padding: 0 0 30px;
-		// max-width: 850px;
 	}
 
 	.btn-bonus {
@@ -994,8 +993,13 @@ html[lang="hi"] [data-locale="promocod"] {
 
 	.img-holder {
 		@include media('>=tablet') {
+			margin: -70px 0 -80px;
+			padding: 0 122px;
+		}
+
+		@include media('>=992px') {
 			margin: -140px 0 -80px;
-			padding: 0 60px;
+			padding: 0 122px;
 		}
 	}
 }

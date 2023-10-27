@@ -305,6 +305,7 @@
 	@include media('>=tablet') {
 		font-size: 22px;
 		margin-left: 15px;
+		min-width: 31px;
 	}
 }
 
@@ -333,7 +334,7 @@
 
 	ul {
 		margin: 0;
-		padding: 0;
+		padding: 5px 0 0;
 		width: 100%;
 
 		li {

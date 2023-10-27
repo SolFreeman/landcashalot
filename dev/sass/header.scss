@@ -187,6 +187,16 @@
 	}
 }
 
+.cricket-mania {
+	.logo-box {
+		max-width: 300px;
+
+		@include media('>=992px') {
+			max-width: 360px;
+		}
+	}	
+}
+
 .nav {
 	position: relative;
 	width: 80px;

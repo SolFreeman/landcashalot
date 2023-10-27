@@ -28,6 +28,8 @@ html {
     background: url("./assets/img/live-casino_bg.jpg"); }
   .wrapper.baccarat {
     background: url("./assets/img/baccarat_bg.jpg"); }
+  .wrapper.cricket-mania {
+    background: url("./assets/img/cricket-bg.jpg"); }
 
 body {
   color: #000;
@@ -505,6 +507,12 @@ input[type="radio"] {
 @media (min-width: 992px) {
   .bonus-2 .logo-box {
     max-width: 360px; } }
+
+.cricket-mania .logo-box {
+  max-width: 300px; }
+  @media (min-width: 992px) {
+    .cricket-mania .logo-box {
+      max-width: 360px; } }
 
 .nav {
   position: relative;
@@ -1053,6 +1061,12 @@ html[lang="hi"] [data-locale="promocod"] {
   100% {
     box-shadow: 0 0 0 22px rgba(115, 248, 155, 0); } }
 
+@keyframes pulse-3 {
+  0% {
+    box-shadow: 0 0 0 1px #ff7b01; }
+  100% {
+    box-shadow: 0 0 0 22px rgba(255, 123, 1, 0); } }
+
 @keyframes fadeLeft {
   0% {
     transform: translateX(-100%);
@@ -1339,5 +1353,37 @@ html[lang="hi"] [data-locale="promocod"] {
 
 .baccarat .main-content {
   padding: 0 15px; }
+
+.cricket-mania .btn-bonus {
+  background: #ff7b01;
+  color: #fff;
+  font-weight: 700;
+  font-size: 20px;
+  border-radius: 40px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  animation: pulse-3 1s infinite cubic-bezier(0.6, 0, 0, 1); }
+  .cricket-mania .btn-bonus:hover {
+    opacity: .8; }
+  @media (min-width: 768px) {
+    .cricket-mania .btn-bonus {
+      padding: 20px 56px;
+      margin-bottom: 90px;
+      font-size: 32px;
+      border-radius: 50px; } }
+
+.cricket-mania .main-holder {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  transform: scale(1);
+  height: 100%;
+  padding: 44px 0 0; }
+  @media (min-width: 768px) {
+    .cricket-mania .main-holder {
+      padding: 0; } }
 
 /*# sourceMappingURL=style.css.map */

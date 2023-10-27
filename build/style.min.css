@@ -30,6 +30,8 @@ html {
     background: url(./assets/img/baccarat_bg.jpg); }
   .wrapper.cricket-mania {
     background: url(./assets/img/cricket-bg.jpg); }
+  .wrapper.sun-of-egypt {
+    background: url(./assets/img/egypt-bg.jpg); }
 
 body {
   color: #000;
@@ -508,9 +510,11 @@ input[type=radio] {
   .bonus-2 .logo-box {
     max-width: 360px; } }
 
+.sun-of-egypt .logo-box,
 .cricket-mania .logo-box {
   max-width: 300px; }
   @media (min-width: 992px) {
+    .sun-of-egypt .logo-box,
     .cricket-mania .logo-box {
       max-width: 360px; } }
 
@@ -1067,6 +1071,12 @@ html[lang=hi] [data-locale=promocod] {
   100% {
     box-shadow: 0 0 0 22px rgba(255, 123, 1, 0); } }
 
+@keyframes pulse-4 {
+  0% {
+    box-shadow: 0 0 0 1px #fa011b; }
+  100% {
+    box-shadow: 0 0 0 22px rgba(250, 1, 27, 0); } }
+
 @keyframes fadeLeft {
   0% {
     transform: translateX(-100%);
@@ -1335,7 +1345,8 @@ html[lang=hi] [data-locale=promocod] {
   padding: 0 15px 20px;
   width: 100%;
   justify-content: center;
-  display: flex; }
+  display: flex;
+  animation: fadeRight 1s; }
   .baccarat .card-box .img-holder {
     max-width: 700px; }
     .baccarat .card-box .img-holder img {
@@ -1354,6 +1365,7 @@ html[lang=hi] [data-locale=promocod] {
 .baccarat .main-content {
   padding: 0 15px; }
 
+.sun-of-egypt .btn-bonus,
 .cricket-mania .btn-bonus {
   background: #ff7b01;
   color: #fff;
@@ -1363,15 +1375,18 @@ html[lang=hi] [data-locale=promocod] {
   margin-bottom: 20px;
   text-transform: uppercase;
   animation: pulse-3 1s infinite cubic-bezier(0.6, 0, 0, 1); }
+  .sun-of-egypt .btn-bonus:hover,
   .cricket-mania .btn-bonus:hover {
     opacity: .8; }
   @media (min-width: 768px) {
+    .sun-of-egypt .btn-bonus,
     .cricket-mania .btn-bonus {
       padding: 20px 56px;
       margin-bottom: 90px;
       font-size: 32px;
       border-radius: 50px; } }
 
+.sun-of-egypt .main-holder,
 .cricket-mania .main-holder {
   max-width: 1000px;
   margin: 0 auto;
@@ -1383,7 +1398,21 @@ html[lang=hi] [data-locale=promocod] {
   height: 100%;
   padding: 44px 0 0; }
   @media (min-width: 768px) {
+    .sun-of-egypt .main-holder,
     .cricket-mania .main-holder {
       padding: 0; } }
+
+.sun-of-egypt .main-holder {
+  padding: 0 0 30px; }
+
+.sun-of-egypt .btn-bonus {
+  background: #fa011b;
+  animation: pulse-4 1s infinite cubic-bezier(0.6, 0, 0, 1);
+  margin: 0; }
+
+@media (min-width: 768px) {
+  .sun-of-egypt .img-holder {
+    margin: -140px 0 -80px;
+    padding: 0 60px; } }
 
 /*# sourceMappingURL=style.css.map */

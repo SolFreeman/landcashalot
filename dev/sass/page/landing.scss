@@ -513,6 +513,16 @@ html[lang="hi"] [data-locale="promocod"] {
 	}
 }
 
+@keyframes pulse-4 {
+	0% {
+		box-shadow: 0 0 0 1px rgba(250, 1, 27, 1);
+	}
+
+	100% {
+		box-shadow: 0 0 0 22px rgba(250, 1, 27, 0);
+	}
+}
+
 @keyframes fadeLeft {
 	0% {
 		transform: translateX(-100%);
@@ -840,9 +850,10 @@ html[lang="hi"] [data-locale="promocod"] {
 			font-size: 72px;
 			margin: 0 0 60px;
 			line-height: 1.2;
+
 			&.online_title {
 				letter-spacing: 10px;
-	
+
 				.light {
 					letter-spacing: 0;
 				}
@@ -897,6 +908,7 @@ html[lang="hi"] [data-locale="promocod"] {
 		width: 100%;
 		justify-content: center;
 		display: flex;
+		animation: fadeRight 1s;
 
 		.img-holder {
 			max-width: 700px;
@@ -927,6 +939,7 @@ html[lang="hi"] [data-locale="promocod"] {
 	}
 }
 
+.sun-of-egypt,
 .cricket-mania {
 	.btn-bonus {
 		background: #ff7b01;
@@ -963,6 +976,26 @@ html[lang="hi"] [data-locale="promocod"] {
 
 		@include media('>=tablet') {
 			padding: 0;
+		}
+	}
+}
+
+.sun-of-egypt {
+	.main-holder {
+		padding: 0 0 30px;
+		// max-width: 850px;
+	}
+
+	.btn-bonus {
+		background: #fa011b;
+		animation: pulse-4 1s infinite cubic-bezier(.6, 0, 0, 1);
+		margin: 0;
+	}
+
+	.img-holder {
+		@include media('>=tablet') {
+			margin: -140px 0 -80px;
+			padding: 0 60px;
 		}
 	}
 }

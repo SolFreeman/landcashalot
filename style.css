@@ -604,7 +604,8 @@ input[type="radio"] {
   @media (min-width: 768px) {
     .lang-cc {
       font-size: 22px;
-      margin-left: 15px; } }
+      margin-left: 15px;
+      min-width: 31px; } }
 
 .lang-list {
   display: none;
@@ -626,7 +627,7 @@ input[type="radio"] {
       height: 40px; }
   .lang-list ul {
     margin: 0;
-    padding: 0;
+    padding: 5px 0 0;
     width: 100%; }
     .lang-list ul li {
       margin-bottom: 12px;
@@ -1412,7 +1413,12 @@ html[lang="hi"] [data-locale="promocod"] {
 
 @media (min-width: 768px) {
   .sun-of-egypt .img-holder {
+    margin: -70px 0 -80px;
+    padding: 0 122px; } }
+
+@media (min-width: 992px) {
+  .sun-of-egypt .img-holder {
     margin: -140px 0 -80px;
-    padding: 0 60px; } }
+    padding: 0 122px; } }
 
 /*# sourceMappingURL=style.css.map */

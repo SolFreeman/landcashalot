@@ -109,6 +109,28 @@ html {
 	&.sun-of-egypt {
 		background: url('./assets/img/egypt-bg.jpg');
 	}
+
+	&.fury {
+		background: url('./assets/img/fury_bg.jpg');
+		justify-content: flex-start;
+
+		&:after {
+			position: absolute;
+			content: '';
+			right: 0;
+			// top: 100px;
+			bottom: 0;
+			width: 879px;
+			height: 993px;
+			max-height: 100%;
+			max-width: 100%;
+			background-image: url('./assets/img/fury_girls.png');
+			background-size: contain;
+			background-repeat: no-repeat;
+			background-position: 100% 100%;
+			z-index: 0;
+		}
+	}
 }
 
 body {

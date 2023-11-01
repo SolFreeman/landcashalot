@@ -195,7 +195,19 @@
 		@include media('>=992px') {
 			max-width: 360px;
 		}
-	}	
+	}
+}
+
+.fury {
+	.logo-box {
+		max-width: 285px;
+	}
+
+	.header {
+		.container {
+			max-width: 1760px;
+		}
+	}
 }
 
 .nav {

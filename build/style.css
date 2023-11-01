@@ -32,6 +32,23 @@ html {
     background: url("./assets/img/cricket-bg.jpg"); }
   .wrapper.sun-of-egypt {
     background: url("./assets/img/egypt-bg.jpg"); }
+  .wrapper.fury {
+    background: url("./assets/img/fury_bg.jpg");
+    justify-content: flex-start; }
+    .wrapper.fury:after {
+      position: absolute;
+      content: '';
+      right: 0;
+      bottom: 0;
+      width: 879px;
+      height: 993px;
+      max-height: 100%;
+      max-width: 100%;
+      background-image: url("./assets/img/fury_girls.png");
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: 100% 100%;
+      z-index: 0; }
 
 body {
   color: #000;
@@ -517,6 +534,12 @@ input[type="radio"] {
     .sun-of-egypt .logo-box,
     .cricket-mania .logo-box {
       max-width: 360px; } }
+
+.fury .logo-box {
+  max-width: 285px; }
+
+.fury .header .container {
+  max-width: 1760px; }
 
 .nav {
   position: relative;
@@ -1420,5 +1443,11 @@ html[lang="hi"] [data-locale="promocod"] {
   .sun-of-egypt .img-holder {
     margin: -140px 0 -80px;
     padding: 0 122px; } }
+
+.fury .main-holder {
+  max-width: 1760px;
+  padding-top: 28px;
+  margin: 0 auto;
+  z-index: 1; }
 
 /*# sourceMappingURL=style.css.map */

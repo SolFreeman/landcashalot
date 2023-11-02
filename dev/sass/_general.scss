@@ -14,71 +14,69 @@ html {
 	bottom: 0;
 	left: 0;
 	overflow-y: auto;
-	background: conic-gradient( 
-		#22553d 6deg,
-		#396651 6deg 12deg,
-		#22553d 12deg 18deg,
-		#396651 18deg 24deg,
-		#22553d 24deg 30deg,
-		#396651 30deg 36deg,
-		#22553d 36deg 42deg,
-		#396651 42deg 48deg,
-		#22553d 48deg 54deg,
-		#396651 54deg 60deg,
-		#22553d 60deg 66deg,
-		#396651 66deg 72deg,
-		#22553d 72deg 78deg,
-		#396651 78deg 84deg,
-		#22553d 84deg 90deg,
-		#396651 90deg 96deg,
-		#22553d 96deg 102deg,
-		#396651 102deg 108deg,
-		#22553d 108deg 114deg,
-		#396651 114deg 120deg,
+	background: conic-gradient(#22553d 6deg,
+			#396651 6deg 12deg,
+			#22553d 12deg 18deg,
+			#396651 18deg 24deg,
+			#22553d 24deg 30deg,
+			#396651 30deg 36deg,
+			#22553d 36deg 42deg,
+			#396651 42deg 48deg,
+			#22553d 48deg 54deg,
+			#396651 54deg 60deg,
+			#22553d 60deg 66deg,
+			#396651 66deg 72deg,
+			#22553d 72deg 78deg,
+			#396651 78deg 84deg,
+			#22553d 84deg 90deg,
+			#396651 90deg 96deg,
+			#22553d 96deg 102deg,
+			#396651 102deg 108deg,
+			#22553d 108deg 114deg,
+			#396651 114deg 120deg,
 
-		#22553d 120deg 126deg,
-		#396651 126deg 132deg,
-		#22553d 132deg 138deg,
-		#396651 138deg 144deg,
-		#22553d 144deg 150deg,
-		#396651 150deg 156deg,
-		#22553d 156deg 162deg,
-		#396651 162deg 168deg,
-		#22553d 168deg 174deg,
-		#396651 174deg 180deg,
-		#22553d 180deg 186deg,
-		#396651 186deg 192deg,
-		#22553d 192deg 198deg,
-		#396651 198deg 204deg,
-		#22553d 204deg 210deg,
-		#396651 210deg 216deg,
-		#22553d 216deg 222deg,
-		#396651 222deg 228deg,
+			#22553d 120deg 126deg,
+			#396651 126deg 132deg,
+			#22553d 132deg 138deg,
+			#396651 138deg 144deg,
+			#22553d 144deg 150deg,
+			#396651 150deg 156deg,
+			#22553d 156deg 162deg,
+			#396651 162deg 168deg,
+			#22553d 168deg 174deg,
+			#396651 174deg 180deg,
+			#22553d 180deg 186deg,
+			#396651 186deg 192deg,
+			#22553d 192deg 198deg,
+			#396651 198deg 204deg,
+			#22553d 204deg 210deg,
+			#396651 210deg 216deg,
+			#22553d 216deg 222deg,
+			#396651 222deg 228deg,
 
-		#22553d 228deg 234deg,
-		#396651 234deg 240deg,
-		#22553d 240deg 246deg,
-		#396651 246deg 252deg,
-		#22553d 252deg 258deg,
-		#396651 258deg 264deg,
-		#22553d 264deg 270deg,
-		#396651 270deg 276deg,
-		#22553d 276deg 282deg,
-		#396651 282deg 288deg,
-		#22553d 288deg 294deg,
-		#396651 294deg 300deg,
-		#22553d 300deg 306deg,
-		#396651 306deg 312deg,
-		#22553d 312deg 318deg,
-		#396651 318deg 324deg,
-		#22553d 324deg 330deg,
-		#396651 330deg 336deg,
+			#22553d 228deg 234deg,
+			#396651 234deg 240deg,
+			#22553d 240deg 246deg,
+			#396651 246deg 252deg,
+			#22553d 252deg 258deg,
+			#396651 258deg 264deg,
+			#22553d 264deg 270deg,
+			#396651 270deg 276deg,
+			#22553d 276deg 282deg,
+			#396651 282deg 288deg,
+			#22553d 288deg 294deg,
+			#396651 294deg 300deg,
+			#22553d 300deg 306deg,
+			#396651 306deg 312deg,
+			#22553d 312deg 318deg,
+			#396651 318deg 324deg,
+			#22553d 324deg 330deg,
+			#396651 330deg 336deg,
 
-		#22553d 336deg 342deg,
-		#396651 342deg 348deg,
-		#22553d 348deg 354deg,
-		#396651 354deg 360deg
-    );
+			#22553d 336deg 342deg,
+			#396651 342deg 348deg,
+			#22553d 348deg 354deg,
+			#396651 354deg 360deg);
 
 	@include media('>=tablet') {
 		height: 100vh;
@@ -114,21 +112,30 @@ html {
 		background: url('./assets/img/fury_bg.jpg');
 		justify-content: flex-start;
 
-		&:after {
+		.fury_bg {
 			position: absolute;
 			content: '';
 			right: 0;
-			// top: 100px;
 			bottom: 0;
-			width: 879px;
-			height: 993px;
-			max-height: 100%;
-			max-width: 100%;
+			width: 772px;
+			height: 100%;
+			max-height: 284px;
+			max-width: 350px;
 			background-image: url('./assets/img/fury_girls.png');
 			background-size: contain;
 			background-repeat: no-repeat;
 			background-position: 100% 100%;
 			z-index: 0;
+
+			@include media('>=500px') {
+				height: 50%;
+			}
+
+			@include media('>=tablet') {
+				height: 993px;
+				max-width: 100%;
+				max-height: 100%;
+			}
 		}
 	}
 }
@@ -157,7 +164,7 @@ p {
 }
 
 a {
-	transition: all .15s ease-in-out;
+	transition: all .2s ease-in-out;
 
 	&:hover {
 		text-decoration: none;

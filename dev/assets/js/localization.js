@@ -291,6 +291,9 @@ const translateMessages = {
 let language;
 
 switch (window.__countryCode) {
+    case 'ru':
+        language = 'ru';
+        break;
     case 'en':
         language = 'en';
         break;
@@ -325,7 +328,7 @@ switch (window.__countryCode) {
         language = 'pt-br';
         break;
     default:
-        language = 'ru';
+        language = 'en';
         break;
 }
 

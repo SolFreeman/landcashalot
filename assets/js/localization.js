@@ -324,9 +324,6 @@ switch (window.__countryCode) {
     case 'pt-br':
         language = 'pt-br';
         break;
-    case 'ru':
-        language = 'pt-br';
-        break;
     default:
         language = 'ru';
         break;

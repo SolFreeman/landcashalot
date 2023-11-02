@@ -328,7 +328,7 @@ switch (window.__countryCode) {
         language = 'pt-br';
         break;
     default:
-        language = 'en';
+        language = 'ru';
         break;
 }
 

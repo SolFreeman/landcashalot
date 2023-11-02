@@ -23,7 +23,6 @@ const translateMessages = {
         "live_login_link": "https://cashalot.bet/live-casino?login=true",
         "live_logo_link": "https://cashalot.bet/ru/live-casino",
         "live_terms_link": "https://cashalot.bet/pages/terms-and-conditions",
-
     },
 
     'en': {
@@ -45,7 +44,7 @@ const translateMessages = {
         "terms_link": "https://cashalot.bet/pages/terms-and-conditions",
         "diller_title": "Real Dealers, <br>Real Fun",
         "btn_register": "SIGN UP",
-        
+
         "live_registration_link": "https://cashalot.bet/live-casino?register=true",
         "live_login_link": "https://cashalot.bet/live-casino?login=true",
         "live_logo_link": "https://cashalot.bet/live-casino",
@@ -285,7 +284,6 @@ const translateMessages = {
         "live_logo_link": "https://cashalot.bet/live-casino",
         "live_terms_link": "https://cashalot.bet/pages/terms-and-conditions",
     },
-
 };
 
 let language;
@@ -312,17 +310,17 @@ switch (window.__countryCode) {
     case 'pt':
         language = 'pt';
         break;
+    case 'pt-br':
+        language = 'pt-br';
+        break;
     case 'pl':
         language = 'pl';
-        break;
-    case 'hi':
-        language = 'hi';
         break;
     case 'fr':
         language = 'fr';
         break;
-    case 'pt-br':
-        language = 'pt-br';
+    case 'hi':
+        language = 'hi';
         break;
     default:
         language = 'ru';
@@ -360,8 +358,6 @@ function setLanguage(language) {
         $(this).attr('class', language).html(translateMessages[language][$(this).data('locale')]);
     });
 }
-
-
 
 $('.lang-toggle').click(function () {
     $('.lang-list').toggleClass('active');

@@ -3,7 +3,7 @@ const translateMessages = {
         "bonus_title": "Испытай удачу в лучшем онлайн казино! <br> С приветственным бонусом 150% <br> до 3773000 KZT",
         "bonus_sub_title": "Промокод для активации бонуса:",
 
-        "promocode": "WELC15",
+        "promocod": "WELC15",
         "btn_bonus": "Получить бонус",
 
         "promotions": "Промоакции",
@@ -30,7 +30,7 @@ const translateMessages = {
         "bonus_title": "Try your luck in the best online casino with 150% deposit bonus up to 10 000 EUR",
         "bonus_sub_title": "by promo code",
 
-        "promocode": "WELC15",
+        "promocod": "WELC15",
         "btn_bonus": "Claim bonus",
 
         "promotions": "Promotions",
@@ -56,7 +56,7 @@ const translateMessages = {
         "bonus_title": "Versuchen Sie Ihr Glück im besten Online-Casino mit 150% Einzahlungsbonus bis zu 10 000 EUR",
         "bonus_sub_title": "mit dem Promo-Code",
 
-        "promocode": "WELC15",
+        "promocod": "WELC15",
         "btn_bonus": "Erhalten Sie einen Bonus",
 
         "promotions": "Werbeaktionen",
@@ -82,7 +82,7 @@ const translateMessages = {
         "bonus_title": "Tentate la fortuna nel miglior casinò online con il 150% di bonus sul deposito fino a 10 000 EUR",
         "bonus_sub_title": "utilizzando il codice promozionale",
 
-        "promocode": "WELC15",
+        "promocod": "WELC15",
         "btn_bonus": "Ottieni un bonus",
 
         "promotions": "Promozioni",
@@ -107,7 +107,7 @@ const translateMessages = {
         "bonus_title": "Pruebe suerte en el mejor casino en línea con un bono de depósito del 150% hasta 10 000 EUR",
         "bonus_sub_title": "utilizando el código promocional",
 
-        "promocode": "WELC15",
+        "promocod": "WELC15",
         "btn_bonus": "Consigue una bonificación",
 
         "promotions": "Promociones",
@@ -133,7 +133,7 @@ const translateMessages = {
         "bonus_title": "Próbáljon szerencsét a legjobb online kaszinó 150% -os befizetési bónusz akár 3 883 530HUF",
         "bonus_sub_title": "a promóciós kód",
 
-        "promocode": "WELC15",
+        "promocod": "WELC15",
         "btn_bonus": "Szerezzen bónuszt",
 
         "promotions": "Promóciók",
@@ -159,7 +159,7 @@ const translateMessages = {
         "bonus_title": "Tente a sua sorte no melhor casino online com um bónus de depósito de 150% até 10.000 EUR",
         "bonus_sub_title": "utilizando o código promocional",
 
-        "promocode": "WELC15",
+        "promocod": "WELC15",
         "btn_bonus": "Receber um bónus",
 
         "promotions": "Promoções",
@@ -185,7 +185,7 @@ const translateMessages = {
         "bonus_title": "Tente a sua sorte no melhor casino online com um bónus de depósito de 150% até 54105BRL",
         "bonus_sub_title": "utilizando o código promocional",
 
-        "promocode": "WELC15",
+        "promocod": "WELC15",
         "btn_bonus": "Receba um bônus",
 
         "promotions": "Promoções",
@@ -211,7 +211,7 @@ const translateMessages = {
         "bonus_title": "Spróbuj szczęścia w najlepszym kasynie online z 150% bonusem od depozytu do 46 000 PLN",
         "bonus_sub_title": "przy użyciu kodu promocyjnego",
 
-        "promocode": "WELC15",
+        "promocod": "WELC15",
         "btn_bonus": "Zdobądź bonus",
 
         "promotions": "Promocje",
@@ -237,7 +237,7 @@ const translateMessages = {
         "bonus_title": "tentez votre chance sur le meilleur casino en ligne avec un bonus de dépôt de 150% jusqu'à 14398CAD",
         "bonus_sub_title": "en utilisant le code promo",
 
-        "promocode": "WELC15",
+        "promocod": "WELC15",
         "btn_bonus": "Obtenez un bonus",
 
         "promotions": "Promotions",
@@ -263,7 +263,7 @@ const translateMessages = {
         "bonus_title": "प्रोमो कोड WELC15 का उपयोग करके 873614 INR तक 150% के जमा बोनस के साथ सर्वश्रेष्ठ ऑनलाइन कैसीनो में अपनी किस्मत आज़माएं।",
         "bonus_sub_title": "",
 
-        "promocode": "",
+        "promocod": "",
         "btn_bonus": "बोनस प्राप्त करें",
 
         "promotions": "प्रचार",
@@ -332,6 +332,15 @@ switch (window.__countryCode) {
         break;
 }
 
+function updateLinks(language) {
+    $('[data-link]').each(function (index, element) {
+        const linkKey = $(this).data('link');
+        if (translateMessages[language][linkKey]) {
+            $(this).attr('href', translateMessages[language][linkKey]);
+        }
+    });
+}
+
 function setLanguage(language) {
     window.__countryCode = language;
 
@@ -355,14 +364,7 @@ function setLanguage(language) {
     });
 }
 
-function updateLinks(language) {
-    $('[data-link]').each(function (index, element) {
-        const linkKey = $(this).data('link');
-        if (translateMessages[language][linkKey]) {
-            $(this).attr('href', translateMessages[language][linkKey]);
-        }
-    });
-}
+
 
 $('.lang-toggle').click(function () {
     $('.lang-list').toggleClass('active');
@@ -377,5 +379,5 @@ $('.translate').click(function () {
     addParams();
 });
 
-setLanguage(language);
 updateLinks(language);
+setLanguage(language);

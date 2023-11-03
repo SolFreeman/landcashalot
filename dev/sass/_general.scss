@@ -138,6 +138,71 @@ html {
 			}
 		}
 	}
+
+	&.gems-respin {
+		background: url('./assets/img/777-gems_bg.jpg');
+	}
+
+	&.scarab-boost {
+		background: url('./assets/img/scarab_boost_bg.jpg');
+
+		&:before,
+		&:after {
+			position: absolute;
+			content: '';
+			left: 0;
+			top: 0;
+			width: 100%;
+			height: 100%;
+			background-image: url('./assets/img/coins_1.png');
+			background-repeat: no-repeat;
+			background-position: 50% 67%;
+			animation: coinsPosition_1 7s infinite;
+			z-index: 0;
+
+			@include media('<=1600px') {
+				background-size: contain;
+			}
+		}
+
+		&:after {
+			background-image: url('./assets/img/coins_2.png');
+			animation: coinsPosition_2 10s infinite;
+			background-position: 50% 34%;
+		}
+
+		&>* {
+			z-index: 1;
+		}
+	}
+}
+
+@keyframes coinsPosition_1 {
+	0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-40px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes coinsPosition_2 {
+	0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-50px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
 }
 
 body {
@@ -194,17 +259,6 @@ ol {
 		position: relative;
 		padding-left: 26px;
 		margin-bottom: 18px;
-
-		// &:before {
-		// 	content: counter(li, decimal) ".";
-		// 	counter-increment: li;
-		// 	margin-left: 0;
-		// 	margin-right: 0;
-		// 	color: $tertiary-color;
-		// 	position: absolute;
-		// 	top: 0;
-		// 	left: 0
-		// }
 
 		&::marker {
 			color: $tertiary-color;

@@ -157,17 +157,17 @@ html {
 			background-image: url('./assets/img/coins_1.png');
 			background-repeat: no-repeat;
 			background-position: 50% 67%;
-			animation: coinsPosition_1 7s infinite;
 			z-index: 0;
-
+			animation: none;
+			
 			@include media('<=1600px') {
 				background-size: contain;
 			}
 		}
-
+		
 		&:after {
 			background-image: url('./assets/img/coins_2.png');
-			animation: coinsPosition_2 10s infinite;
+			animation: coinsPosition_1 7s infinite;
 			background-position: 50% 34%;
 		}
 
@@ -184,20 +184,6 @@ html {
 
     50% {
         transform: translateY(-40px);
-    }
-
-    100% {
-        transform: translateY(0);
-    }
-}
-
-@keyframes coinsPosition_2 {
-	0% {
-        transform: translateY(0);
-    }
-
-    50% {
-        transform: translateY(-50px);
     }
 
     100% {

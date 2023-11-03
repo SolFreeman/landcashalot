@@ -57,6 +57,47 @@ html {
           height: 993px;
           max-width: 100%;
           max-height: 100%; } }
+  .wrapper.gems-respin {
+    background: url("./assets/img/777-gems_bg.jpg"); }
+  .wrapper.scarab-boost {
+    background: url("./assets/img/scarab_boost_bg.jpg"); }
+    .wrapper.scarab-boost:before, .wrapper.scarab-boost:after {
+      position: absolute;
+      content: '';
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background-image: url("./assets/img/coins_1.png");
+      background-repeat: no-repeat;
+      background-position: 50% 67%;
+      animation: coinsPosition_1 7s infinite;
+      z-index: 0; }
+      @media (max-width: 1600px) {
+        .wrapper.scarab-boost:before, .wrapper.scarab-boost:after {
+          background-size: contain; } }
+    .wrapper.scarab-boost:after {
+      background-image: url("./assets/img/coins_2.png");
+      animation: coinsPosition_2 10s infinite;
+      background-position: 50% 34%; }
+    .wrapper.scarab-boost > * {
+      z-index: 1; }
+
+@keyframes coinsPosition_1 {
+  0% {
+    transform: translateY(0); }
+  50% {
+    transform: translateY(-40px); }
+  100% {
+    transform: translateY(0); } }
+
+@keyframes coinsPosition_2 {
+  0% {
+    transform: translateY(0); }
+  50% {
+    transform: translateY(-50px); }
+  100% {
+    transform: translateY(0); } }
 
 body {
   color: #000;
@@ -542,6 +583,10 @@ input[type="radio"] {
     .sun-of-egypt .logo-box,
     .cricket-mania .logo-box {
       max-width: 360px; } }
+
+.scarab-boost .logo-box,
+.gems-respin .logo-box {
+  max-width: 284px; }
 
 .fury .logo-box {
   max-width: 285px; }
@@ -1109,6 +1154,18 @@ html[lang="hi"] [data-locale="promocod"] {
   100% {
     box-shadow: 0 0 0 22px rgba(250, 1, 27, 0); } }
 
+@keyframes pulse-5 {
+  0% {
+    box-shadow: 0 0 0 1px #ffff09; }
+  100% {
+    box-shadow: 0 0 0 22px rgba(255, 255, 9, 0); } }
+
+@keyframes pulse-6 {
+  0% {
+    box-shadow: 0 0 0 1px #d300fc; }
+  100% {
+    box-shadow: 0 0 0 22px rgba(211, 0, 252, 0); } }
+
 @keyframes fadeLeft {
   0% {
     transform: translateX(-100%);
@@ -1397,6 +1454,8 @@ html[lang="hi"] [data-locale="promocod"] {
 .baccarat .main-content {
   padding: 0 15px; }
 
+.scarab-boost .btn-bonus,
+.gems-respin .btn-bonus,
 .sun-of-egypt .btn-bonus,
 .cricket-mania .btn-bonus {
   background: #ff7b01;
@@ -1407,10 +1466,14 @@ html[lang="hi"] [data-locale="promocod"] {
   margin-bottom: 20px;
   text-transform: uppercase;
   animation: pulse-3 1s infinite cubic-bezier(0.6, 0, 0, 1); }
+  .scarab-boost .btn-bonus:hover,
+  .gems-respin .btn-bonus:hover,
   .sun-of-egypt .btn-bonus:hover,
   .cricket-mania .btn-bonus:hover {
     opacity: .8; }
   @media (min-width: 768px) {
+    .scarab-boost .btn-bonus,
+    .gems-respin .btn-bonus,
     .sun-of-egypt .btn-bonus,
     .cricket-mania .btn-bonus {
       padding: 20px 56px;
@@ -1418,6 +1481,8 @@ html[lang="hi"] [data-locale="promocod"] {
       font-size: 32px;
       border-radius: 50px; } }
 
+.scarab-boost .main-holder,
+.gems-respin .main-holder,
 .sun-of-egypt .main-holder,
 .cricket-mania .main-holder {
   max-width: 1000px;
@@ -1430,6 +1495,8 @@ html[lang="hi"] [data-locale="promocod"] {
   height: 100%;
   padding: 44px 0 0; }
   @media (min-width: 768px) {
+    .scarab-boost .main-holder,
+    .gems-respin .main-holder,
     .sun-of-egypt .main-holder,
     .cricket-mania .main-holder {
       padding: 0; } }
@@ -1631,5 +1698,46 @@ html[lang="hi"] [data-locale="promocod"] {
   to {
     opacity: 0;
     transform: translateY(-10em) scale(0); } }
+
+.gems-respin .main-holder {
+  transform: scale(1);
+  padding: 0 15px; }
+  .gems-respin .main-holder .img-holder {
+    margin: 0 0 24px;
+    max-width: 690px; }
+    @media (min-width: 1024px) {
+      .gems-respin .main-holder .img-holder {
+        margin: -60px 0 50px; } }
+
+.gems-respin .btn-bonus {
+  color: #170103;
+  background: #fbfb09;
+  animation: pulse-5 1s infinite cubic-bezier(0.6, 0, 0, 1);
+  font-weight: 900;
+  font-size: 20px; }
+  @media (min-width: 1024px) {
+    .gems-respin .btn-bonus {
+      font-size: 38px;
+      margin: 0 0 30px; } }
+
+.scarab-boost .main-holder {
+  transform: scale(1); }
+  .scarab-boost .main-holder .img-holder {
+    margin: 0 0 24px;
+    max-width: 690px; }
+    @media (min-width: 1024px) {
+      .scarab-boost .main-holder .img-holder {
+        margin: -100px 0 0; } }
+
+.scarab-boost .btn-bonus {
+  color: #070626;
+  background: #d300fc;
+  animation: pulse-6 1s infinite cubic-bezier(0.6, 0, 0, 1);
+  font-weight: 900;
+  font-size: 20px; }
+  @media (min-width: 1024px) {
+    .scarab-boost .btn-bonus {
+      font-size: 38px;
+      margin: 0 0 30px; } }
 
 /*# sourceMappingURL=style.css.map */

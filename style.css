@@ -42,7 +42,7 @@ html {
       bottom: 0;
       width: 772px;
       height: 100%;
-      max-height: 284px;
+      max-height: 384px;
       max-width: 350px;
       background-image: url("./assets/img/fury_girls.png");
       background-size: contain;
@@ -1458,7 +1458,7 @@ html[lang="hi"] [data-locale="promocod"] {
   z-index: 1;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: space-between;
   height: 100%;
   transform: scale(1); }
   @media (min-width: 768px) {
@@ -1519,15 +1519,16 @@ html[lang="hi"] [data-locale="promocod"] {
 
 .fury .small-col {
   display: flex;
-  flex-direction: column; }
+  flex-direction: column;
+  align-items: center; }
   @media (min-width: 768px) {
     .fury .small-col {
       margin: 0 0 0 85px; } }
   .fury .small-col .buy-bonus {
-    font-size: 24px;
+    font-size: 18px;
     animation: textShadow 5s infinite;
-    width: 154px;
-    height: 154px;
+    width: 110px;
+    height: 110px;
     color: #ffd319;
     display: flex;
     text-decoration: none;
@@ -1538,7 +1539,7 @@ html[lang="hi"] [data-locale="promocod"] {
     position: relative;
     line-height: 1;
     padding: 0 0 10px;
-    margin: 0 0 20px; }
+    margin: 0 0 10px; }
     .fury .small-col .buy-bonus:after {
       position: absolute;
       content: '';
@@ -1549,11 +1550,21 @@ html[lang="hi"] [data-locale="promocod"] {
       animation: buttonColor 5s infinite;
       background-image: url("./assets/img/btn_buy_bg.png");
       background-repeat: no-repeat;
+      background-size: contain;
       z-index: -1; }
+    @media (min-width: 768px) {
+      .fury .small-col .buy-bonus {
+        width: 154px;
+        height: 154px;
+        font-size: 24px;
+        margin: 0 0 20px; } }
   .fury .small-col .promotions {
     color: #ffd319;
-    font-size: 22px;
+    font-size: 18px;
     margin: 0 0 20px; }
+    @media (min-width: 768px) {
+      .fury .small-col .promotions {
+        font-size: 22px; } }
 
 @keyframes textShadow {
   0% {
@@ -1583,11 +1594,11 @@ html[lang="hi"] [data-locale="promocod"] {
   filter: blur(var(--blur));
   -webkit-filter: blur(var(--blur));
   position: relative;
-  width: 5em;
-  height: 3em;
-  transform: translateY(39px);
+  width: 6em;
+  height: 7em;
+  transform: translateY(30px);
   position: absolute;
-  left: 84px; }
+  left: -1px; }
   @media (min-width: 768px) {
     #fire-container {
       transform: translateY(55px);

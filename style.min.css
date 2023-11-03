@@ -1713,7 +1713,8 @@ html[lang=hi] [data-locale=promocod] {
       margin: 0 0 70px; } }
 
 .scarab-boost .main-holder {
-  transform: scale(1); }
+  transform: scale(1);
+  padding: 0 15px; }
   .scarab-boost .main-holder .img-holder {
     margin: 0 0 24px;
     max-width: 690px; }

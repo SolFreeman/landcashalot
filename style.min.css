@@ -113,7 +113,7 @@ html {
         .wrapper.hit-the-gold:after {
           width: 30%; } }
 
-@keyframes coinsPosition_3 {
+@keyframes coinsPosition_1 {
   0% {
     transform: translateY(0); }
   50% {

@@ -197,9 +197,10 @@ html {
 			width: 65%;
 			animation: ManDog 7s infinite;
 			z-index: 1;
+			background-size: contain;
 			
-			@include media('<=1600px') {
-				background-size: contain;
+			@include media('>=tablet') {
+				width: 46%;
 			}
 		}
 		
@@ -208,6 +209,10 @@ html {
 			width: 35%;
 			left: auto;
 			right: 0;
+
+			@include media('>=tablet') {
+				width: 30%;
+			}
 		}
 	}
 }

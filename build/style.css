@@ -99,15 +99,19 @@ html {
       background-position: 0 100%;
       width: 65%;
       animation: ManDog 7s infinite;
-      z-index: 1; }
-      @media (max-width: 1600px) {
+      z-index: 1;
+      background-size: contain; }
+      @media (min-width: 768px) {
         .wrapper.hit-the-gold:before, .wrapper.hit-the-gold:after {
-          background-size: contain; } }
+          width: 46%; } }
     .wrapper.hit-the-gold:after {
       background-image: url("./assets/img/gold_dog.png");
       width: 35%;
       left: auto;
       right: 0; }
+      @media (min-width: 768px) {
+        .wrapper.hit-the-gold:after {
+          width: 30%; } }
 
 @keyframes coinsPosition_3 {
   0% {
@@ -1789,6 +1793,8 @@ html[lang="hi"] [data-locale="promocod"] {
 
 .hit-the-gold .main-holder {
   height: auto; }
+  .hit-the-gold .main-holder .img-holder {
+    max-width: 650px; }
   @media (min-width: 768px) {
     .hit-the-gold .main-holder {
       height: 100%; } }
@@ -1806,6 +1812,6 @@ html[lang="hi"] [data-locale="promocod"] {
   @media (min-width: 1024px) {
     .hit-the-gold .btn-bonus {
       font-size: 38px;
-      margin: 0 0 50px; } }
+      margin: 0 0 60px; } }
 
 /*# sourceMappingURL=style.css.map */

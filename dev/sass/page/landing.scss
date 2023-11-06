@@ -543,6 +543,16 @@ html[lang="hi"] [data-locale="promocod"] {
 	}
 }
 
+@keyframes pulse-7 {
+	0% {
+		box-shadow: 0 0 0 1px rgba(0, 174, 236, 1);
+	}
+
+	100% {
+		box-shadow: 0 0 0 22px rgba(0, 174, 236, 0);
+	}
+}
+
 @keyframes fadeLeft {
 	0% {
 		transform: translateX(-100%);
@@ -959,6 +969,7 @@ html[lang="hi"] [data-locale="promocod"] {
 	}
 }
 
+.hit-the-gold,
 .scarab-boost,
 .gems-respin,
 .sun-of-egypt,
@@ -1288,6 +1299,7 @@ html[lang="hi"] [data-locale="promocod"] {
 	}
 }
 
+.hit-the-gold,
 .scarab-boost {
 	.main-holder {
 		transform: scale(1);
@@ -1313,6 +1325,34 @@ html[lang="hi"] [data-locale="promocod"] {
 		@include media('>=1024px') {
 			font-size: 38px;
 			margin: 0 0 30px;
+		}
+	}
+}
+
+.hit-the-gold {
+	.main-holder {
+		height: auto;
+
+		@include media('>=tablet') {
+			height: 100%;
+		}
+	}
+
+	.btn-holder {
+		z-index: 2;
+	}
+
+	.btn-bonus {
+		color: #0c031d;
+		background: #00aeec;
+		animation: pulse-7 1s infinite cubic-bezier(.6, 0, 0, 1);
+		font-weight: 900;
+		font-size: 20px;
+		margin: 0 0 30px;
+
+		@include media('>=1024px') {
+			font-size: 38px;
+			margin: 0 0 50px;
 		}
 	}
 }

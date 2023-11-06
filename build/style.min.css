@@ -82,12 +82,46 @@ html {
       background-position: 50% 34%; }
     .wrapper.scarab-boost > * {
       z-index: 1; }
+  .wrapper.hit-the-gold {
+    background-image: url(./assets/img/gold_bg.jpg);
+    justify-content: flex-start; }
+    @media (min-width: 768px) {
+      .wrapper.hit-the-gold {
+        justify-content: space-around; } }
+    .wrapper.hit-the-gold:before, .wrapper.hit-the-gold:after {
+      position: absolute;
+      content: '';
+      left: 0;
+      bottom: 0;
+      height: 100%;
+      background-image: url(./assets/img/gold_man.png);
+      background-repeat: no-repeat;
+      background-position: 0 100%;
+      width: 65%;
+      animation: ManDog 7s infinite;
+      z-index: 1; }
+      @media (max-width: 1600px) {
+        .wrapper.hit-the-gold:before, .wrapper.hit-the-gold:after {
+          background-size: contain; } }
+    .wrapper.hit-the-gold:after {
+      background-image: url(./assets/img/gold_dog.png);
+      width: 35%;
+      left: auto;
+      right: 0; }
 
-@keyframes coinsPosition_1 {
+@keyframes coinsPosition_3 {
   0% {
     transform: translateY(0); }
   50% {
     transform: translateY(-40px); }
+  100% {
+    transform: translateY(0); } }
+
+@keyframes ManDog {
+  0% {
+    transform: translateY(0); }
+  50% {
+    transform: translateY(-15px); }
   100% {
     transform: translateY(0); } }
 
@@ -576,6 +610,7 @@ input[type=radio] {
     .cricket-mania .logo-box {
       max-width: 360px; } }
 
+.hit-the-gold .logo-box,
 .scarab-boost .logo-box,
 .gems-respin .logo-box {
   max-width: 284px; }
@@ -585,6 +620,9 @@ input[type=radio] {
 
 .fury .header .container {
   max-width: 1760px; }
+
+.hit-the-gold .header .container {
+  justify-content: flex-end; }
 
 .nav {
   position: relative;
@@ -1158,6 +1196,12 @@ html[lang=hi] [data-locale=promocod] {
   100% {
     box-shadow: 0 0 0 22px rgba(211, 0, 252, 0); } }
 
+@keyframes pulse-7 {
+  0% {
+    box-shadow: 0 0 0 1px #00aeec; }
+  100% {
+    box-shadow: 0 0 0 22px rgba(0, 174, 236, 0); } }
+
 @keyframes fadeLeft {
   0% {
     transform: translateX(-100%);
@@ -1446,6 +1490,7 @@ html[lang=hi] [data-locale=promocod] {
 .baccarat .main-content {
   padding: 0 15px; }
 
+.hit-the-gold .btn-bonus,
 .scarab-boost .btn-bonus,
 .gems-respin .btn-bonus,
 .sun-of-egypt .btn-bonus,
@@ -1458,12 +1503,14 @@ html[lang=hi] [data-locale=promocod] {
   margin-bottom: 20px;
   text-transform: uppercase;
   animation: pulse-3 1s infinite cubic-bezier(0.6, 0, 0, 1); }
+  .hit-the-gold .btn-bonus:hover,
   .scarab-boost .btn-bonus:hover,
   .gems-respin .btn-bonus:hover,
   .sun-of-egypt .btn-bonus:hover,
   .cricket-mania .btn-bonus:hover {
     opacity: .8; }
   @media (min-width: 768px) {
+    .hit-the-gold .btn-bonus,
     .scarab-boost .btn-bonus,
     .gems-respin .btn-bonus,
     .sun-of-egypt .btn-bonus,
@@ -1473,6 +1520,7 @@ html[lang=hi] [data-locale=promocod] {
       font-size: 32px;
       border-radius: 50px; } }
 
+.hit-the-gold .main-holder,
 .scarab-boost .main-holder,
 .gems-respin .main-holder,
 .sun-of-egypt .main-holder,
@@ -1487,6 +1535,7 @@ html[lang=hi] [data-locale=promocod] {
   height: 100%;
   padding: 44px 0 0; }
   @media (min-width: 768px) {
+    .hit-the-gold .main-holder,
     .scarab-boost .main-holder,
     .gems-respin .main-holder,
     .sun-of-egypt .main-holder,
@@ -1712,16 +1761,20 @@ html[lang=hi] [data-locale=promocod] {
       font-size: 38px;
       margin: 0 0 70px; } }
 
+.hit-the-gold .main-holder,
 .scarab-boost .main-holder {
   transform: scale(1);
   padding: 0 15px; }
+  .hit-the-gold .main-holder .img-holder,
   .scarab-boost .main-holder .img-holder {
     margin: 0 0 24px;
     max-width: 690px; }
     @media (min-width: 1024px) {
+      .hit-the-gold .main-holder .img-holder,
       .scarab-boost .main-holder .img-holder {
         margin: -100px 0 0; } }
 
+.hit-the-gold .btn-bonus,
 .scarab-boost .btn-bonus {
   color: #070626;
   background: #d300fc;
@@ -1729,8 +1782,30 @@ html[lang=hi] [data-locale=promocod] {
   font-weight: 900;
   font-size: 20px; }
   @media (min-width: 1024px) {
+    .hit-the-gold .btn-bonus,
     .scarab-boost .btn-bonus {
       font-size: 38px;
       margin: 0 0 30px; } }
+
+.hit-the-gold .main-holder {
+  height: auto; }
+  @media (min-width: 768px) {
+    .hit-the-gold .main-holder {
+      height: 100%; } }
+
+.hit-the-gold .btn-holder {
+  z-index: 2; }
+
+.hit-the-gold .btn-bonus {
+  color: #0c031d;
+  background: #00aeec;
+  animation: pulse-7 1s infinite cubic-bezier(0.6, 0, 0, 1);
+  font-weight: 900;
+  font-size: 20px;
+  margin: 0 0 30px; }
+  @media (min-width: 1024px) {
+    .hit-the-gold .btn-bonus {
+      font-size: 38px;
+      margin: 0 0 50px; } }
 
 /*# sourceMappingURL=style.css.map */

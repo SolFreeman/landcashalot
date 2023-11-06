@@ -175,9 +175,44 @@ html {
 			z-index: 1;
 		}
 	}
+
+	&.hit-the-gold {
+		background-image: url('./assets/img/gold_bg.jpg');
+		justify-content: flex-start;
+
+		@include media('>=tablet') {
+			justify-content: space-around;
+		}
+
+		&:before,
+		&:after {
+			position: absolute;
+			content: '';
+			left: 0;
+			bottom: 0;
+			height: 100%;
+			background-image: url('./assets/img/gold_man.png');
+			background-repeat: no-repeat;
+			background-position: 0 100%;
+			width: 65%;
+			animation: ManDog 7s infinite;
+			z-index: 1;
+			
+			@include media('<=1600px') {
+				background-size: contain;
+			}
+		}
+		
+		&:after {
+			background-image: url('./assets/img/gold_dog.png');
+			width: 35%;
+			left: auto;
+			right: 0;
+		}
+	}
 }
 
-@keyframes coinsPosition_1 {
+@keyframes coinsPosition_3 {
 	0% {
         transform: translateY(0);
     }
@@ -188,6 +223,20 @@ html {
 
     100% {
         transform: translateY(0);
+    }
+}
+
+@keyframes ManDog {
+	0% {
+		transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-15px);
+    }
+
+    100% {
+		transform: translateY(0);
     }
 }
 

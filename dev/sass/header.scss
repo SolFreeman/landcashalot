@@ -198,6 +198,7 @@
 	}
 }
 
+.hit-the-gold,
 .scarab-boost,
 .gems-respin {
 	.logo-box {
@@ -215,6 +216,14 @@
 			max-width: 1760px;
 		}
 	}
+}
+
+.hit-the-gold {
+	.header {
+		.container {
+			justify-content: flex-end;
+		}
+	}	
 }
 
 .nav {

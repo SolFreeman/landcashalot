@@ -553,6 +553,16 @@ html[lang="hi"] [data-locale="promocod"] {
 	}
 }
 
+@keyframes pulse-8 {
+	0% {
+		box-shadow: 0 0 0 1px rgba(255, 240, 4, 1);
+	}
+
+	100% {
+		box-shadow: 0 0 0 22px rgba(255, 240, 4, 0);
+	}
+}
+
 @keyframes fadeLeft {
 	0% {
 		transform: translateX(-100%);
@@ -969,6 +979,7 @@ html[lang="hi"] [data-locale="promocod"] {
 	}
 }
 
+.big-bass,
 .hit-the-gold,
 .scarab-boost,
 .gems-respin,
@@ -1299,6 +1310,7 @@ html[lang="hi"] [data-locale="promocod"] {
 	}
 }
 
+.big-bass,
 .hit-the-gold,
 .scarab-boost {
 	.main-holder {
@@ -1358,5 +1370,13 @@ html[lang="hi"] [data-locale="promocod"] {
 			font-size: 38px;
 			margin: 0 0 60px;
 		}
+	}
+}
+
+.big-bass {
+	.btn-bonus {
+		color: #080f28;
+		background: #fff004;
+		animation: pulse-8 1s infinite cubic-bezier(.6, 0, 0, 1);
 	}
 }

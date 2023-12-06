@@ -1,8 +1,10 @@
 .header {
 	padding: 20px 0 0;
+	position: relative;
+	z-index: 10;
 
 	@include media('>=tablet') {
-		padding: 40px 0 0;
+		padding: 38px 0 0;
 	}
 
 	@media (max-height: 440px) {
@@ -79,12 +81,18 @@
 		padding: 0;
 
 		@include media('>=tablet') {
-			padding: 40px 0 0;
+			padding: 40px 15px;
+		}
+
+		@include media('>=1680px') {
+			padding: 40px 6.5%;
 		}
 
 		.container {
 			align-items: center;
 			flex-direction: column-reverse;
+			max-width: 100%;
+			padding: 0;
 
 			@include media('>=tablet') {
 				flex-direction: row;
@@ -132,11 +140,6 @@
 			padding: 15px 12px;
 		}
 
-		// @include media('>=992px') {
-		// 	margin: 0 42px 0 0;
-		// 	padding: 15px 47px;
-		// }
-
 		@include media('>=1025px') {
 			margin: 0 42px 0 0;
 			padding: 15px 47px;
@@ -154,8 +157,6 @@
 				background: #73f89b;
 				color: #070f0c;
 			}
-
-			@include media('>=992px') {}
 		}
 
 		&.btn-registration {
@@ -168,7 +169,6 @@
 			}
 		}
 	}
-
 }
 
 .bonus-2 {
@@ -208,6 +208,12 @@
 }
 
 .fury {
+	.header {
+		@include media('>=tablet') {
+			padding: 30px 0 0;
+		}
+	}
+
 	.logo-box {
 		max-width: 285px;
 	}
@@ -225,6 +231,43 @@
 			justify-content: flex-end;
 		}
 	}	
+}
+
+.sports-betting {
+	.logo-box {
+		max-width: 270px;
+	}
+
+	.lang {
+		border-color: #ffa200;
+		color: $white;
+	}
+
+	.lang-cc.lang-active {
+		color: $white;
+	}
+
+	@include media('>=tablet') {
+		.lang {
+			padding: 16px 0;
+			margin-top: -27px;
+			border-radius: 27px;
+			font-size: 18px;
+		}
+
+		.btn {
+			font-size: 18px;
+		}
+	}
+
+	a.btn-transparent {
+		color: $white !important;
+		border-color: #ffa200 !important;
+
+		&:hover {
+			background: #ffa200 !important;
+		}
+	}
 }
 
 .nav {

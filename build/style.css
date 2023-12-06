@@ -14,26 +14,29 @@ html {
   bottom: 0;
   left: 0;
   overflow-y: auto;
-  background: conic-gradient(#22553d 6deg, #396651 6deg 12deg, #22553d 12deg 18deg, #396651 18deg 24deg, #22553d 24deg 30deg, #396651 30deg 36deg, #22553d 36deg 42deg, #396651 42deg 48deg, #22553d 48deg 54deg, #396651 54deg 60deg, #22553d 60deg 66deg, #396651 66deg 72deg, #22553d 72deg 78deg, #396651 78deg 84deg, #22553d 84deg 90deg, #396651 90deg 96deg, #22553d 96deg 102deg, #396651 102deg 108deg, #22553d 108deg 114deg, #396651 114deg 120deg, #22553d 120deg 126deg, #396651 126deg 132deg, #22553d 132deg 138deg, #396651 138deg 144deg, #22553d 144deg 150deg, #396651 150deg 156deg, #22553d 156deg 162deg, #396651 162deg 168deg, #22553d 168deg 174deg, #396651 174deg 180deg, #22553d 180deg 186deg, #396651 186deg 192deg, #22553d 192deg 198deg, #396651 198deg 204deg, #22553d 204deg 210deg, #396651 210deg 216deg, #22553d 216deg 222deg, #396651 222deg 228deg, #22553d 228deg 234deg, #396651 234deg 240deg, #22553d 240deg 246deg, #396651 246deg 252deg, #22553d 252deg 258deg, #396651 258deg 264deg, #22553d 264deg 270deg, #396651 270deg 276deg, #22553d 276deg 282deg, #396651 282deg 288deg, #22553d 288deg 294deg, #396651 294deg 300deg, #22553d 300deg 306deg, #396651 306deg 312deg, #22553d 312deg 318deg, #396651 318deg 324deg, #22553d 324deg 330deg, #396651 330deg 336deg, #22553d 336deg 342deg, #396651 342deg 348deg, #22553d 348deg 354deg, #396651 354deg 360deg); }
+  background-image: conic-gradient(#22553d 6deg, #396651 6deg 12deg, #22553d 12deg 18deg, #396651 18deg 24deg, #22553d 24deg 30deg, #396651 30deg 36deg, #22553d 36deg 42deg, #396651 42deg 48deg, #22553d 48deg 54deg, #396651 54deg 60deg, #22553d 60deg 66deg, #396651 66deg 72deg, #22553d 72deg 78deg, #396651 78deg 84deg, #22553d 84deg 90deg, #396651 90deg 96deg, #22553d 96deg 102deg, #396651 102deg 108deg, #22553d 108deg 114deg, #396651 114deg 120deg, #22553d 120deg 126deg, #396651 126deg 132deg, #22553d 132deg 138deg, #396651 138deg 144deg, #22553d 144deg 150deg, #396651 150deg 156deg, #22553d 156deg 162deg, #396651 162deg 168deg, #22553d 168deg 174deg, #396651 174deg 180deg, #22553d 180deg 186deg, #396651 186deg 192deg, #22553d 192deg 198deg, #396651 198deg 204deg, #22553d 204deg 210deg, #396651 210deg 216deg, #22553d 216deg 222deg, #396651 222deg 228deg, #22553d 228deg 234deg, #396651 234deg 240deg, #22553d 240deg 246deg, #396651 246deg 252deg, #22553d 252deg 258deg, #396651 258deg 264deg, #22553d 264deg 270deg, #396651 270deg 276deg, #22553d 276deg 282deg, #396651 282deg 288deg, #22553d 288deg 294deg, #396651 294deg 300deg, #22553d 300deg 306deg, #396651 306deg 312deg, #22553d 312deg 318deg, #396651 318deg 324deg, #22553d 324deg 330deg, #396651 330deg 336deg, #22553d 336deg 342deg, #396651 342deg 348deg, #22553d 348deg 354deg, #396651 354deg 360deg); }
   @media (min-width: 768px) {
     .wrapper {
       height: 100vh;
       position: static; } }
+  @media (min-width: 1920px) {
+    .wrapper {
+      background-size: cover; } }
   .wrapper.bonus {
-    background: url("./assets/img/bonus-bg.jpg");
+    background-image: url("./assets/img/bonus-bg.jpg");
     justify-content: flex-start; }
   .wrapper.bonus-2 {
-    background: url("./assets/img/bg-bonus-2.jpg"); }
+    background-image: url("./assets/img/bg-bonus-2.jpg"); }
   .wrapper.live-casino {
-    background: url("./assets/img/live-casino_bg.jpg"); }
+    background-image: url("./assets/img/live-casino_bg.jpg"); }
   .wrapper.baccarat {
-    background: url("./assets/img/baccarat_bg.jpg"); }
+    background-image: url("./assets/img/baccarat_bg.jpg"); }
   .wrapper.cricket-mania {
-    background: url("./assets/img/cricket-bg.jpg"); }
+    background-image: url("./assets/img/cricket-bg.jpg"); }
   .wrapper.sun-of-egypt {
-    background: url("./assets/img/egypt-bg.jpg"); }
+    background-image: url("./assets/img/egypt-bg.jpg"); }
   .wrapper.fury {
-    background: url("./assets/img/fury_bg.jpg");
+    background-image: url("./assets/img/fury_bg.jpg");
     justify-content: flex-start; }
     .wrapper.fury .fury_bg {
       position: absolute;
@@ -58,9 +61,9 @@ html {
           max-width: 100%;
           max-height: 100%; } }
   .wrapper.gems-respin {
-    background: url("./assets/img/777-gems_bg.jpg"); }
+    background-image: url("./assets/img/777-gems_bg.jpg"); }
   .wrapper.scarab-boost {
-    background: url("./assets/img/scarab_boost_bg.jpg"); }
+    background-image: url("./assets/img/scarab_boost_bg.jpg"); }
     .wrapper.scarab-boost:before, .wrapper.scarab-boost:after {
       position: absolute;
       content: '';
@@ -113,7 +116,9 @@ html {
         .wrapper.hit-the-gold:after {
           width: 30%; } }
   .wrapper.big-bass {
-    background: url("./assets/img/big-bass_bg.jpg"); }
+    background-image: url("./assets/img/big-bass_bg.jpg"); }
+  .wrapper.sports-betting {
+    background-image: url("./assets/img/betting.jpg"); }
 
 @keyframes coinsPosition_1 {
   0% {
@@ -195,22 +200,6 @@ ul {
       left: 0;
       top: 8px;
       display: inline-block; }
-
-/*5-6*/
-.font-weight-light {
-  font-weight: lighter; }
-
-.font-weight-bold {
-  font-weight: bold; }
-
-.font-weight-Regular {
-  font-weight: 400; }
-
-.font-weight-Medium {
-  font-weight: 500; }
-
-.font-weight-SemiBold {
-  font-weight: 600; }
 
 /*7-8*/
 h1,
@@ -478,10 +467,12 @@ input[type="radio"] {
   content: "\e918"; }
 
 .header {
-  padding: 20px 0 0; }
+  padding: 20px 0 0;
+  position: relative;
+  z-index: 10; }
   @media (min-width: 768px) {
     .header {
-      padding: 40px 0 0; } }
+      padding: 38px 0 0; } }
   @media (max-height: 440px) {
     .header {
       padding: 20px 0 0; } }
@@ -536,10 +527,15 @@ input[type="radio"] {
   padding: 0; }
   @media (min-width: 768px) {
     .bonus .header {
-      padding: 40px 0 0; } }
+      padding: 40px 15px; } }
+  @media (min-width: 1680px) {
+    .bonus .header {
+      padding: 40px 6.5%; } }
   .bonus .header .container {
     align-items: center;
-    flex-direction: column-reverse; }
+    flex-direction: column-reverse;
+    max-width: 100%;
+    padding: 0; }
     @media (min-width: 768px) {
       .bonus .header .container {
         flex-direction: row; } }
@@ -622,6 +618,10 @@ input[type="radio"] {
 .gems-respin .logo-box {
   max-width: 284px; }
 
+@media (min-width: 768px) {
+  .fury .header {
+    padding: 30px 0 0; } }
+
 .fury .logo-box {
   max-width: 285px; }
 
@@ -630,6 +630,31 @@ input[type="radio"] {
 
 .hit-the-gold .header .container {
   justify-content: flex-end; }
+
+.sports-betting .logo-box {
+  max-width: 270px; }
+
+.sports-betting .lang {
+  border-color: #ffa200;
+  color: #fff; }
+
+.sports-betting .lang-cc.lang-active {
+  color: #fff; }
+
+@media (min-width: 768px) {
+  .sports-betting .lang {
+    padding: 16px 0;
+    margin-top: -27px;
+    border-radius: 27px;
+    font-size: 18px; }
+  .sports-betting .btn {
+    font-size: 18px; } }
+
+.sports-betting a.btn-transparent {
+  color: #fff !important;
+  border-color: #ffa200 !important; }
+  .sports-betting a.btn-transparent:hover {
+    background: #ffa200 !important; }
 
 .nav {
   position: relative;
@@ -1215,6 +1240,12 @@ html[lang="hi"] [data-locale="promocod"] {
   100% {
     box-shadow: 0 0 0 22px rgba(255, 240, 4, 0); } }
 
+@keyframes pulse-9 {
+  0% {
+    box-shadow: 0 0 0 1px #ffa200; }
+  100% {
+    box-shadow: 0 0 0 22px rgba(255, 162, 0, 0); } }
+
 @keyframes fadeLeft {
   0% {
     transform: translateX(-100%);
@@ -1735,7 +1766,7 @@ html[lang="hi"] [data-locale="promocod"] {
       position: relative; } }
   @media (min-width: 1024px) {
     #fire-container {
-      transform: translateY(0); } }
+      transform: translateY(-11px); } }
 
 #fire-container .particle {
   animation: rise var(--fireDuration) ease-in infinite;
@@ -1837,5 +1868,110 @@ html[lang="hi"] [data-locale="promocod"] {
   color: #080f28;
   background: #fff004;
   animation: pulse-8 1s infinite cubic-bezier(0.6, 0, 0, 1); }
+
+.sports-betting h1 {
+  font-size: 22px;
+  color: #fff;
+  font-weight: 700;
+  line-height: 1.2;
+  text-transform: uppercase;
+  max-width: 100%;
+  text-shadow: 0px 5px 43.24px rgba(0, 0, 0, 0.3); }
+  .sports-betting h1 span span {
+    font-weight: 300;
+    display: block; }
+  @media (min-width: 768px) {
+    .sports-betting h1 {
+      font-size: 72px;
+      margin-top: 60px; } }
+
+.sports-betting .btn-bonus {
+  font-size: 18px;
+  color: #fff;
+  background: #ffa200;
+  margin: 0 0 20px;
+  animation: pulse-9 1s infinite cubic-bezier(0.6, 0, 0, 1); }
+  @media (min-width: 768px) {
+    .sports-betting .btn-bonus {
+      padding: 32px 36px;
+      font-size: 21px;
+      margin: 0; } }
+
+.sports-betting .promo-list {
+  font-size: 14px; }
+  @media (min-width: 768px) {
+    .sports-betting .promo-list {
+      font-size: 18px; } }
+  .sports-betting .promo-list li {
+    margin-bottom: 15px; }
+    @media (min-width: 768px) {
+      .sports-betting .promo-list li {
+        margin-bottom: 60px; } }
+    .sports-betting .promo-list li a {
+      color: #fff; }
+
+.sports-betting .roullete {
+  width: 100%;
+  max-width: 900px;
+  bottom: 44%;
+  transform: translate(0, 50%);
+  top: auto; }
+  .sports-betting .roullete .img-holder {
+    z-index: 1; }
+  .sports-betting .roullete:before, .sports-betting .roullete:after {
+    position: absolute;
+    bottom: 29px;
+    content: '';
+    background-image: url("./assets/img/balls-01.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    max-width: 500px;
+    max-height: 757px;
+    width: 100%;
+    height: 100%;
+    right: 127px;
+    z-index: 2;
+    animation: rotating 10s ease-in-out infinite forwards; }
+  .sports-betting .roullete:after {
+    bottom: 19px;
+    background-image: url("./assets/img/balls-02.png");
+    max-width: 600px;
+    max-height: 664px;
+    right: auto;
+    left: 20px;
+    z-index: 0;
+    animation: rotating 20s ease-in-out infinite forwards; }
+  @media (max-width: 900px) {
+    .sports-betting .roullete {
+      max-width: 768px; }
+      .sports-betting .roullete:before, .sports-betting .roullete:after {
+        max-width: 500px;
+        background-position: 0 100%; } }
+  @media (max-width: 767px) {
+    .sports-betting .roullete {
+      max-width: 300px;
+      transform: translate(50%, 50%); }
+      .sports-betting .roullete:before, .sports-betting .roullete:after {
+        max-width: 200px;
+        bottom: 0; }
+      .sports-betting .roullete:before {
+        right: 0; }
+      .sports-betting .roullete:after {
+        left: 0; } }
+
+.sports-betting .bottom {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 12% 0 0;
+  align-items: center; }
+  @media (min-width: 768px) {
+    .sports-betting .bottom {
+      align-items: flex-start;
+      justify-content: space-between; } }
+
+.sports-betting .chip_1 {
+  animation: none; }
 
 /*# sourceMappingURL=style.css.map */

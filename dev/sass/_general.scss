@@ -14,7 +14,7 @@ html {
 	bottom: 0;
 	left: 0;
 	overflow-y: auto;
-	background: conic-gradient(#22553d 6deg,
+	background-image: conic-gradient(#22553d 6deg,
 			#396651 6deg 12deg,
 			#22553d 12deg 18deg,
 			#396651 18deg 24deg,
@@ -83,33 +83,37 @@ html {
 		position: static;
 	}
 
+	@include media('>=1920px') {
+		background-size: cover;
+	}
+
 	&.bonus {
-		background: url('./assets/img/bonus-bg.jpg');
+		background-image: url('./assets/img/bonus-bg.jpg');
 		justify-content: flex-start;
 	}
 
 	&.bonus-2 {
-		background: url('./assets/img/bg-bonus-2.jpg');
+		background-image: url('./assets/img/bg-bonus-2.jpg');
 	}
 
 	&.live-casino {
-		background: url('./assets/img/live-casino_bg.jpg');
+		background-image: url('./assets/img/live-casino_bg.jpg');
 	}
 
 	&.baccarat {
-		background: url('./assets/img/baccarat_bg.jpg');
+		background-image: url('./assets/img/baccarat_bg.jpg');
 	}
 
 	&.cricket-mania {
-		background: url('./assets/img/cricket-bg.jpg');
+		background-image: url('./assets/img/cricket-bg.jpg');
 	}
 
 	&.sun-of-egypt {
-		background: url('./assets/img/egypt-bg.jpg');
+		background-image: url('./assets/img/egypt-bg.jpg');
 	}
 
 	&.fury {
-		background: url('./assets/img/fury_bg.jpg');
+		background-image: url('./assets/img/fury_bg.jpg');
 		justify-content: flex-start;
 
 		.fury_bg {
@@ -140,11 +144,11 @@ html {
 	}
 
 	&.gems-respin {
-		background: url('./assets/img/777-gems_bg.jpg');
+		background-image: url('./assets/img/777-gems_bg.jpg');
 	}
 
 	&.scarab-boost {
-		background: url('./assets/img/scarab_boost_bg.jpg');
+		background-image: url('./assets/img/scarab_boost_bg.jpg');
 
 		&:before,
 		&:after {
@@ -217,7 +221,11 @@ html {
 	}
 
 	&.big-bass {
-		background: url('./assets/img/big-bass_bg.jpg');
+		background-image: url('./assets/img/big-bass_bg.jpg');
+	}
+
+	&.sports-betting {
+		background-image: url('./assets/img/betting.jpg');
 	}
 }
 
@@ -334,28 +342,6 @@ ul {
 			display: inline-block;
 		}
 	}
-}
-
-/*5-6*/
-
-.font-weight-light {
-	font-weight: lighter;
-}
-
-.font-weight-bold {
-	font-weight: bold;
-}
-
-.font-weight-Regular {
-	font-weight: 400;
-}
-
-.font-weight-Medium {
-	font-weight: 500;
-}
-
-.font-weight-SemiBold {
-	font-weight: 600;
 }
 
 /*7-8*/

@@ -563,6 +563,16 @@ html[lang="hi"] [data-locale="promocod"] {
 	}
 }
 
+@keyframes pulse-9 {
+	0% {
+		box-shadow: 0 0 0 1px rgba(255, 162, 0, 1);
+	}
+
+	100% {
+		box-shadow: 0 0 0 22px rgba(255, 162, 0, 0);
+	}
+}
+
 @keyframes fadeLeft {
 	0% {
 		transform: translateX(-100%);
@@ -1249,7 +1259,7 @@ html[lang="hi"] [data-locale="promocod"] {
 	}
 
 	@include media('>=1024px') {
-		transform: translateY(0);
+		transform: translateY(-11px);
 	}
 }
 
@@ -1380,3 +1390,148 @@ html[lang="hi"] [data-locale="promocod"] {
 		animation: pulse-8 1s infinite cubic-bezier(.6, 0, 0, 1);
 	}
 }
+
+.sports-betting {
+	h1 {
+		font-size: 22px;
+		color: $white;
+		font-weight: 700;
+		line-height: 1.2;
+		text-transform: uppercase;
+		max-width: 100%;
+		text-shadow: 0px 5px 43.24px rgba(0, 0, 0, 0.3);
+
+		span span {
+			font-weight: 300;
+			display: block;
+		}
+
+		@include media('>=tablet') {
+			font-size: 72px;
+			margin-top: 60px;
+		}
+	}
+
+	.btn-bonus {
+		font-size: 18px;
+		color: $white;
+		background: #ffa200;
+		margin: 0 0 20px;
+		animation: pulse-9 1s infinite cubic-bezier(.6, 0, 0, 1);
+
+		@include media('>=tablet') {
+			padding: 32px 36px;
+			font-size: 21px;
+			margin: 0;
+		}
+	}
+
+	.promo-list {
+		font-size: 14px;
+
+		@include media('>=tablet') {
+			font-size: 18px;
+		}
+
+		li {
+			margin-bottom: 15px;
+
+			@include media('>=tablet') {
+				margin-bottom: 60px;
+			}
+
+			a {
+				color: $white;
+			}
+		}
+	}
+
+	.roullete {
+		width: 100%;
+		max-width: 900px;
+		bottom: 44%;
+		transform: translate(0, 50%);
+		top: auto;
+
+		.img-holder {
+			z-index: 1;
+		}
+
+		&:before,
+		&:after {
+			position: absolute;
+			bottom: 29px;
+			content: '';
+			background-image: url('./assets/img/balls-01.png');
+			background-size: contain;
+			background-repeat: no-repeat;
+			max-width: 500px;
+			max-height: 757px;
+			width: 100%;
+			height: 100%;
+			right: 127px;
+			z-index: 2;
+			animation: rotating 10s ease-in-out infinite forwards;
+		}
+
+		&:after {
+			bottom: 19px;
+			background-image: url('./assets/img/balls-02.png');
+			max-width: 600px;
+			max-height: 664px;
+			right: auto;
+			left: 20px;
+			z-index: 0;
+			animation: rotating 20s ease-in-out infinite forwards;
+		}
+
+		@include media('<=900px') {
+			max-width: 768px;
+
+			&:before,
+			&:after {
+				max-width: 500px;
+				background-position: 0 100%;
+			}
+		}
+
+		@include media('<768px') {
+			max-width: 300px;
+			transform: translate(50%, 50%);
+
+			&:before,
+			&:after {
+				max-width: 200px;
+				bottom: 0;
+			}
+
+			&:before {
+				right: 0;
+			}
+
+			&:after {
+				left: 0;
+			}
+		}
+	}
+
+	.bottom {
+		display: flex;
+		height: 100%;
+		flex-direction: column;
+		justify-content: flex-end;
+		padding: 12% 0 0;
+		align-items: center;
+
+		@include media('>=tablet') {
+			align-items: flex-start;
+			justify-content: space-between;
+		}
+	}
+
+	.chip_1 {
+		animation: none;
+	}
+}
+
+  

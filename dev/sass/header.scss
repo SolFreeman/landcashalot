@@ -270,6 +270,18 @@
 	}
 }
 
+.bonus-up {
+	.header {
+		.container {
+			justify-content: flex-end;
+		}
+	}
+
+	.logo-box {
+		max-width: 286px;
+	}
+}
+
 .nav {
 	position: relative;
 	width: 80px;

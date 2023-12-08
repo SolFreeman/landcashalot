@@ -119,6 +119,9 @@ html {
     background-image: url(./assets/img/big-bass_bg.jpg); }
   .wrapper.sports-betting {
     background-image: url(./assets/img/betting.jpg); }
+  .wrapper.bonus-up {
+    background-image: url(./assets/img/bonus-up_bg.jpg);
+    background-size: 100% 100%; }
 
 @keyframes coinsPosition_1 {
   0% {
@@ -655,6 +658,12 @@ input[type=radio] {
   border-color: #ffa200 !important; }
   .sports-betting a.btn-transparent:hover {
     background: #ffa200 !important; }
+
+.bonus-up .header .container {
+  justify-content: flex-end; }
+
+.bonus-up .logo-box {
+  max-width: 286px; }
 
 .nav {
   position: relative;
@@ -1246,6 +1255,12 @@ html[lang=hi] [data-locale=promocod] {
   100% {
     box-shadow: 0 0 0 22px rgba(255, 162, 0, 0); } }
 
+@keyframes pulse-10 {
+  0% {
+    box-shadow: 0 0 0 1px #0d064e; }
+  100% {
+    box-shadow: 0 0 0 22px rgba(13, 6, 78, 0); } }
+
 @keyframes fadeLeft {
   0% {
     transform: translateX(-100%);
@@ -1534,6 +1549,7 @@ html[lang=hi] [data-locale=promocod] {
 .baccarat .main-content {
   padding: 0 15px; }
 
+.bonus-up .btn-bonus,
 .big-bass .btn-bonus,
 .hit-the-gold .btn-bonus,
 .scarab-boost .btn-bonus,
@@ -1548,6 +1564,7 @@ html[lang=hi] [data-locale=promocod] {
   margin-bottom: 20px;
   text-transform: uppercase;
   animation: pulse-3 1s infinite cubic-bezier(0.6, 0, 0, 1); }
+  .bonus-up .btn-bonus:hover,
   .big-bass .btn-bonus:hover,
   .hit-the-gold .btn-bonus:hover,
   .scarab-boost .btn-bonus:hover,
@@ -1556,6 +1573,7 @@ html[lang=hi] [data-locale=promocod] {
   .cricket-mania .btn-bonus:hover {
     opacity: .8; }
   @media (min-width: 768px) {
+    .bonus-up .btn-bonus,
     .big-bass .btn-bonus,
     .hit-the-gold .btn-bonus,
     .scarab-boost .btn-bonus,
@@ -1567,6 +1585,7 @@ html[lang=hi] [data-locale=promocod] {
       font-size: 32px;
       border-radius: 50px; } }
 
+.bonus-up .main-holder,
 .big-bass .main-holder,
 .hit-the-gold .main-holder,
 .scarab-boost .main-holder,
@@ -1583,6 +1602,7 @@ html[lang=hi] [data-locale=promocod] {
   height: 100%;
   padding: 44px 0 0; }
   @media (min-width: 768px) {
+    .bonus-up .main-holder,
     .big-bass .main-holder,
     .hit-the-gold .main-holder,
     .scarab-boost .main-holder,
@@ -1973,5 +1993,80 @@ html[lang=hi] [data-locale=promocod] {
 
 .sports-betting .chip_1 {
   animation: none; }
+
+.bonus-up .main-holder {
+  padding-top: 0; }
+
+.bonus-up h1 {
+  color: #0d064e;
+  font-size: 26px;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 900; }
+  @media (min-width: 768px) {
+    .bonus-up h1 {
+      font-size: 40px;
+      margin: -24px 0 -49px; } }
+  @media (min-width: 1250px) {
+    .bonus-up h1 {
+      font-size: 72px;
+      margin: -92px 0 0; } }
+
+.bonus-up .img-holder {
+  max-width: 700px;
+  margin: -5px 0 -42px;
+  position: relative; }
+  .bonus-up .img-holder:before, .bonus-up .img-holder:after {
+    position: absolute;
+    content: '';
+    left: 0;
+    top: 0;
+    background-image: url(./assets/img/stars.png);
+    width: 100%;
+    height: 100%;
+    background-size: 100% 100%;
+    z-index: 1;
+    animation: infinite_scale 20s ease-in-out infinite forwards; }
+  .bonus-up .img-holder:after {
+    background-image: url(./assets/img/coins.png);
+    animation: rotating 20s ease-in-out infinite forwards; }
+  .bonus-up .img-holder img {
+    position: relative;
+    z-index: 0; }
+  .bonus-up .img-holder img.human {
+    position: absolute;
+    width: 90%;
+    height: auto;
+    z-index: 2;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%); }
+
+.bonus-up .btn-holder {
+  position: relative; }
+
+.bonus-up .btn-bonus {
+  text-transform: capitalize;
+  background: #0d064e;
+  animation: pulse-10 1s infinite cubic-bezier(0.6, 0, 0, 1); }
+  @media (min-width: 768px) {
+    .bonus-up .btn-bonus {
+      font-size: 30px;
+      margin: 0 0 30px; } }
+
+.bonus-up .promo-list {
+  margin: 0 0 30px; }
+  .bonus-up .promo-list li {
+    padding: 0;
+    margin: 0; }
+    .bonus-up .promo-list li:before {
+      display: none; }
+  .bonus-up .promo-list a {
+    color: #0d064e;
+    font-weight: 700;
+    font-size: 18px; }
+    @media (min-width: 768px) {
+      .bonus-up .promo-list a {
+        font-size: 30px; } }
 
 /*# sourceMappingURL=style.css.map */

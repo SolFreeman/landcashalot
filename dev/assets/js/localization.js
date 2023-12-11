@@ -19,7 +19,7 @@ const translateMessages = {
         "diller_title": "Настоящие дилеры, <br>Настоящие развлечения",
         "btn_register": "Зарегестрироваться",
 
-        "betting_title": "Ставки <br> на спорт <span>в онлайн казино</span>",
+        "betting_title": "Ставки <span>на спорт</span> <span>в онлайн казино</span>",
 
         "live_registration_link": "https://cashalot.bet/live-casino?register=true",
         "live_login_link": "https://cashalot.bet/live-casino?login=true",
@@ -47,7 +47,7 @@ const translateMessages = {
         "diller_title": "Real Dealers, <br>Real Fun",
         "btn_register": "SIGN UP",
 
-        "betting_title": "BEST <br> BETTING <span>ONLINE CASINO</span>",
+        "betting_title": "BEST <span>BETTING</span> <span>ONLINE CASINO</span>",
 
         "live_registration_link": "https://cashalot.bet/live-casino?register=true",
         "live_login_link": "https://cashalot.bet/live-casino?login=true",
@@ -75,7 +75,7 @@ const translateMessages = {
         "diller_title": "Echte Händler, <br>echter Spaß",
         "btn_register": "ANMELDEN",
 
-        "betting_title": "BESTE <br> WETTEN <span>ONLINE CASINO</span>",
+        "betting_title": "BESTE <span> WETTEN</span> <span>ONLINE CASINO</span>",
 
         "live_registration_link": "https://cashalot.bet/live-casino?register=true",
         "live_login_link": "https://cashalot.bet/live-casino?login=true",
@@ -103,7 +103,7 @@ const translateMessages = {
         "diller_title": "Concessionari veri, <br>divertimento vero",
         "btn_register": "ISCRIVERSI",
 
-        "betting_title": "IL MIGLIOR <br> CASINÒ <span>ONLINE PER LE SCOMMESSE</span>",
+        "betting_title": "IL MIGLIOR <span> CASINÒ</span> <span>ONLINE PER LE SCOMMESSE</span>",
 
         "live_registration_link": "https://cashalot1.bet/live-casino?register=true",
         "live_login_link": "https://cashalot1.bet/live-casino?login=true",
@@ -130,7 +130,7 @@ const translateMessages = {
         "diller_title": "Concesionarios reales, <br>diversión real",
         "btn_register": "REGISTRO",
 
-        "betting_title": "MEJORES <br> APUESTAS <span>CASINO ONLINE</span>",
+        "betting_title": "MEJORES <span> APUESTAS</span> <span>CASINO ONLINE</span>",
 
         "live_registration_link": "https://cashalot.bet/live-casino?register=true",
         "live_login_link": "https://cashalot.bet/live-casino?login=true",
@@ -158,7 +158,7 @@ const translateMessages = {
         "diller_title": "Igazi kereskedők, <br>igazi szórakozás",
         "btn_register": "REGISZTRÁCIÓ",
 
-        "betting_title": "LEGJOBB <br> FOGADÁS <span>ONLINE KASZINÓ</span>",
+        "betting_title": "LEGJOBB <span> FOGADÁS</span> <span>ONLINE KASZINÓ</span>",
 
         "live_registration_link": "https://cashalot.bet/live-casino?register=true",
         "live_login_link": "https://cashalot.bet/live-casino?login=true",
@@ -186,7 +186,7 @@ const translateMessages = {
         "diller_title": "Negociantes reais, <br>diversão real",
         "btn_register": "REGISTO",
 
-        "betting_title": "MELHORES <br> APOSTAS NO <span>CASINO ONLINE</span>",
+        "betting_title": "MELHORES <span> APOSTAS NO</span> <span>CASINO ONLINE</span>",
 
         "live_registration_link": "https://cashalot.bet/live-casino?register=true",
         "live_login_link": "https://cashalot.bet/live-casino?login=true",
@@ -214,7 +214,7 @@ const translateMessages = {
         "diller_title": "Comerciantes de verdade, <br>diversão de verdade",
         "btn_register": "REGISTRE-SE",
 
-        "betting_title": "MELHOR <br> CASSINO <span>ONLINE PARA APOSTAS</span>",
+        "betting_title": "MELHOR <span> CASSINO</span> <span>ONLINE PARA APOSTAS</span>",
 
         "live_registration_link": "https://cashalot.bet/live-casino?register=true",
         "live_login_link": "https://cashalot.bet/live-casino?login=true",
@@ -242,7 +242,7 @@ const translateMessages = {
         "diller_title": "Prawdziwi dealerzy, <br>prawdziwa zabawa",
         "btn_register": "ZAPISZ SIĘ",
 
-        "betting_title": "NAJLEPSZE <br> KASYNO <span>ONLINE Z ZAKŁADAMI</span>",
+        "betting_title": "NAJLEPSZE <span> KASYNO</span> <span>ONLINE Z ZAKŁADAMI</span>",
 
         "live_registration_link": "https://cashalot01.bet/live-casino?register=true",
         "live_login_link": "https://cashalot01.bet/live-casino?login=true",
@@ -299,7 +299,7 @@ const translateMessages = {
         "diller_title": "असली व्यापारी, <br>असली मज़ा",
         "btn_register": "पंजीकरण करवाना",
 
-        "betting_title": "सर्वोत्तम <br> सट्टेबाजी <span>ऑनलाइन कैसीनो</span>",
+        "betting_title": "सर्वोत्तम <span> सट्टेबाजी</span> <span>ऑनलाइन कैसीनो</span>",
 
         "live_registration_link": "https://cashalot.bet/live-casino?register=true",
         "live_login_link": "https://cashalot.bet/live-casino?login=true",

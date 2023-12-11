@@ -119,9 +119,35 @@ html {
     background-image: url(./assets/img/big-bass_bg.jpg); }
   .wrapper.sports-betting {
     background-image: url(./assets/img/betting.jpg); }
+    @media (max-width: 768px) {
+      .wrapper.sports-betting {
+        background-size: cover; } }
   .wrapper.bonus-up {
     background-image: url(./assets/img/bonus-up_bg.jpg);
     background-size: 100% 100%; }
+  .wrapper.tiger {
+    background-image: url(./assets/img/tiger_bg.jpg);
+    background-size: 100% 100%; }
+    .wrapper.tiger:after {
+      position: absolute;
+      content: '';
+      background-image: url(./assets/img/tiger_coins.png);
+      background-position: 50% 67%;
+      background-size: contain;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      animation: coinsPosition_1 7s infinite;
+      background-repeat: no-repeat;
+      z-index: 0; }
+      @media (min-width: 768px) {
+        .wrapper.tiger:after {
+          width: 88%;
+          height: 88%;
+          margin: 5%; } }
+    .wrapper.tiger > * {
+      z-index: 1; }
 
 @keyframes coinsPosition_1 {
   0% {
@@ -597,7 +623,8 @@ input[type=radio] {
       color: #73f89b; }
 
 .bonus-2 .header {
-  margin-bottom: 20px; }
+  margin-bottom: 0;
+  padding: 40px 6.5% 36px; }
 
 @media (min-width: 640px) {
   .bonus-2 .logo-box {
@@ -615,6 +642,7 @@ input[type=radio] {
     .cricket-mania .logo-box {
       max-width: 360px; } }
 
+.tiger .logo-box,
 .big-bass .logo-box,
 .hit-the-gold .logo-box,
 .scarab-boost .logo-box,
@@ -1261,6 +1289,12 @@ html[lang=hi] [data-locale=promocod] {
   100% {
     box-shadow: 0 0 0 22px rgba(13, 6, 78, 0); } }
 
+@keyframes pulse-11 {
+  0% {
+    box-shadow: 0 0 0 1px #00bf7f; }
+  100% {
+    box-shadow: 0 0 0 22px rgba(0, 191, 127, 0); } }
+
 @keyframes fadeLeft {
   0% {
     transform: translateX(-100%);
@@ -1356,6 +1390,8 @@ html[lang=hi] [data-locale=promocod] {
   margin: 0 0 29px;
   font-size: 22px;
   line-height: 1.7; }
+  .bonus-2 h1.eng {
+    text-transform: uppercase; }
   .bonus-2 h1 span {
     display: block;
     font-size: 16px; }
@@ -1365,6 +1401,8 @@ html[lang=hi] [data-locale=promocod] {
       margin: 0 0 40px;
       font-size: 52px;
       line-height: 2.2; }
+      .bonus-2 h1.eng {
+        line-height: 1.7; }
       .bonus-2 h1 span {
         font-size: 34px;
         margin-top: 10px; } }
@@ -1549,6 +1587,7 @@ html[lang=hi] [data-locale=promocod] {
 .baccarat .main-content {
   padding: 0 15px; }
 
+.tiger .btn-bonus,
 .bonus-up .btn-bonus,
 .big-bass .btn-bonus,
 .hit-the-gold .btn-bonus,
@@ -1564,6 +1603,7 @@ html[lang=hi] [data-locale=promocod] {
   margin-bottom: 20px;
   text-transform: uppercase;
   animation: pulse-3 1s infinite cubic-bezier(0.6, 0, 0, 1); }
+  .tiger .btn-bonus:hover,
   .bonus-up .btn-bonus:hover,
   .big-bass .btn-bonus:hover,
   .hit-the-gold .btn-bonus:hover,
@@ -1573,6 +1613,7 @@ html[lang=hi] [data-locale=promocod] {
   .cricket-mania .btn-bonus:hover {
     opacity: .8; }
   @media (min-width: 768px) {
+    .tiger .btn-bonus,
     .bonus-up .btn-bonus,
     .big-bass .btn-bonus,
     .hit-the-gold .btn-bonus,
@@ -1585,6 +1626,7 @@ html[lang=hi] [data-locale=promocod] {
       font-size: 32px;
       border-radius: 50px; } }
 
+.tiger .main-holder,
 .bonus-up .main-holder,
 .big-bass .main-holder,
 .hit-the-gold .main-holder,
@@ -1602,6 +1644,7 @@ html[lang=hi] [data-locale=promocod] {
   height: 100%;
   padding: 44px 0 0; }
   @media (min-width: 768px) {
+    .tiger .main-holder,
     .bonus-up .main-holder,
     .big-bass .main-holder,
     .hit-the-gold .main-holder,
@@ -1890,16 +1933,20 @@ html[lang=hi] [data-locale=promocod] {
   animation: pulse-8 1s infinite cubic-bezier(0.6, 0, 0, 1); }
 
 .sports-betting h1 {
-  font-size: 22px;
+  font-size: 28px;
   color: #fff;
   font-weight: 700;
   line-height: 1.2;
   text-transform: uppercase;
   max-width: 100%;
-  text-shadow: 0px 5px 43.24px rgba(0, 0, 0, 0.3); }
-  .sports-betting h1 span span {
+  text-shadow: 0px 5px 43.24px rgba(0, 0, 0, 0.3);
+  margin-top: 14%; }
+  .sports-betting h1 span span:last-child {
     font-weight: 300;
     display: block; }
+  @media (min-width: 768px) {
+    .sports-betting h1 span span {
+      display: block; } }
   @media (min-width: 768px) {
     .sports-betting h1 {
       font-size: 72px;
@@ -1970,7 +2017,8 @@ html[lang=hi] [data-locale=promocod] {
   @media (max-width: 767px) {
     .sports-betting .roullete {
       max-width: 300px;
-      transform: translate(50%, 50%); }
+      transform: translate(50%, 50%);
+      bottom: 35%; }
       .sports-betting .roullete:before, .sports-betting .roullete:after {
         max-width: 200px;
         bottom: 0; }
@@ -1999,7 +2047,7 @@ html[lang=hi] [data-locale=promocod] {
 
 .bonus-up h1 {
   color: #0d064e;
-  font-size: 26px;
+  font-size: 32px;
   text-transform: uppercase;
   text-align: center;
   font-weight: 900; }
@@ -2062,11 +2110,30 @@ html[lang=hi] [data-locale=promocod] {
     .bonus-up .promo-list li:before {
       display: none; }
   .bonus-up .promo-list a {
-    color: #0d064e;
+    color: #fff;
     font-weight: 700;
     font-size: 18px; }
     @media (min-width: 768px) {
       .bonus-up .promo-list a {
-        font-size: 30px; } }
+        font-size: 24px; } }
+
+.tiger .img-holder {
+  max-width: 300px;
+  margin: -75px 0 20px; }
+  @media (min-width: 768px) {
+    .tiger .img-holder {
+      max-width: 545px;
+      margin: 0 0 20px; } }
+  @media (min-width: 960px) {
+    .tiger .img-holder {
+      margin: -75px 0 20px; } }
+
+.tiger .btn-bonus {
+  background: #00bf7f;
+  animation: pulse-11 1s infinite cubic-bezier(0.6, 0, 0, 1);
+  text-transform: capitalize; }
+  @media (min-width: 768px) {
+    .tiger .btn-bonus {
+      font-size: 40px; } }
 
 /*# sourceMappingURL=style.css.map */

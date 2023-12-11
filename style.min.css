@@ -125,6 +125,29 @@ html {
   .wrapper.bonus-up {
     background-image: url(./assets/img/bonus-up_bg.jpg);
     background-size: 100% 100%; }
+  .wrapper.tiger {
+    background-image: url(./assets/img/tiger_bg.jpg);
+    background-size: 100% 100%; }
+    .wrapper.tiger:after {
+      position: absolute;
+      content: '';
+      background-image: url(./assets/img/tiger_coins.png);
+      background-position: 50% 67%;
+      background-size: contain;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      animation: coinsPosition_1 7s infinite;
+      background-repeat: no-repeat;
+      z-index: 0; }
+      @media (min-width: 768px) {
+        .wrapper.tiger:after {
+          width: 88%;
+          height: 88%;
+          margin: 5%; } }
+    .wrapper.tiger > * {
+      z-index: 1; }
 
 @keyframes coinsPosition_1 {
   0% {
@@ -619,6 +642,7 @@ input[type=radio] {
     .cricket-mania .logo-box {
       max-width: 360px; } }
 
+.tiger .logo-box,
 .big-bass .logo-box,
 .hit-the-gold .logo-box,
 .scarab-boost .logo-box,
@@ -1265,6 +1289,12 @@ html[lang=hi] [data-locale=promocod] {
   100% {
     box-shadow: 0 0 0 22px rgba(13, 6, 78, 0); } }
 
+@keyframes pulse-11 {
+  0% {
+    box-shadow: 0 0 0 1px #00bf7f; }
+  100% {
+    box-shadow: 0 0 0 22px rgba(0, 191, 127, 0); } }
+
 @keyframes fadeLeft {
   0% {
     transform: translateX(-100%);
@@ -1557,6 +1587,7 @@ html[lang=hi] [data-locale=promocod] {
 .baccarat .main-content {
   padding: 0 15px; }
 
+.tiger .btn-bonus,
 .bonus-up .btn-bonus,
 .big-bass .btn-bonus,
 .hit-the-gold .btn-bonus,
@@ -1572,6 +1603,7 @@ html[lang=hi] [data-locale=promocod] {
   margin-bottom: 20px;
   text-transform: uppercase;
   animation: pulse-3 1s infinite cubic-bezier(0.6, 0, 0, 1); }
+  .tiger .btn-bonus:hover,
   .bonus-up .btn-bonus:hover,
   .big-bass .btn-bonus:hover,
   .hit-the-gold .btn-bonus:hover,
@@ -1581,6 +1613,7 @@ html[lang=hi] [data-locale=promocod] {
   .cricket-mania .btn-bonus:hover {
     opacity: .8; }
   @media (min-width: 768px) {
+    .tiger .btn-bonus,
     .bonus-up .btn-bonus,
     .big-bass .btn-bonus,
     .hit-the-gold .btn-bonus,
@@ -1593,6 +1626,7 @@ html[lang=hi] [data-locale=promocod] {
       font-size: 32px;
       border-radius: 50px; } }
 
+.tiger .main-holder,
 .bonus-up .main-holder,
 .big-bass .main-holder,
 .hit-the-gold .main-holder,
@@ -1610,6 +1644,7 @@ html[lang=hi] [data-locale=promocod] {
   height: 100%;
   padding: 44px 0 0; }
   @media (min-width: 768px) {
+    .tiger .main-holder,
     .bonus-up .main-holder,
     .big-bass .main-holder,
     .hit-the-gold .main-holder,
@@ -2081,5 +2116,24 @@ html[lang=hi] [data-locale=promocod] {
     @media (min-width: 768px) {
       .bonus-up .promo-list a {
         font-size: 24px; } }
+
+.tiger .img-holder {
+  max-width: 300px;
+  margin: -75px 0 20px; }
+  @media (min-width: 768px) {
+    .tiger .img-holder {
+      max-width: 545px;
+      margin: 0 0 20px; } }
+  @media (min-width: 960px) {
+    .tiger .img-holder {
+      margin: -75px 0 20px; } }
+
+.tiger .btn-bonus {
+  background: #00bf7f;
+  animation: pulse-11 1s infinite cubic-bezier(0.6, 0, 0, 1);
+  text-transform: capitalize; }
+  @media (min-width: 768px) {
+    .tiger .btn-bonus {
+      font-size: 40px; } }
 
 /*# sourceMappingURL=style.css.map */

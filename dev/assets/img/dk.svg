@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="_Слой_2" data-name="Слой 2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 33.56 19.58">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+      }
+
+      .cls-1, .cls-2, .cls-3 {
+        stroke-width: 0px;
+      }
+
+      .cls-2 {
+        fill: #fff;
+      }
+
+      .cls-4 {
+        clip-path: url(#clippath);
+      }
+
+      .cls-3 {
+        fill: #be003a;
+      }
+    </style>
+    <clipPath id="clippath">
+      <rect class="cls-1" width="33.56" height="19.58"/>
+    </clipPath>
+  </defs>
+  <g id="_4" data-name="4">
+    <g id="DENMARK">
+      <g class="cls-4">
+        <rect class="cls-3" width="33.56" height="19.58"/>
+        <rect class="cls-2" x="10.89" width="3.63" height="19.58"/>
+        <rect class="cls-2" y="7.97" width="33.56" height="3.63"/>
+      </g>
+    </g>
+  </g>
+</svg>

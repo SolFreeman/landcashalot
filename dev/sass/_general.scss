@@ -270,6 +270,17 @@ html {
 			z-index: 1;
 		}
 	}
+
+	&.bonus-registration {
+		background-image: url('./assets/img/registration_bonus_bg.jpg');
+		background-size: cover;
+		background-position: 80% 0;
+
+		@include media('>=tablet') {
+			background-position: 0 0;
+		}
+		
+	}
 }
 
 @keyframes coinsPosition_1 {

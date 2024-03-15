@@ -284,6 +284,32 @@
 	}
 }
 
+.bonus-registration {
+	.header {
+		padding-bottom: 0;
+
+		.container {
+			flex-direction: row;
+			justify-content: space-between;
+			padding: 15px 15px 0;
+		}
+
+		@include media('>=tablet') {
+			.container {
+				padding: 0;
+			}
+		}
+	}
+
+	.logo-box {
+		max-width: 140px;
+
+		@include media('>=tablet') {
+			max-width: 290px;
+		}
+	}
+}
+
 .nav {
 	position: relative;
 	width: 80px;

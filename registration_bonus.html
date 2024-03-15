@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="theme-color" content="#188de7">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no" />
+    <title>Cashalot</title>
+    <link rel="shortcut icon" href="./assets/img/favicon.png" />
+
+    <link rel="stylesheet" type="text/css" href="style.css" />
+
+</head>
+
+<body>
+
+
+
+    <div class="wrapper bonus bonus-registration">
+        <header class="header">
+            <div class="container">
+                <div class="logo-box">
+                    <a data-link="logo_link" href="https://cashalot.bet/online-casino" class="logo">
+					<img src="./assets/img/logo.svg" class="img-fluid" alt="Cashalot Bet">
+				</a>
+                </div>
+                <div class="btn-area">
+                    <nav class="nav">
+                        <div class="lang-select">
+                            <div class="current-lang">
+                                <img src="./assets/img/" alt="">
+                                <span></span>
+                            </div>
+                            <ul class="lang-list" id="lang_list">
+                                <li>
+                                    <button class="translate" id="de">
+                                        <span class="lang-imgbox">
+										<img src="./assets/img/de.svg" alt="">
+									</span>
+                                        <span class="text">DE</span>
+                                    </button>
+                                </li>
+                                <li>
+                                    <button class="translate" id="pt-br">
+                                        <span class="lang-imgbox">
+										<img src="./assets/img/pt-br.svg" alt="">
+									</span>
+                                        <span class="text">pt(br)</span>
+                                    </button>
+                                </li>
+                                <li>
+                                    <button class="translate" id="es">
+                                        <span class="lang-imgbox">
+										<img src="./assets/img/es.svg" alt="">
+									</span>
+                                        <span class="text">ES</span>
+                                    </button>
+                                </li>
+                                <li>
+                                    <button class="translate" id="fi">
+                                        <span class="lang-imgbox">
+										<img src="./assets/img/fi.svg" alt="">
+									</span>
+                                        <span class="text">FI</span>
+                                    </button>
+                                </li>
+                                <li>
+                                    <button class="translate" id="en">
+                                        <span class="lang-imgbox">
+										<img src="./assets/img/en.svg" alt="">
+									</span>
+                                        <span class="text">EN</span>
+                                    </button>
+                                </li>
+                                <li>
+                                    <button class="translate" id="hu">
+                                        <span class="lang-imgbox">
+										<img src="./assets/img/hu.svg" alt="">
+									</span>
+                                        <span class="text">HU</span>
+                                    </button>
+                                </li>
+                                <li>
+                                    <button class="translate" id="it">
+                                        <span class="lang-imgbox">
+										<img src="./assets/img/it.svg" alt="">
+									</span>
+                                        <span class="text">IT</span>
+                                    </button>
+                                </li>
+                                <li>
+                                    <button class="translate" id="pl">
+                                        <span class="lang-imgbox">
+										<img src="./assets/img/pl.svg" alt="">
+									</span>
+                                        <span class="text">PL</span>
+                                    </button>
+                                </li>
+                                <li>
+                                    <button class="translate" id="pt">
+                                        <span class="lang-imgbox">
+										<img src="./assets/img/pt.svg" alt="">
+									</span>
+                                        <span class="text">PT</span>
+                                    </button>
+                                </li>
+                                <li>
+                                    <button class="translate" id="dk">
+                                        <span class="lang-imgbox">
+										<img src="./assets/img/dk.svg" alt="">
+									</span>
+                                        <span class="text">DK</span>
+                                    </button>
+                                </li>
+                                <li>
+                                    <button class="translate" id="kz">
+                                        <span class="lang-imgbox">
+										<img src="./assets/img/kz.svg" alt="">
+									</span>
+                                        <span class="text">KZ</span>
+                                    </button>
+                                </li>
+                                <li>
+                                    <button class="translate display-none" id="no">
+                                        <span class="lang-imgbox">
+										<img src="./assets/img/no.svg" alt="">
+									</span>
+                                        <span class="text">NO</span>
+                                    </button>
+                                </li>
+                                <li>
+                                    <button class="translate" id="fr">
+                                        <span class="lang-imgbox">
+										<img src="./assets/img/fr.svg" alt="">
+									</span>
+                                        <span class="text">fr</span>
+                                    </button>
+                                </li>
+                                <li>
+                                    <button class="translate" id="hi">
+                                        <span class="lang-imgbox">
+										<img src="./assets/img/hi.svg" alt="">
+									</span>
+                                        <span class="text">hi</span>
+                                    </button>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <main class="main-holder">
+            <div class="main-content">
+                <h1 class="lang" data-locale="title">
+				<span class="big">Бонус</span>
+				<span class="blue">до</span>
+				<span class="decimal">45 000 EUR + 50 FS</span>
+			</h1>
+
+                <div class="form-box">
+                    <form class="home__form" id="registration" novalidate="novalidate">
+                        <div class="home__holder">
+                            <label class="home__label validate">
+                                <input class="home__input lang" placeholder="Email" name="email" type="email" maxlength="50" data-locale="reg_email">
+                            </label>
+                        </div>
+                        <div class="home__holder">
+                            <label class="home__label validate">
+                                <input style="text-transform:none!important" class="home__input lang" placeholder="Пароль" name="password" type="password" data-locale="reg_password">
+                            </label>
+                        </div>
+                        <div class="select-country-block home__select-wrapper validate">
+                            <div class="select-country-flag" style="background-image:url(&quot;images/flags/ua.svg&quot;);">
+                            </div>
+                            <select class="home__select select-country" name="user_country">
+                                <option>select country</option>
+                                <option value="al">albania</option>
+                                <option value="dz">algeria</option>
+                                <option value="ad">andorra</option>
+                                <option value="ao">angola</option>
+                                <option value="ai">anguilla</option>
+                                <option value="ar">argentina</option>
+                                <option value="am">armenia</option>
+                                <option value="at">austria</option>
+                                <option value="az">azerbaijan</option>
+                                <option value="bs">bahamas</option>
+                                <option value="bh">bahrain</option>
+                                <option value="bd">bangladesh</option>
+                                <option value="bb">barbados</option>
+                                <option value="bz">belize</option>
+                                <option value="bj">benin</option>
+                                <option value="bm">bermuda</option>
+                                <option value="bt">bhutan</option>
+                                <option value="bo">bolivia</option>
+                                <option value="ba">bosnia and herzegovina</option>
+                                <option value="bw">botswana</option>
+                                <option value="br">brazil</option>
+                                <option value="bn">brunei darussalam</option>
+                                <option value="bf">burkina faso</option>
+                                <option value="bi">burundi</option>
+                                <option value="kh">cambodia</option>
+                                <option value="cm">cameroon</option>
+                                <option value="ca">canada</option>
+                                <option value="cv">cape verde</option>
+                                <option value="ky">cayman islands</option>
+                                <option value="cf">central african republic</option>
+                                <option value="td">chad</option>
+                                <option value="cl">chile</option>
+                                <option value="cn">china</option>
+                                <option value="cx">christmas island</option>
+                                <option value="cc">cocos (keeling) islands</option>
+                                <option value="co">colombia</option>
+                                <option value="km">comoros</option>
+                                <option value="cg">congo</option>
+                                <option value="cd">congo, democratic republic of the congo</option>
+                                <option value="ck">cook islands</option>
+                                <option value="cr">costa rica</option>
+                                <option value="ci">cote d'ivoire</option>
+                                <option value="hr">croatia</option>
+                                <option value="cu">cuba</option>
+                                <option value="cz">czech republic</option>
+                                <option value="dk">denmark</option>
+                                <option value="dj">djibouti</option>
+                                <option value="dm">dominica</option>
+                                <option value="do">dominican republic</option>
+                                <option value="ec">ecuador</option>
+                                <option value="eg">egypt</option>
+                                <option value="sv">el salvador</option>
+                                <option value="gq">equatorial guinea</option>
+                                <option value="er">eritrea</option>
+                                <option value="ee">estonia</option>
+                                <option value="et">ethiopia</option>
+                                <option value="fk">falkland islands (malvinas)</option>
+                                <option value="fo">faroe islands</option>
+                                <option value="fj">fiji</option>
+                                <option value="fi">finland</option>
+                                <option value="ga">gabon</option>
+                                <option value="gm">gambia</option>
+                                <option value="ge">georgia</option>
+                                <option value="de">germany</option>
+                                <option value="gh">ghana</option>
+                                <option value="gi">gibraltar</option>
+                                <option value="gl">greenland</option>
+                                <option value="gd">grenada</option>
+                                <option value="gp">guadeloupe</option>
+                                <option value="gu">guam</option>
+                                <option value="gt">guatemala</option>
+                                <option value="gn">guinea</option>
+                                <option value="gw">guinea-bissau</option>
+                                <option value="gy">guyana</option>
+                                <option value="ht">haiti</option>
+                                <option value="hn">honduras</option>
+                                <option value="hk">hong kong</option>
+                                <option value="hu">hungary</option>
+                                <option value="is">iceland</option>
+                                <option value="ie">ireland</option>
+                                <option value="it">italy</option>
+                                <option value="jm">jamaica</option>
+                                <option value="jp">japan</option>
+                                <option value="jo">jordan</option>
+                                <option value="kz">kazakhstan</option>
+                                <option value="ke">kenya</option>
+                                <option value="ki">kiribati</option>
+                                <option value="kp">korea, democratic people's republic of</option>
+                                <option value="kw">kuwait</option>
+                                <option value="kg">kyrgyzstan</option>
+                                <option value="la">lao people's democratic republic</option>
+                                <option value="lv">latvia</option>
+                                <option value="ls">lesotho</option>
+                                <option value="lr">liberia</option>
+                                <option value="ly">libyan arab jamahiriya</option>
+                                <option value="li">liechtenstein</option>
+                                <option value="lu">luxembourg</option>
+                                <option value="mk">macedonia, the former yugoslav republic of</option>
+                                <option value="mg">madagascar</option>
+                                <option value="mw">malawi</option>
+                                <option value="my">malaysia</option>
+                                <option value="mv">maldives</option>
+                                <option value="ml">mali</option>
+                                <option value="mt">malta</option>
+                                <option value="mh">marshall islands</option>
+                                <option value="mq">martinique</option>
+                                <option value="mr">mauritania</option>
+                                <option value="mu">mauritius</option>
+                                <option value="yt">mayotte</option>
+                                <option value="mx">mexico</option>
+                                <option value="fm">micronesia, federated states of</option>
+                                <option value="md">moldova, republic of</option>
+                                <option value="mc">monaco</option>
+                                <option value="mn">mongolia</option>
+                                <option value="me">montenegro</option>
+                                <option value="ms">montserrat</option>
+                                <option value="ma">morocco</option>
+                                <option value="mz">mozambique</option>
+                                <option value="mm">myanmar</option>
+                                <option value="na">namibia</option>
+                                <option value="nr">nauru</option>
+                                <option value="np">nepal</option>
+                                <option value="nz">new zealand</option>
+                                <option value="ni">nicaragua</option>
+                                <option value="ne">niger</option>
+                                <option value="ng">nigeria</option>
+                                <option value="nu">niue</option>
+                                <option value="nf">norfolk island</option>
+                                <option value="mp">northern mariana islands</option>
+                                <option value="no">norway</option>
+                                <option value="om">oman</option>
+                                <option value="pk">pakistan</option>
+                                <option value="pw">palau</option>
+                                <option value="pa">panama</option>
+                                <option value="pg">papua new guinea</option>
+                                <option value="py">paraguay</option>
+                                <option value="pe">peru</option>
+                                <option value="ph">philippines</option>
+                                <option value="pn">pitcairn</option>
+                                <option value="pl">poland</option>
+                                <option value="pt">portugal</option>
+                                <option value="pr">puerto rico</option>
+                                <option value="re">reunion</option>
+                                <option value="hi">Republic of India</option>
+                                <option value="ru">russian federation</option>
+                                <option value="rw">rwanda</option>
+                                <option value="sh">saint helena</option>
+                                <option value="kn">saint kitts and nevis</option>
+                                <option value="lc">saint lucia</option>
+                                <option value="pm">saint pierre and miquelon</option>
+                                <option value="ws">samoa</option>
+                                <option value="sm">san marino</option>
+                                <option value="st">sao tome and principe</option>
+                                <option value="sa">saudi arabia</option>
+                                <option value="sn">senegal</option>
+                                <option value="rs">serbia</option>
+                                <option value="sc">seychelles</option>
+                                <option value="sl">sierra leone</option>
+                                <option value="sg">singapore</option>
+                                <option value="sk">slovakia</option>
+                                <option value="si">slovenia</option>
+                                <option value="sb">solomon islands</option>
+                                <option value="so">somalia</option>
+                                <option value="za">south africa</option>
+                                <option value="es">spain</option>
+                                <option value="lk">sri lanka</option>
+                                <option value="sd">sudan</option>
+                                <option value="sr">suriname</option>
+                                <option value="sj">svalbard and jan mayen</option>
+                                <option value="sz">swaziland</option>
+                                <option value="se">sweden</option>
+                                <option value="sy">syrian arab republic</option>
+                                <option value="tw">taiwan, province of china</option>
+                                <option value="tj">tajikistan</option>
+                                <option value="tz">tanzania, united republic of</option>
+                                <option value="th">thailand</option>
+                                <option value="tl">timor-leste</option>
+                                <option value="tg">togo</option>
+                                <option value="tk">tokelau</option>
+                                <option value="to">tonga</option>
+                                <option value="tt">trinidad and tobago</option>
+                                <option value="tn">tunisia</option>
+                                <option value="tr">turkey</option>
+                                <option value="tm">turkmenistan</option>
+                                <option value="tc">turks and caicos islands</option>
+                                <option value="tv">tuvalu</option>
+                                <option value="ug">uganda</option>
+                                <option value="ua">ukraine</option>
+                                <option value="ae">united arab emirates</option>
+                                <option value="uy">uruguay</option>
+                                <option value="uz">uzbekistan</option>
+                                <option value="vu">vanuatu</option>
+                                <option value="ve">venezuela</option>
+                                <option value="vn">viet nam</option>
+                                <option value="wf">wallis and futuna</option>
+                                <option value="zm">zambia</option>
+                                <option value="zw">zimbabwe</option>
+                            </select>
+                        </div>
+                        <div class="home__select-wrapper validate">
+                            <select class="home__select select-currency" name="currency">
+                                <option value="usd">usd</option>
+                                <option value="rub">rub</option>
+                                <option value="uah">uah</option>
+                                <option value="eur">eur</option>
+                                <option value="pln">pln</option>
+                                <option value="gbp">gbp</option>
+                                <option value="try">try</option>
+                                <option value="ars">ars</option>
+                                <option value="aed">aed</option>
+                                <option value="vnd">vnd</option>
+                                <option value="cad">cad</option>
+                                <option value="brl">brl</option>
+                                <option value="cop">cop</option>
+                                <option value="pen">pen</option>
+                            </select>
+                        </div>
+                        <button class="home__register lang" type="submit" data-locale="reg_button">Зареєструватися</button>
+                    </form>
+                    <a href="#" class="promotions"> <span data-locale="promotions" class="lang"></span></a>
+                </div>
+            </div>
+        </main>
+
+    </div>
+    <script>
+    window.__countryCode = 'en';
+    window.__countryCurrency = 'eur';
+    window.__params_ajax = '';
+    </script>
+    <script src="./assets/js/jquery-3.7.1.min.js"></script>
+    <!-- <script async src="./assets/js/localization.js"></script> -->
+    <script async src="./assets/js/locale-registration.js"></script>
+
+    <script async src="./assets/js/global.js"></script>
+</body>

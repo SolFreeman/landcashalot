@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 html {
   scroll-behavior: smooth; }
 
@@ -126,8 +126,11 @@ html {
     background-image: url("./assets/img/bonus-up_bg.jpg");
     background-size: 100% 100%; }
   .wrapper.tiger {
-    background-image: url("./assets/img/tiger_bg.jpg");
+    background-image: url("./assets/img/tiger_768x1024.jpg");
     background-size: 100% 100%; }
+    @media (min-width: 768px) {
+      .wrapper.tiger {
+        background-image: url("./assets/img/tiger_bg.jpg"); } }
     .wrapper.tiger:after {
       position: absolute;
       content: '';
@@ -148,6 +151,13 @@ html {
           margin: 5%; } }
     .wrapper.tiger > * {
       z-index: 1; }
+  .wrapper.bonus-registration {
+    background-image: url("./assets/img/registration_bonus_bg.jpg");
+    background-size: cover;
+    background-position: 80% 0; }
+    @media (min-width: 768px) {
+      .wrapper.bonus-registration {
+        background-position: 0 0; } }
 
 @keyframes coinsPosition_1 {
   0% {
@@ -692,6 +702,22 @@ input[type="radio"] {
 
 .bonus-up .logo-box {
   max-width: 286px; }
+
+.bonus-registration .header {
+  padding-bottom: 0; }
+  .bonus-registration .header .container {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 15px 15px 0; }
+  @media (min-width: 768px) {
+    .bonus-registration .header .container {
+      padding: 0; } }
+
+.bonus-registration .logo-box {
+  max-width: 140px; }
+  @media (min-width: 768px) {
+    .bonus-registration .logo-box {
+      max-width: 290px; } }
 
 .nav {
   position: relative;
@@ -1295,6 +1321,12 @@ html[lang="hi"] [data-locale="promocod"] {
   100% {
     box-shadow: 0 0 0 22px rgba(0, 191, 127, 0); } }
 
+@keyframes pulse-12 {
+  0% {
+    box-shadow: 0 0 0 1px #0d03d0; }
+  100% {
+    box-shadow: 0 0 0 22px rgba(13, 3, 208, 0); } }
+
 @keyframes fadeLeft {
   0% {
     transform: translateX(-100%);
@@ -1479,7 +1511,7 @@ html[lang="hi"] [data-locale="promocod"] {
   @media (min-width: 768px) {
     .live-casino h1 {
       font-size: 24px;
-      margin: 0 0 50px; } }
+      margin: 0 0 39px; } }
   @media (min-width: 992px) {
     .live-casino h1 {
       font-size: 40px; } }
@@ -2135,5 +2167,242 @@ html[lang="hi"] [data-locale="promocod"] {
   @media (min-width: 768px) {
     .tiger .btn-bonus {
       font-size: 40px; } }
+
+.bonus-registration {
+  /* ?? */ }
+  .bonus-registration h1 {
+    color: #fff;
+    font-weight: 900;
+    font-style: italic;
+    text-transform: uppercase;
+    z-index: 1; }
+    .bonus-registration h1.lang {
+      position: static;
+      color: #fff;
+      font-weight: 900;
+      font-style: italic;
+      text-transform: uppercase;
+      z-index: 1;
+      border: none;
+      display: block;
+      background: none;
+      border-radius: 0;
+      box-shadow: none;
+      max-width: 100%; }
+    .bonus-registration h1 .big {
+      font-size: 27px;
+      line-height: 1; }
+    .bonus-registration h1 .blue {
+      color: #0d03d0;
+      font-size: 24px;
+      line-height: 1;
+      text-transform: lowercase; }
+    .bonus-registration h1 .decimal {
+      font-size: 22px;
+      line-height: 1;
+      display: block; }
+    @media (min-width: 768px) {
+      .bonus-registration h1 .big {
+        font-size: 56px; }
+      .bonus-registration h1 .blue {
+        font-size: 40px; }
+      .bonus-registration h1 .decimal {
+        font-size: 44px; } }
+    @media (min-width: 1280px) {
+      .bonus-registration h1 .big {
+        font-size: 86px; }
+      .bonus-registration h1 .blue {
+        font-size: 48px; }
+      .bonus-registration h1 .decimal {
+        font-size: 60px; } }
+  .bonus-registration .main-content {
+    margin: 0 auto;
+    justify-content: flex-end;
+    max-width: 1360px; }
+    @media (min-width: 768px) {
+      .bonus-registration .main-content {
+        justify-content: flex-start; } }
+  .bonus-registration .form-box {
+    background: rgba(31, 32, 56, 0.5);
+    border-radius: 10px;
+    padding: 60px 15px 20px;
+    max-width: 534px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: -50px 0 0 0;
+    z-index: 0; }
+    @media (min-width: 768px) {
+      .bonus-registration .form-box {
+        margin: -55px 0 0 36px;
+        padding: 60px 38px 20px; } }
+  .bonus-registration .home__label {
+    margin: 0 0 10px;
+    display: block; }
+    @media (min-width: 768px) {
+      .bonus-registration .home__label {
+        margin: 0 0 24px; } }
+    .bonus-registration .home__label input {
+      width: 100%;
+      border: 0;
+      background: rgba(45, 44, 87, 0.5);
+      border-radius: 39px;
+      padding: 14px 15px;
+      font-size: 18px;
+      font-weight: 700;
+      text-align: center;
+      color: #4a4f7c; }
+      @media (min-width: 768px) {
+        .bonus-registration .home__label input {
+          padding: 25px 15px;
+          font-size: 24px; } }
+      .bonus-registration .home__label input:focus {
+        outline: none; }
+      .bonus-registration .home__label input::placeholder {
+        color: #4a4f7c; }
+  .bonus-registration .home__select-wrapper {
+    margin: 0 0 10px; }
+    @media (min-width: 768px) {
+      .bonus-registration .home__select-wrapper {
+        margin: 0 0 24px; } }
+  .bonus-registration .home__select {
+    width: 100%;
+    border: 0;
+    background: rgba(45, 44, 87, 0.5);
+    border-radius: 39px;
+    padding: 14px 15px;
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+    color: #4a4f7c;
+    text-transform: capitalize;
+    appearance: none; }
+    @media (min-width: 768px) {
+      .bonus-registration .home__select {
+        padding: 25px 15px;
+        font-size: 24px; } }
+  .bonus-registration .select-currency {
+    text-transform: uppercase; }
+  .bonus-registration .form-box .lang {
+    position: static;
+    margin: 0;
+    box-shadow: none; }
+  .bonus-registration .home__register {
+    position: static;
+    background: #0d03d0;
+    width: 100%;
+    font-size: 18px;
+    font-weight: 700;
+    color: #fff;
+    border: 0;
+    border-radius: 39px;
+    margin: 0 0 10px;
+    cursor: pointer; }
+    .bonus-registration .home__register:hover {
+      animation: pulse-12 1s infinite cubic-bezier(0.6, 0, 0, 1); }
+    @media (min-width: 768px) {
+      .bonus-registration .home__register {
+        margin: 0 0 24px;
+        font-size: 24px;
+        font-weight: 800; } }
+  .bonus-registration .promotions {
+    color: #4a4f7c;
+    text-decoration: none;
+    margin-top: 10px; }
+    @media (min-width: 768px) {
+      .bonus-registration .promotions {
+        margin-top: 24px; } }
+    .bonus-registration .promotions .lang {
+      font-size: 14px;
+      border: none;
+      padding: 0; }
+      @media (min-width: 768px) {
+        .bonus-registration .promotions .lang {
+          font-size: 18px; } }
+  .bonus-registration .lang {
+    border-color: #0d03d0; }
+  .bonus-registration .lang-cc.lang-active {
+    color: #fff;
+    font-weight: 700;
+    font-size: 18px; }
+  .bonus-registration .lang-select {
+    position: absolute;
+    top: -18px;
+    right: 0;
+    border-radius: 27px;
+    border: 1px solid #0d03d0;
+    width: 110px;
+    padding: 8px 0;
+    font-size: 16px;
+    background: rgba(31, 32, 56, 0.6);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), inset -5px 5px 20px rgba(0, 0, 0, 0.25); }
+    @media (min-width: 768px) {
+      .bonus-registration .lang-select {
+        top: -30px;
+        width: 150px;
+        font-size: 18px; } }
+    .bonus-registration .lang-select .current-lang {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      color: #fff;
+      text-transform: uppercase;
+      position: relative;
+      font-size: 18px; }
+      @media (min-width: 768px) {
+        .bonus-registration .lang-select .current-lang {
+          font-size: 22px; } }
+      .bonus-registration .lang-select .current-lang img {
+        margin-right: 20px;
+        margin-left: 8px;
+        max-width: 28px; }
+        @media (min-width: 768px) {
+          .bonus-registration .lang-select .current-lang img {
+            max-width: 34px; } }
+    .bonus-registration .lang-select .lang-list {
+      flex-direction: column;
+      list-style: none;
+      padding: 10px 0 0;
+      margin: 0;
+      color: #fff; }
+      @media (min-width: 768px) {
+        .bonus-registration .lang-select .lang-list {
+          padding: 15px 0 0; } }
+      .bonus-registration .lang-select .lang-list .translate {
+        background: none;
+        border: none;
+        display: flex;
+        align-items: center;
+        color: #fff;
+        padding: 0;
+        font-size: 18px; }
+        @media (min-width: 768px) {
+          .bonus-registration .lang-select .lang-list .translate {
+            font-size: 22px; } }
+        .bonus-registration .lang-select .lang-list .translate .lang-imgbox {
+          width: 28px;
+          text-align: center; }
+          @media (min-width: 768px) {
+            .bonus-registration .lang-select .lang-list .translate .lang-imgbox {
+              width: 34px; } }
+          .bonus-registration .lang-select .lang-list .translate .lang-imgbox img {
+            display: inline-block; }
+        .bonus-registration .lang-select .lang-list .translate .text {
+          min-width: 31px;
+          margin-left: 15px;
+          text-align: center;
+          text-transform: uppercase; }
+      .bonus-registration .lang-select .lang-list li {
+        padding: 0;
+        margin: 0 0 10px;
+        display: flex;
+        justify-content: center; }
+        @media (min-width: 768px) {
+          .bonus-registration .lang-select .lang-list li {
+            margin: 0 0 18px; } }
+        .bonus-registration .lang-select .lang-list li:before {
+          display: none; }
 
 /*# sourceMappingURL=style.css.map */

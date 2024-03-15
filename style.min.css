@@ -2405,4 +2405,9 @@ html[lang=hi] [data-locale=promocod] {
         .bonus-registration .lang-select .lang-list li:before {
           display: none; }
 
+.validate-error {
+  font-size: 16px;
+  display: block;
+  text-align: center; }
+
 /*# sourceMappingURL=style.css.map */

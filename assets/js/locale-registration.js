@@ -19,7 +19,7 @@ $.get("https://ipinfo.io", function (response) {
 			'promotions': 'Промоакции',
 		},
 		'en': {
-			'title': '<img src="/assets/img/title-EN.svg" alt="">',
+			'title': '<img src="/assets/img/title-EN.svg" alt="title">',
 			'reg_email': 'Email',
 			'reg_password': 'Password',
 			'reg_button': 'SIGN UP',

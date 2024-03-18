@@ -286,7 +286,8 @@
 
 .bonus-registration {
 	.header {
-		padding-bottom: 0;
+		padding-bottom: 20px;
+		z-index: 4;
 
 		.container {
 			flex-direction: row;
@@ -295,6 +296,8 @@
 		}
 
 		@include media('>=tablet') {
+			padding-bottom: 60px;
+
 			.container {
 				padding: 0;
 			}
@@ -305,7 +308,7 @@
 		max-width: 140px;
 
 		@include media('>=tablet') {
-			max-width: 290px;
+			max-width: 220px;
 		}
 	}
 }

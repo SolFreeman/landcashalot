@@ -12,14 +12,14 @@ $.get("https://ipinfo.io", function (response) {
 
 	const translateMessages = {
 		'ru': {
-			'title': '<span class="big">Бонус</span><span class="blue"> до</span><br><span class="decimal">45 000 EUR + 50 FS</span>',
+			'title': '<img src="/assets/img/title-RU.svg" alt="">',
 			'reg_email': 'Email',
 			'reg_password': 'Пароль',
 			'reg_button': 'Зарегистрироваться',
 			'promotions': 'Промоакции',
 		},
 		'en': {
-			'title': '<span class="big">Welcome bonus</span><span class="blue"> up to</span><br><span class="decimal">45 000 EUR + 50 FS</span>',
+			'title': '<img src="/assets/img/title-EN.svg" alt="">',
 			'reg_email': 'Email',
 			'reg_password': 'Password',
 			'reg_button': 'SIGN UP',
@@ -27,7 +27,7 @@ $.get("https://ipinfo.io", function (response) {
 		},
 
 		'de': {
-			'title': '<span class="big">Willkommensbonus</span><span class="blue"> von bis zu</span><br><span class="decimal">45 000 EUR + 50 FS</span>',
+			'title': '<img src="/assets/img/title-DE.svg" alt="">',
 			'reg_email': 'Email',
 			'reg_password': 'Passwort',
 			'reg_button': 'ANMELDEN',
@@ -35,21 +35,21 @@ $.get("https://ipinfo.io", function (response) {
 		},
 
 		'es': {
-			'title': '<span class="big">Bonificación de bienvenida</span><span class="blue"> de hasta</span><br><span class="decimal">45 000 EUR + 50 FS</span>',
+			'title': '<img src="/assets/img/title-ES.svg" alt="">',
 			'reg_email': 'Email',
 			'reg_password': 'Contraseña',
 			'reg_button': 'REGISTRO',
 			'promotions': 'Promociones',
 		},
 		'dk': {
-			'title': '<span class="big">Velkomstbonus</span><span class="blue"> op til</span><br><span class="decimal">336 000 DKK + 50 FS</span>',
+			'title': '<img src="/assets/img/title-DK.svg" alt="">',
 			'reg_email': 'Email',
 			'reg_password': 'Adgangskode',
 			'reg_button': 'TILMELD DIG',
 			'promotions': 'Kampagner',
 		},
 		'no': {
-			'title': '<span class="big">Velkomstbonus</span><span class="blue"> op til</span><br><span class="decimal">530 000 NOK + 50 FS</span>',
+			'title': '<img src="/assets/img/title-NO.svg" alt="">',
 			'reg_email': 'Email',
 			'reg_password': 'Passord',
 			'reg_button': 'REGISTRER DEG',
@@ -57,7 +57,7 @@ $.get("https://ipinfo.io", function (response) {
 		},
 
 		'kz': {
-			'title': '<span class="big">45 000 EUR + 50 FS</span><span class="blue"> дейін</span><br><span class="decimal">сәлемдесу бонусы</span>',
+			'title': '<img src="/assets/img/title-KZ.svg" alt="">',
 			'reg_email': 'Email',
 			'reg_password': 'Құпия сөз',
 			'reg_button': 'Тіркеу',
@@ -65,63 +65,63 @@ $.get("https://ipinfo.io", function (response) {
 		},
 
 		'pt': {
-			'title': '<span class="big">Bônus de boas-vindas</span><span class="blue"> de até</span><br><span class="decimal">45.000 EUR + 50 FS</span>',
+			'title': '<img src="/assets/img/title-PT.svg" alt="">',
 			'reg_email': 'Email',
 			'reg_password': 'Senha',
 			'reg_button': 'REGISTO',
 			'promotions': 'Promoções',
 		},
 		'pt-br': {
-			'title': '<span class="big">Bônus de boas-vindas</span><span class="blue"> até</span><br><span class="decimal">240 000 BRL + 50 FS</span>',
+			'title': '<img src="/assets/img/title-PT(BR).svg" alt="">',
 			'reg_email': 'Email',
 			'reg_password': 'Palavra-passe',
 			'reg_button': 'CADASTRO-SE',
 			'promotions': 'Promoções',
 		},
 		'fi': {
-			'title': '<span class="big">Bônus de boas-vindas</span><span class="blue"> até</span><br><span class="decimal">240 000 BRL + 50 FS</span>',
+			'title': '<img src="/assets/img/title-FI.svg" alt="">',
 			'reg_email': 'Email',
 			'reg_password': 'Salasana',
 			'reg_button': 'LISÄÄNTYMINEN',
 			'promotions': 'Kampanjat',
 		},
 		'ua': {
-			'title': '<span class="big">Бонус</span><span class="blue">до</span><br><span class="decimal">45 000 EUR + 50 FS</span>',
+			'title': '<img src="/assets/img/title-UA.svg" alt="">',
 			'reg_email': 'Email',
 			'reg_password': 'Пароль',
 			'reg_button': 'Зареєструватися',
 			'promotions': 'Промоакції',
 		},
 		'pl': {
-			'title': '<span class="big">Bonus powitalny</span><span class="blue"> do </span><br><span class="decimal">196 000 PLN + 50 FS</span>',
+			'title': '<img src="/assets/img/title-PL.svg" alt="">',
 			'reg_email': 'Email',
 			'reg_password': 'Hasło',
 			'reg_button': 'ZAPISZ SIĘ',
 			'promotions': 'Promocje',
 		},
 		'it': {
-			'title': '<span class="big">Bonus di benvenuto</span><span class="blue"> fino a </span><br><span class="decimal">45 000 EUR + 50 FS</span>',
+			'title': '<img src="/assets/img/title-IT.svg" alt="">',
 			'reg_email': 'Email',
 			'reg_password': 'Password',
 			'reg_button': 'ISCRIVERSI',
 			'promotions': 'Promozioni',
 		},
 		'hu': {
-			'title': '<span class="big">Üdvözlő bónusz</span><span class="blue"> akár </span><br><span class="decimal">17 230 000 HUF + 50 FS</span>',
+			'title': '<img src="/assets/img/title-HU.svg" alt="">',
 			'reg_email': 'Email',
 			'reg_password': 'Jelszó',
 			'reg_button': 'REGISZTRÁCIÓ',
 			'promotions': 'Promóciók',
 		},
 		'fr': {
-			'title': '<span class="big">Bonus de bienvenue</span><span class="blue"> jusqu\'à </span><br><span class="decimal">66 000 CAD + 50 FS</span>',
+			'title': '<img src="/assets/img/title-FR.svg" alt="">',
 			'reg_email': 'Email',
 			'reg_password': 'Mot de passe',
 			'reg_button': 'ENREGISTREMENT',
 			'promotions': 'Promotions',
 		},
 		'hi': {
-			'title': '<span class="big">880 000₹ तक + 50 मुफ्त</span><span class="blue"> स्पिन तक </span><br><span class="decimal">स्वागत बोनस</span>',
+			'title': '<img src="/assets/img/title-HI.svg" alt="">',
 			'reg_email': 'Email',
 			'reg_password': 'पासवर्ड',
 			'reg_button': 'पंजीकरण करवाना',

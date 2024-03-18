@@ -163,12 +163,12 @@ html {
 			background-position: 50% 67%;
 			z-index: 0;
 			animation: none;
-			
+
 			@include media('<=1600px') {
 				background-size: contain;
 			}
 		}
-		
+
 		&:after {
 			background-image: url('./assets/img/coins_2.png');
 			animation: coinsPosition_1 7s infinite;
@@ -202,12 +202,12 @@ html {
 			animation: ManDog 7s infinite;
 			z-index: 1;
 			background-size: contain;
-			
+
 			@include media('>=tablet') {
 				width: 46%;
 			}
 		}
-		
+
 		&:after {
 			background-image: url('./assets/img/gold_dog.png');
 			width: 35%;
@@ -226,7 +226,7 @@ html {
 
 	&.sports-betting {
 		background-image: url('./assets/img/betting.jpg');
-		
+
 		@include media('<=tablet') {
 			background-size: cover;
 		}
@@ -266,49 +266,86 @@ html {
 			}
 		}
 
-		& > * {
+		&>* {
 			z-index: 1;
 		}
 	}
 
 	&.bonus-registration {
-		background-image: url('./assets/img/registration_bonus_bg.jpg');
+		background-image: url('./assets/img/mobile_bonus_bg.jpg');
 		background-size: cover;
-		background-position: 80% 0;
 
 		@include media('>=tablet') {
 			background-position: 0 0;
+			background-image: url('./assets/img/registration_bonus_desktop.jpg');
 		}
-		
+
+		&:before {
+			position: absolute;
+			content: '';
+			background-image: url('./assets/img/girl.png');
+			max-width: 270px;
+			width: 100%;
+			height: 100%;
+			max-height: 408px;
+			background-repeat: no-repeat;
+			right: 50%;
+			bottom: 40%;
+			transform: translateX(50%);
+			background-size: contain;
+			z-index: 1;
+
+
+			@include media('>=tablet') {
+				background-size: contain;
+				right: 15%;
+				max-width: 590px;
+				bottom: 45px;
+				max-height: 790px;
+				transform: translateX(0);
+			}
+		}
+
+		&:after {
+			position: absolute;
+			content: '';
+			background: linear-gradient(135deg,  rgba(8,50,31,0) 0%,rgba(9,50,31,0.02) 33%,rgba(1,52,47,0.03) 64%,rgba(0,52,48,0.04) 66%,rgba(0,54,72,0.16) 100%);
+			right: 0;
+			bottom: 0;
+			width: 100%;
+			height: 100%;
+			z-index: 2;
+		}
+
 	}
 }
 
 @keyframes coinsPosition_1 {
 	0% {
-        transform: translateY(0);
-    }
+		transform: translateY(0);
+	}
 
-    50% {
-        transform: translateY(-40px);
-    }
+	50% {
+		transform: translateY(-40px);
+	}
 
-    100% {
-        transform: translateY(0);
-    }
+	100% {
+		transform: translateY(0);
+	}
 }
 
 @keyframes ManDog {
 	0% {
 		transform: translateY(0);
-    }
+	}
 
-    50% {
-        transform: translateY(-15px);
-    }
+	50% {
+		transform: translateY(-15px);
+	}
 
-    100% {
+	100% {
 		transform: translateY(0);
-    }
+	}
 }
 
 body {
@@ -322,6 +359,17 @@ body {
 	margin: 0;
 	overflow-x: hidden;
 	height: 100vh;
+}
+
+html[lang="hi"] {
+
+	select,
+	input,
+	button,
+	a,
+	body {
+		font-family: "Hind", sans-serif;
+	}
 }
 
 *,

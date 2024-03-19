@@ -1459,9 +1459,13 @@ html[lang="hi"] [data-locale="promocod"] {
 
 .bonus-2 .btn-bonus {
   margin: 0 0 20px; }
+  .bonus-2 .btn-bonus.rok {
+    padding: 17px 41px 10px; }
   @media (min-width: 768px) {
     .bonus-2 .btn-bonus {
-      padding: 16px 46px; } }
+      padding: 16px 46px; }
+      .bonus-2 .btn-bonus.rok {
+        padding: 21px 59px 12px; } }
 
 .bonus-2 h1 {
   margin: 0 0 29px;

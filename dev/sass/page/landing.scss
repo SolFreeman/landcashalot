@@ -726,9 +726,17 @@ html[lang="hi"] [data-locale="promocod"] {
 
 	.btn-bonus {
 		margin: 0 0 20px;
+		
+		&.rok {
+			padding: 17px 41px 10px;
+		}
 
 		@include media('>=tablet') {
 			padding: 16px 46px;
+
+			&.rok {
+				padding: 21px 59px 12px;
+			}
 		}
 	}
 

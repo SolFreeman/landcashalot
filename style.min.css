@@ -217,6 +217,10 @@ body {
   margin: 0;
   overflow-x: hidden;
   height: 100vh; }
+  body .rok {
+    font-family: "Gothic A1", sans-serif; }
+    body .rok h1 {
+      font-family: "Gothic A1", sans-serif; }
 
 html[lang=hi] select,
 html[lang=hi] input,
@@ -1612,12 +1616,16 @@ html[lang=hi] [data-locale=promocod] {
         .baccarat h1.online_title .light {
           letter-spacing: 0; }
       .baccarat h1 .light {
-        font-size: 72px; } }
+        font-size: 72px; }
+        .baccarat h1 .light.my {
+          font-size: 43px; } }
   @media (min-width: 1420px) {
     .baccarat h1 {
       font-size: 110px; }
       .baccarat h1 .light {
-        font-size: 110px; } }
+        font-size: 110px; }
+        .baccarat h1 .light.my {
+          font-size: 63px; } }
   @media (min-width: 1780px) {
     .baccarat h1 {
       font-size: 150px; }

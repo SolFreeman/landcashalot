@@ -750,7 +750,7 @@ input[type="radio"] {
     padding: 15px 15px 0; }
   @media (min-width: 768px) {
     .bonus-registration .header {
-      padding-bottom: 60px; }
+      padding-bottom: 120px; }
       .bonus-registration .header .container {
         padding: 0; } }
 
@@ -2264,7 +2264,7 @@ html[lang="hi"] [data-locale="promocod"] {
   .bonus-registration .main-content {
     margin: 0 auto;
     justify-content: flex-end;
-    max-width: 1360px;
+    max-width: 1460px;
     padding: 0 0 20px; }
     @media (min-width: 768px) {
       .bonus-registration .main-content {
@@ -2274,7 +2274,7 @@ html[lang="hi"] [data-locale="promocod"] {
     background: rgba(31, 32, 56, 0.7);
     border-radius: 10px;
     padding: 40px 15px 20px;
-    max-width: 410px;
+    max-width: 360px;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -2283,7 +2283,7 @@ html[lang="hi"] [data-locale="promocod"] {
     z-index: 0; }
     @media (min-width: 768px) {
       .bonus-registration .form-box {
-        margin: -18px 0 0 36px;
+        margin: -18px 0 0 106px;
         padding: 60px 20px 20px; } }
   .bonus-registration .home__label {
     margin: 0 0 10px;

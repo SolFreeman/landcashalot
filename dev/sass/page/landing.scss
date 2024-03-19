@@ -1805,7 +1805,7 @@ html[lang="hi"] [data-locale="promocod"] {
 		background: rgba(31, 32, 56, .7);
 		border-radius: 10px;
 		padding: 40px 15px 20px;
-		max-width: 360px;
+		max-width: 400px;
 		width: 100%;
 		display: flex;
 		flex-direction: column;
@@ -1814,7 +1814,7 @@ html[lang="hi"] [data-locale="promocod"] {
 		z-index: 0;
 
 		@include media('>=tablet') {
-			margin: -18px 0 0 106px;
+			margin: -18px 0 0 120px;
 			padding: 60px 20px 20px;
 		}
 	}
@@ -1824,7 +1824,7 @@ html[lang="hi"] [data-locale="promocod"] {
 		display: block;
 
 		@include media('>=tablet') {
-			margin: 0 0 14px;
+			margin: 0 0 18px;
 		}
 
 		input {
@@ -1857,7 +1857,7 @@ html[lang="hi"] [data-locale="promocod"] {
 		margin: 0 0 10px;
 
 		@include media('>=tablet') {
-			margin: 0 0 14px;
+			margin: 0 0 18px;
 		}
 	}
 

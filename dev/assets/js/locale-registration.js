@@ -12,14 +12,14 @@ $.get("https://ipinfo.io", function (response) {
 
 	const translateMessages = {
 		'ru': {
-			'title': '<img src="/assets/img/title-ru.svg" alt="">',
+			'title': '<img src="./assets/img/title-ru.svg" alt="">',
 			'reg_email': 'Email',
 			'reg_password': 'Пароль',
 			'reg_button': 'Зарегистрироваться',
 			'promotions': 'Промоакции',
 		},
 		'en': {
-			'title': '<img src="/assets/img/title-en.svg" alt="title">',
+			'title': '<img src="./assets/img/title-en.svg" alt="title">',
 			'reg_email': 'Email',
 			'reg_password': 'Password',
 			'reg_button': 'SIGN UP',
@@ -27,7 +27,7 @@ $.get("https://ipinfo.io", function (response) {
 		},
 
 		'de': {
-			'title': '<img src="/assets/img/title-de.svg" alt="">',
+			'title': '<img src="./assets/img/title-de.svg" alt="">',
 			'reg_email': 'Email',
 			'reg_password': 'Passwort',
 			'reg_button': 'ANMELDEN',
@@ -35,21 +35,21 @@ $.get("https://ipinfo.io", function (response) {
 		},
 
 		'es': {
-			'title': '<img src="/assets/img/title-es.svg" alt="">',
+			'title': '<img src="./assets/img/title-es.svg" alt="">',
 			'reg_email': 'Email',
 			'reg_password': 'Contraseña',
 			'reg_button': 'REGISTRO',
 			'promotions': 'Promociones',
 		},
 		'dk': {
-			'title': '<img src="/assets/img/title-dk.svg" alt="">',
+			'title': '<img src="./assets/img/title-dk.svg" alt="">',
 			'reg_email': 'Email',
 			'reg_password': 'Adgangskode',
 			'reg_button': 'TILMELD DIG',
 			'promotions': 'Kampagner',
 		},
 		'no': {
-			'title': '<img src="/assets/img/title-no.svg" alt="">',
+			'title': '<img src="./assets/img/title-no.svg" alt="">',
 			'reg_email': 'Email',
 			'reg_password': 'Passord',
 			'reg_button': 'REGISTRER DEG',
@@ -57,7 +57,7 @@ $.get("https://ipinfo.io", function (response) {
 		},
 
 		'kz': {
-			'title': '<img src="/assets/img/title-kz.svg" alt="">',
+			'title': '<img src="./assets/img/title-kz.svg" alt="">',
 			'reg_email': 'Email',
 			'reg_password': 'Құпия сөз',
 			'reg_button': 'Тіркеу',
@@ -65,63 +65,63 @@ $.get("https://ipinfo.io", function (response) {
 		},
 
 		'pt': {
-			'title': '<img src="/assets/img/title-pt.svg" alt="">',
+			'title': '<img src="./assets/img/title-pt.svg" alt="">',
 			'reg_email': 'Email',
 			'reg_password': 'Senha',
 			'reg_button': 'REGISTO',
 			'promotions': 'Promoções',
 		},
 		'pt-br': {
-			'title': '<img src="/assets/img/title-pt(br).svg" alt="">',
+			'title': '<img src="./assets/img/title-pt(br).svg" alt="">',
 			'reg_email': 'Email',
 			'reg_password': 'Palavra-passe',
 			'reg_button': 'CADASTRO-SE',
 			'promotions': 'Promoções',
 		},
 		'fi': {
-			'title': '<img src="/assets/img/title-fi.svg" alt="">',
+			'title': '<img src="./assets/img/title-fi.svg" alt="">',
 			'reg_email': 'Email',
 			'reg_password': 'Salasana',
 			'reg_button': 'LISÄÄNTYMINEN',
 			'promotions': 'Kampanjat',
 		},
 		'ua': {
-			'title': '<img src="/assets/img/title-ua.svg" alt="">',
+			'title': '<img src="./assets/img/title-ua.svg" alt="">',
 			'reg_email': 'Email',
 			'reg_password': 'Пароль',
 			'reg_button': 'Зареєструватися',
 			'promotions': 'Промоакції',
 		},
 		'pl': {
-			'title': '<img src="/assets/img/title-pl.svg" alt="">',
+			'title': '<img src="./assets/img/title-pl.svg" alt="">',
 			'reg_email': 'Email',
 			'reg_password': 'Hasło',
 			'reg_button': 'ZAPISZ SIĘ',
 			'promotions': 'Promocje',
 		},
 		'it': {
-			'title': '<img src="/assets/img/title-it.svg" alt="">',
+			'title': '<img src="./assets/img/title-it.svg" alt="">',
 			'reg_email': 'Email',
 			'reg_password': 'Password',
 			'reg_button': 'ISCRIVERSI',
 			'promotions': 'Promozioni',
 		},
 		'hu': {
-			'title': '<img src="/assets/img/title-hu.svg" alt="">',
+			'title': '<img src="./assets/img/title-hu.svg" alt="">',
 			'reg_email': 'Email',
 			'reg_password': 'Jelszó',
 			'reg_button': 'REGISZTRÁCIÓ',
 			'promotions': 'Promóciók',
 		},
 		'fr': {
-			'title': '<img src="/assets/img/title-fr.svg" alt="">',
+			'title': '<img src="./assets/img/title-fr.svg" alt="">',
 			'reg_email': 'Email',
 			'reg_password': 'Mot de passe',
 			'reg_button': 'ENREGISTREMENT',
 			'promotions': 'Promotions',
 		},
 		'hi': {
-			'title': '<img src="/assets/img/title-hi.svg" alt="">',
+			'title': '<img src="./assets/img/title-hi.svg" alt="">',
 			'reg_email': 'Email',
 			'reg_password': 'पासवर्ड',
 			'reg_button': 'पंजीकरण करवाना',

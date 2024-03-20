@@ -2094,3 +2094,17 @@ span.validate-error {
 	left: 50%;
 	transform: translateX(-50%);
 }
+
+.error {
+	display: none;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #e70000;
+    color: #fff;
+    text-align: center;
+    padding: 15px 20px;
+    font-size: 16px;
+    z-index: 9999;
+}

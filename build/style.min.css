@@ -2727,7 +2727,7 @@ span.validate-error {
   font-weight: 800;
   font-size: 27px;
   margin: 0 0 20px;
-  text-shadow: 0 0 6px #000; }
+  text-shadow: 0 0 24px #000; }
   .luck h1 span {
     font-size: 20px;
     color: #fdd731;
@@ -2743,7 +2743,7 @@ span.validate-error {
 .luck .sub_title {
   font-size: 20px;
   color: #fff;
-  text-shadow: 0 0 6px #000; }
+  text-shadow: 0 0 24px #000; }
   .luck .sub_title span {
     font-weight: 800;
     color: #fdd731; }
@@ -2773,7 +2773,7 @@ span.validate-error {
 .luck .promo_link {
   font-size: 18px;
   color: #fff;
-  text-shadow: 0 0 6px #000; }
+  text-shadow: 0 0 24px #000; }
   @media (min-width: 768px) {
     .luck .promo_link {
       text-shadow: none; } }

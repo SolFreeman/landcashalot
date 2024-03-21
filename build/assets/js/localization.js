@@ -65,6 +65,9 @@ $.get("https://ipinfo.io", function (response) {
 
             "bonus_reg_title": "<span class='big'>Welcome bonus</span><span class='blue'>up to</span><span class='decimal'>45 000 EUR + 50 FS</span>",
             "reg_password": "Password",
+
+            "luck_title": "Try your luck <span>in the best online casino <br> with 150% deposit bonus </span>",
+            "luck_promo": "By promo code <span>“WELC15”</span>",
         },
 
         'de': {
@@ -318,6 +321,24 @@ $.get("https://ipinfo.io", function (response) {
             "live_logo_link": "https://cashalot.bet/live-casino",
             "live_terms_link": "https://cashalot.bet/pages/terms-and-conditions",
         },
+
+        'my': {
+            "promotions": "Promosi",
+            "promo_link": "https://cashalot.bet/promotions",
+            "btn_bonus": "Сlaim bonus",
+            "bonus_link": "https://cashalot.bet/online-casino?register=true",
+            "luck_title": "Cuba nasib anda <span>di kasino dalam talian terbaik <br> dengan bonus deposit 150% </span>",
+            "luck_promo": "Dengan kod promosi <span>“WELC15”</span>",
+        },
+
+        'ko': {
+            "promotions": "프로모션",
+            "promo_link": "https://cashalot.bet/promotions",
+            "btn_bonus": "보너스 청구",
+            "bonus_link": "https://cashalot.bet/online-casino?register=true",
+            "luck_title": "150% 입금 <span>보너스가 제공되는 최고의 온라인 <br> 카지노에서 행운을 시험해보세요. </span>",
+            "luck_promo": "프로모션 코드 <span>“WELC15”</span>",
+        },
     };
 
     let language;
@@ -355,6 +376,12 @@ $.get("https://ipinfo.io", function (response) {
             break;
         case 'PT-BR':
             language = 'pt-br';
+            break;
+        case 'MY':
+            language = 'my';
+            break;
+        case 'KO':
+            language = 'ko';
             break;
         default:
             language = 'en';

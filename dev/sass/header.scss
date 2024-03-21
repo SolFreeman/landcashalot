@@ -338,6 +338,33 @@
 	}
 }
 
+.luck {
+	.logo-box {
+		max-width: 160px;
+		margin: 0;
+
+		@include media('>=tablet') {
+			max-width: 220px;
+		}
+	}
+
+	.header {
+		padding: 10px 15px 25px;
+		max-width: 1720px;
+		margin: 0 auto;
+		width: 100%;
+
+		.container {
+			flex-direction: row;
+			justify-content: space-between;
+		}
+
+		@include media('>=tablet') {
+			padding: 40px 15px 65px;
+		}
+	}
+}
+
 .nav {
 	position: relative;
 	width: 80px;

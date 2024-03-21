@@ -350,6 +350,15 @@ html {
 			}
 		}
 	}
+
+	&.luck {
+		background-image: url('./assets/img/luck_bg.jpg');
+		background-position: 50% 0;
+
+		@include media('>=tablet') {
+			background-position: 0 0;
+		}
+	}
 }
 
 @keyframes coinsPosition_1 {

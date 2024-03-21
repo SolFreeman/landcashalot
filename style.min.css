@@ -215,6 +215,12 @@ html {
           height: 252px;
           left: 20%;
           bottom: 50px; } }
+  .wrapper.luck {
+    background-image: url(./assets/img/luck_bg.jpg);
+    background-position: 50% 0; }
+    @media (min-width: 768px) {
+      .wrapper.luck {
+        background-position: 0 0; } }
 
 @keyframes coinsPosition_1 {
   0% {
@@ -807,6 +813,25 @@ input[type=radio] {
   @media (min-width: 768px) {
     .live-roullete .logo-box {
       max-width: 224px; } }
+
+.luck .logo-box {
+  max-width: 160px;
+  margin: 0; }
+  @media (min-width: 768px) {
+    .luck .logo-box {
+      max-width: 220px; } }
+
+.luck .header {
+  padding: 10px 15px 25px;
+  max-width: 1720px;
+  margin: 0 auto;
+  width: 100%; }
+  .luck .header .container {
+    flex-direction: row;
+    justify-content: space-between; }
+  @media (min-width: 768px) {
+    .luck .header {
+      padding: 40px 15px 65px; } }
 
 .nav {
   position: relative;
@@ -1421,6 +1446,12 @@ html[lang=hi] [data-locale=promocod] {
     box-shadow: 0 0 0 1px #d13953; }
   100% {
     box-shadow: 0 0 0 22px rgba(209, 57, 83, 0); } }
+
+@keyframes pulse-14 {
+  0% {
+    box-shadow: 0 0 0 1px #d31b1b; }
+  100% {
+    box-shadow: 0 0 0 22px rgba(211, 27, 27, 0); } }
 
 @keyframes fadeLeft {
   0% {
@@ -2680,5 +2711,166 @@ span.validate-error {
     transform: rotate(0deg); }
   100% {
     transform: rotate(360deg); } }
+
+.luck .main-holder {
+  max-width: 1720px;
+  padding: 0 15px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center; }
+
+.luck .main-content {
+  max-width: 100%;
+  width: 100%; }
+
+.luck h1 {
+  font-weight: 800;
+  font-size: 27px;
+  margin: 0 0 20px; }
+  .luck h1 span {
+    font-size: 20px;
+    color: #fdd731;
+    display: block; }
+  @media (min-width: 768px) {
+    .luck h1 {
+      margin: 0 0 80px;
+      font-size: 70px; }
+      .luck h1 span {
+        font-size: 58px; } }
+
+.luck .sub_title {
+  font-size: 20px;
+  color: #fff; }
+  .luck .sub_title span {
+    font-weight: 800;
+    color: #fdd731; }
+  @media (min-width: 768px) {
+    .luck .sub_title {
+      font-size: 36px; } }
+
+.luck .btn-bonus {
+  font-size: 16px;
+  font-weight: 800;
+  background: #d31b1b;
+  animation: pulse-14 1s infinite cubic-bezier(0.6, 0, 0, 1);
+  padding: 18px 30px;
+  text-transform: capitalize;
+  margin: 0 0 20px; }
+  @media (min-width: 768px) {
+    .luck .btn-bonus {
+      margin: 0 0 80px;
+      font-size: 20px;
+      padding: 20px 36px; } }
+
+.luck .bottom {
+  padding: 8% 0 0;
+  justify-content: flex-start; }
+
+.luck .promo_link {
+  font-size: 18px;
+  color: #fff; }
+
+.luck .nav {
+  width: 80px; }
+  @media (min-width: 768px) {
+    .luck .nav {
+      width: 110px; } }
+
+.luck .lang {
+  border: 3px solid #d31b1b;
+  padding: 8px 0;
+  border-radius: 20px;
+  margin-top: -12px; }
+
+.luck .lang-cc {
+  font-size: 13px;
+  margin-left: 5px;
+  min-width: 23px; }
+
+.luck .lang-img {
+  width: 23px; }
+
+.luck .chip-holder:before {
+  position: absolute;
+  content: '';
+  z-index: 2;
+  background-image: url(./assets/img/panda.png);
+  background-position: 100% 100%;
+  background-repeat: no-repeat;
+  background-size: contain;
+  right: 0;
+  bottom: 0;
+  width: 200px;
+  height: 320px; }
+
+@media (min-width: 900px) {
+  .luck .chip-holder:before {
+    width: 366px;
+    height: 584px; } }
+
+@media (min-width: 1200px) {
+  .luck .chip-holder:before {
+    width: 466px;
+    height: 744px; } }
+
+.luck .roullete_box {
+  width: 230px;
+  height: 270px;
+  bottom: 30px;
+  right: 85px;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  z-index: 1; }
+  .luck .roullete_box:before {
+    position: absolute;
+    content: '';
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(./assets/img/wheel-box.png);
+    background-repeat: no-repeat;
+    z-index: 1;
+    background-size: contain; }
+  .luck .roullete_box:after {
+    position: absolute;
+    content: '';
+    width: 198px;
+    height: 198px;
+    left: 16px;
+    top: 16px;
+    background-image: url(./assets/img/wheel.png);
+    background-repeat: no-repeat;
+    animation: roullete_animate 6s linear infinite;
+    background-size: contain; }
+  @media (min-width: 900px) {
+    .luck .roullete_box {
+      width: 448px;
+      height: 546px;
+      bottom: 50px;
+      right: 14%; }
+      .luck .roullete_box:after {
+        width: 370px;
+        height: 370px;
+        left: 41px;
+        top: 41px; } }
+  @media (min-width: 1200px) {
+    .luck .roullete_box {
+      width: 548px;
+      height: 646px;
+      bottom: 50px;
+      right: 14%; }
+      .luck .roullete_box:after {
+        width: 470px;
+        height: 470px;
+        left: 41px;
+        top: 41px; } }
+
+html[lang=ko] .luck .btn-bonus,
+html[lang=ko] .luck a,
+html[lang=ko] .luck p,
+html[lang=ko] .luck h1 {
+  font-family: "Gothic A1", sans-serif; }
 
 /*# sourceMappingURL=style.css.map */

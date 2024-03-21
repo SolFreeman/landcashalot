@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 20.16 20.16">
+  <defs>
+    <style>
+      .cls-1 {
+        isolation: isolate;
+      }
+
+      .cls-2 {
+        fill: none;
+      }
+
+      .cls-2, .cls-3, .cls-4 {
+        stroke-width: 0px;
+      }
+
+      .cls-3 {
+        fill: url(#_Безымянный_градиент_12);
+        mix-blend-mode: soft-light;
+      }
+
+      .cls-4 {
+        fill: #cecccc;
+      }
+
+      .cls-5 {
+        clip-path: url(#clippath);
+      }
+
+      .cls-6 {
+        mix-blend-mode: multiply;
+      }
+    </style>
+    <clipPath id="clippath">
+      <circle class="cls-2" cx="10.08" cy="10.08" r="10.08"/>
+    </clipPath>
+    <radialGradient id="_Безымянный_градиент_12" data-name="Безымянный градиент 12" cx="12.76" cy="5.07" fx="12.76" fy="5.07" r="3.66" gradientUnits="userSpaceOnUse">
+      <stop offset=".19" stop-color="#fff"/>
+      <stop offset=".26" stop-color="#fefefe" stop-opacity=".94"/>
+      <stop offset=".41" stop-color="#fdfefe" stop-opacity=".79"/>
+      <stop offset=".61" stop-color="#fcfefe" stop-opacity=".54"/>
+      <stop offset=".86" stop-color="#fafefd" stop-opacity=".2"/>
+      <stop offset="1" stop-color="#f9fefd" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <g class="cls-1">
+    <g id="_Слой_2" data-name="Слой 2">
+      <g id="STORY_4" data-name="STORY 4">
+        <g>
+          <circle class="cls-4" cx="10.08" cy="10.08" r="10.08"/>
+          <g class="cls-5">
+            <g class="cls-6">
+              <image width="91" height="91" transform="translate(-36.76 -34.62)" xlink:href="data:image/png;base64,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"/>
+            </g>
+          </g>
+          <circle class="cls-3" cx="12.76" cy="5.07" r="3.66"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

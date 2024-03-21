@@ -313,6 +313,31 @@
 	}
 }
 
+.live-roullete {
+	.header {
+		padding: 20px 15px 0;
+
+		@include media('>=tablet') {
+			max-width: 1890px;
+			width: 100%;
+			margin: 0 auto;
+			padding: 40px 15px 36px;
+		}
+
+		@include media('>=900px') {
+			padding: 40px 15px 36px;
+		}
+	}
+
+	.logo-box {
+		max-width: 160px;
+
+		@include media('>=tablet') {
+			max-width: 224px;
+		}
+	}
+}
+
 .nav {
 	position: relative;
 	width: 80px;

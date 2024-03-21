@@ -318,6 +318,38 @@ html {
 		}
 
 	}
+
+	&.live-roullete {
+		background-image: url('./assets/img/live_roullete_bg.jpg');
+		background-size: cover;
+		background-position: 50% 50%;
+
+		@include media('>=tablet') {
+			background-size: auto;
+			background-position: 0 0;
+		}
+
+		&:before {
+			position: absolute;
+			content: '';
+			background-image: url('./assets/img/chips-roullete.png');
+			background-repeat: no-repeat;
+			background-size: contain;
+			width: 315px;
+			height: 120px;
+			bottom: 0;
+			left: 10%;
+
+			@include media('>=tablet') {
+				background-size: auto;
+				background-position: 0 0;
+				width: 662px;
+				height: 252px;
+				left: 20%;
+				bottom: 50px;
+			}
+		}
+	}
 }
 
 @keyframes coinsPosition_1 {

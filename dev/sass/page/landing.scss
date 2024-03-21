@@ -2328,6 +2328,7 @@ span.validate-error {
 		font-weight: 800;
 		font-size: 27px;
 		margin: 0 0 20px;
+		text-shadow: 0 0 6px #000;
 
 		span {
 			font-size: 20px;
@@ -2338,6 +2339,7 @@ span.validate-error {
 		@include media('>=tablet') {
 			margin: 0 0 80px;
 			font-size: 70px;
+			text-shadow: none;
 
 			span {
 				font-size: 58px;
@@ -2348,6 +2350,7 @@ span.validate-error {
 	.sub_title {
 		font-size: 20px;
 		color: #fff;
+		text-shadow: 0 0 6px #000;
 
 		span {
 			font-weight: 800;
@@ -2356,6 +2359,7 @@ span.validate-error {
 
 		@include media('>=tablet') {
 			font-size: 36px;
+			text-shadow: none;
 		}
 	}
 
@@ -2383,6 +2387,11 @@ span.validate-error {
 	.promo_link {
 		font-size: 18px;
 		color: #fff;
+		text-shadow: 0 0 6px #000;
+
+		@include media('>=tablet') {
+			text-shadow: none;
+		}
 	}
 
 	.nav {

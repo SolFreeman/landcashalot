@@ -2726,7 +2726,8 @@ span.validate-error {
 .luck h1 {
   font-weight: 800;
   font-size: 27px;
-  margin: 0 0 20px; }
+  margin: 0 0 20px;
+  text-shadow: 0 0 6px #000; }
   .luck h1 span {
     font-size: 20px;
     color: #fdd731;
@@ -2734,19 +2735,22 @@ span.validate-error {
   @media (min-width: 768px) {
     .luck h1 {
       margin: 0 0 80px;
-      font-size: 70px; }
+      font-size: 70px;
+      text-shadow: none; }
       .luck h1 span {
         font-size: 58px; } }
 
 .luck .sub_title {
   font-size: 20px;
-  color: #fff; }
+  color: #fff;
+  text-shadow: 0 0 6px #000; }
   .luck .sub_title span {
     font-weight: 800;
     color: #fdd731; }
   @media (min-width: 768px) {
     .luck .sub_title {
-      font-size: 36px; } }
+      font-size: 36px;
+      text-shadow: none; } }
 
 .luck .btn-bonus {
   font-size: 16px;
@@ -2768,7 +2772,11 @@ span.validate-error {
 
 .luck .promo_link {
   font-size: 18px;
-  color: #fff; }
+  color: #fff;
+  text-shadow: 0 0 6px #000; }
+  @media (min-width: 768px) {
+    .luck .promo_link {
+      text-shadow: none; } }
 
 .luck .nav {
   width: 80px; }

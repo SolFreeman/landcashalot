@@ -221,6 +221,8 @@ html {
     @media (min-width: 768px) {
       .wrapper.luck {
         background-position: 0 0; } }
+  .wrapper.bonanza {
+    background-image: url("./assets/img/bonanza_bg.jpg"); }
 
 @keyframes coinsPosition_1 {
   0% {
@@ -833,6 +835,12 @@ input[type="radio"] {
     .luck .header {
       padding: 40px 15px 65px; } }
 
+.bonanza .logo-box {
+  max-width: 200px; }
+  @media (min-width: 768px) {
+    .bonanza .logo-box {
+      max-width: 350px; } }
+
 .nav {
   position: relative;
   width: 80px;
@@ -1345,6 +1353,14 @@ a.terms {
     transform: scale(1); }
   50% {
     transform: scale(1.2); }
+  100% {
+    transform: scale(1); } }
+
+@keyframes infinite_scale2 {
+  0% {
+    transform: scale(1); }
+  50% {
+    transform: scale(1.04); }
   100% {
     transform: scale(1); } }
 
@@ -2880,5 +2896,61 @@ html[lang="ko"] .luck a,
 html[lang="ko"] .luck p,
 html[lang="ko"] .luck h1 {
   font-family: "Gothic A1", sans-serif; }
+
+.bonanza .main-holder {
+  max-width: 1423px;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  padding: 15px 15px 20px;
+  height: 65%;
+  margin: 0 auto;
+  transform: scale(1);
+  justify-content: space-between; }
+  @media (min-width: 768px) {
+    .bonanza .main-holder {
+      height: 100%; } }
+  @media (min-width: 992px) {
+    .bonanza .main-holder {
+      padding: 0 15px 40px;
+      margin: -20px auto 0; } }
+
+.bonanza .img-holder {
+  margin: 0 0 20px; }
+
+.bonanza .btn-bonus {
+  background-image: url("./assets/img/btn_bg_sweet.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  box-sizing: border-box;
+  box-shadow: none;
+  max-width: 888px;
+  width: 100%;
+  border-radius: 0;
+  color: #ffd800;
+  font-weight: 700;
+  text-align: center;
+  text-shadow: 0px 2px 9px rgba(63, 5, 87, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-transform: none;
+  font-size: 18px;
+  padding: 15px;
+  animation: infinite_scale2 10s ease-in-out infinite forwards; }
+  .bonanza .btn-bonus span {
+    text-transform: uppercase; }
+  .bonanza .btn-bonus:hover {
+    opacity: .85; }
+  @media (min-width: 768px) {
+    .bonanza .btn-bonus {
+      font-size: 27px;
+      padding: 34px 15px; } }
+  @media (min-width: 992px) {
+    .bonanza .btn-bonus {
+      font-size: 44px;
+      padding: 40px 15px; } }
 
 /*# sourceMappingURL=style.css.map */

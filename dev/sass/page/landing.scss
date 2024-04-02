@@ -446,6 +446,20 @@ a.terms {
 	}
 }
 
+@keyframes infinite_scale2 {
+	0% {
+		transform: scale(1);
+	}
+
+	50% {
+		transform: scale(1.04)
+	}
+
+	100% {
+		transform: scale(1);
+	}
+}
+
 @keyframes motionRight {
 	0% {
 		transform: translateX(0);
@@ -2532,6 +2546,75 @@ html[lang="ko"] {
 		p,
 		h1 {
 			font-family: "Gothic A1", sans-serif;
+		}
+	}
+}
+
+.bonanza {
+	.main-holder {
+		max-width: 1423px;
+		align-items: center;
+		display: flex;
+		flex-direction: column;
+		padding: 15px 15px 20px;
+		height: 65%;
+		margin: 0 auto;
+		transform: scale(1);
+		justify-content: space-between;
+
+		@include media('>=tablet') {
+			height: 100%;
+		}
+
+		@include media('>=992px') {
+			padding: 0 15px 40px;
+			margin: -20px auto 0;
+		}
+	}
+
+	.img-holder {
+		margin: 0 0 20px;
+	}
+
+	.btn-bonus {
+		background-image: url('./assets/img/btn_bg_sweet.png');
+		background-size: contain;
+		background-repeat: no-repeat;
+		background-position: 50% 0;
+		box-sizing: border-box;
+		box-shadow: none;
+		max-width: 888px;
+		width: 100%;
+		border-radius: 0;
+		color: #ffd800;
+		font-weight: 700;
+		text-align: center;
+		text-shadow: 0px 2px 9px rgba(63, 5, 87, 0.8);
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-direction: column;
+		text-transform: none;
+		font-size: 18px;
+		padding: 15px;
+		animation: infinite_scale2 10s ease-in-out infinite forwards;
+
+		span {
+			text-transform: uppercase;
+		}
+
+		&:hover {
+			opacity: .85;
+		}
+
+		@include media('>=tablet') {
+			font-size: 27px;
+			padding: 34px 15px;
+		}
+
+		@include media('>=992px') {
+			font-size: 44px;
+			padding: 40px 15px;
 		}
 	}
 }

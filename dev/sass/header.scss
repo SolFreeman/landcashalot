@@ -365,6 +365,16 @@
 	}
 }
 
+.bonanza {
+	.logo-box {
+		max-width: 200px;
+
+		@include media('>=tablet') {
+			max-width: 350px;
+		}
+	}
+}
+
 .nav {
 	position: relative;
 	width: 80px;

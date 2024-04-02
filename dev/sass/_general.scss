@@ -359,6 +359,10 @@ html {
 			background-position: 0 0;
 		}
 	}
+
+	&.bonanza {
+		background-image: url('./assets/img/bonanza_bg.jpg');
+	}
 }
 
 @keyframes coinsPosition_1 {

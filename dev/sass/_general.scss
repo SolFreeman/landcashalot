@@ -361,7 +361,12 @@ html {
 	}
 
 	&.bonanza {
-		background-image: url('./assets/img/bonanza_bg.jpg');
+		background-image: url('./assets/img/bonanza_bg_mobile.jpg');
+		background-size: 100% 100%;
+
+		@include media('>=769px') {
+			background-image: url('./assets/img/bonanza_bg.jpg');
+		}
 	}
 }
 

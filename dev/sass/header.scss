@@ -367,10 +367,22 @@
 
 .bonanza {
 	.logo-box {
-		max-width: 200px;
+		max-width: 240px;
 
-		@include media('>=tablet') {
+		@include media('>=767px') {
 			max-width: 350px;
+		}
+	}
+
+	.header {
+		.container {
+			@include media('>=tablet') {
+				justify-content: center;
+			}
+
+			@include media('>=992px') {
+				justify-content: flex-start;
+			}
 		}
 	}
 }

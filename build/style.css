@@ -222,7 +222,11 @@ html {
       .wrapper.luck {
         background-position: 0 0; } }
   .wrapper.bonanza {
-    background-image: url("./assets/img/bonanza_bg.jpg"); }
+    background-image: url("./assets/img/bonanza_bg_mobile.jpg");
+    background-size: 100% 100%; }
+    @media (min-width: 769px) {
+      .wrapper.bonanza {
+        background-image: url("./assets/img/bonanza_bg.jpg"); } }
 
 @keyframes coinsPosition_1 {
   0% {
@@ -836,10 +840,18 @@ input[type="radio"] {
       padding: 40px 15px 65px; } }
 
 .bonanza .logo-box {
-  max-width: 200px; }
-  @media (min-width: 768px) {
+  max-width: 240px; }
+  @media (min-width: 767px) {
     .bonanza .logo-box {
       max-width: 350px; } }
+
+@media (min-width: 768px) {
+  .bonanza .header .container {
+    justify-content: center; } }
+
+@media (min-width: 992px) {
+  .bonanza .header .container {
+    justify-content: flex-start; } }
 
 .nav {
   position: relative;
@@ -2902,21 +2914,27 @@ html[lang="ko"] .luck h1 {
   align-items: center;
   display: flex;
   flex-direction: column;
-  padding: 15px 15px 20px;
-  height: 65%;
+  padding: 15px 15px 80px;
+  height: 74%;
   margin: 0 auto;
   transform: scale(1);
   justify-content: space-between; }
-  @media (min-width: 768px) {
-    .bonanza .main-holder {
-      height: 100%; } }
   @media (min-width: 992px) {
     .bonanza .main-holder {
-      padding: 0 15px 40px;
-      margin: -20px auto 0; } }
+      padding: 0 15px 80px;
+      margin: -20px auto 0;
+      height: 100%; } }
 
 .bonanza .img-holder {
-  margin: 0 0 20px; }
+  margin: 0 0 20px;
+  max-width: 1300px; }
+  .bonanza .img-holder .desktop {
+    display: none; }
+  @media (min-width: 769px) {
+    .bonanza .img-holder .mobile {
+      display: none; }
+    .bonanza .img-holder .desktop {
+      display: block; } }
 
 .bonanza .btn-bonus {
   background-image: url("./assets/img/btn_bg_sweet.png");
@@ -2944,7 +2962,7 @@ html[lang="ko"] .luck h1 {
     text-transform: uppercase; }
   .bonanza .btn-bonus:hover {
     opacity: .85; }
-  @media (min-width: 768px) {
+  @media (min-width: 767px) {
     .bonanza .btn-bonus {
       font-size: 27px;
       padding: 34px 15px; } }

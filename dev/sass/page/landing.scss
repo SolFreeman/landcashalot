@@ -2556,24 +2556,36 @@ html[lang="ko"] {
 		align-items: center;
 		display: flex;
 		flex-direction: column;
-		padding: 15px 15px 20px;
-		height: 65%;
+		padding: 15px 15px 80px;
+		height: 74%;
 		margin: 0 auto;
 		transform: scale(1);
 		justify-content: space-between;
 
-		@include media('>=tablet') {
-			height: 100%;
-		}
-
 		@include media('>=992px') {
-			padding: 0 15px 40px;
+			padding: 0 15px 80px;
 			margin: -20px auto 0;
+			height: 100%;
 		}
 	}
 
 	.img-holder {
 		margin: 0 0 20px;
+		max-width: 1300px;
+
+		.desktop {
+			display: none;
+		}
+
+		@include media('>=769px') {
+			.mobile {
+				display: none;
+			}
+
+			.desktop {
+				display: block;
+			}
+		}
 	}
 
 	.btn-bonus {
@@ -2607,7 +2619,7 @@ html[lang="ko"] {
 			opacity: .85;
 		}
 
-		@include media('>=tablet') {
+		@include media('>=767px') {
 			font-size: 27px;
 			padding: 34px 15px;
 		}

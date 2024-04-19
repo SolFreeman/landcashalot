@@ -131,7 +131,28 @@ $.get("https://ipinfo.io", function (response) {
 
 	let language;
 
+	function getBrowserLanguage() {
+        return navigator.language || navigator.userLanguage || navigator.browserLanguage || navigator.systemLanguage || 'en';
+    }
+
 	switch (window.__countryCode) {
+
+		case 'CA':
+            console.log('IP address is from Canada');
+            const browserLanguage = getBrowserLanguage();
+            console.log('Browser language:', browserLanguage);
+            // Если IP адрес из Канады, то определяем язык в соответствии с языком браузера
+
+            if (browserLanguage.startsWith('fr')) {
+                language = 'fr';
+            } else if (browserLanguage.startsWith('en')) {
+                language = 'en';
+            } else {
+                console.log('Browser language is not French or English. Defaulting to English.');
+                language = 'en'; // Если язык не определен, используем английский
+            }
+        break;
+			
 		case 'RU': language = 'ru'; break;
 		case 'EN': language = 'en'; break;
 		case 'ES': language = 'es'; break;

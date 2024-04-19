@@ -85,13 +85,13 @@ $.get("https://ipinfo.io", function (response) {
 			'reg_button': 'LISÄÄNTYMINEN',
 			'promotions': 'Kampanjat',
 		},
-		'ua': {
-			'title': '<img src="./assets/img/title-ua.svg" alt="">',
-			'reg_email': 'Email',
-			'reg_password': 'Пароль',
-			'reg_button': 'Зареєструватися',
-			'promotions': 'Промоакції',
-		},
+		// 'ua': {
+		// 	'title': '<img src="./assets/img/title-ua.svg" alt="">',
+		// 	'reg_email': 'Email',
+		// 	'reg_password': 'Пароль',
+		// 	'reg_button': 'Зареєструватися',
+		// 	'promotions': 'Промоакції',
+		// },
 		'pl': {
 			'title': '<img src="./assets/img/title-pl.svg" alt="">',
 			'reg_email': 'Email',

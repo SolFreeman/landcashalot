@@ -426,7 +426,7 @@ $.get("https://ipinfo.io", function (response) {
 
         $('html').attr('lang', language);
 
-        let langImg = './../assets/img/' + language + '.svg';
+        let langImg = './assets/img/' + language + '.svg';
         let langActiveImg = $('.lang-active-img');
 
         $('.lang-active').text(language);

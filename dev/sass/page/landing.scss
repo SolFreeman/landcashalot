@@ -2645,7 +2645,12 @@ html[lang="ko"] {
 .fizz_aviator {
 
 	.main-holder {
-		margin: 0 auto;
+		margin: -60px auto 0;
+
+		@include media('>=tablet') {
+			margin: 0 auto;
+		}
+
 	}
 
 	.aviator_logo_holder {
@@ -2677,6 +2682,7 @@ html[lang="ko"] {
 		font-size: 30px;
 		border-radius: 10px;
 		font-weight: 700;
+		text-transform: none;
 		animation: pulse-15 1s infinite cubic-bezier(.6, 0, 0, 1);
 
 	}

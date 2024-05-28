@@ -3038,7 +3038,10 @@ html[lang=ko] .luck h1 {
 
 /* new pages */
 .fizz_aviator .main-holder {
-  margin: 0 auto; }
+  margin: -60px auto 0; }
+  @media (min-width: 768px) {
+    .fizz_aviator .main-holder {
+      margin: 0 auto; } }
 
 .fizz_aviator .aviator_logo_holder {
   max-width: 458px;
@@ -3060,6 +3063,7 @@ html[lang=ko] .luck h1 {
   font-size: 30px;
   border-radius: 10px;
   font-weight: 700;
+  text-transform: none;
   animation: pulse-15 1s infinite cubic-bezier(0.6, 0, 0, 1); }
 
 /*# sourceMappingURL=style.css.map */

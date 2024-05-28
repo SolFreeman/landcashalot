@@ -227,6 +227,9 @@ html {
     @media (min-width: 769px) {
       .wrapper.bonanza {
         background-image: url("./assets/img/bonanza_bg.jpg"); } }
+  .wrapper.fizz_aviator {
+    background-image: url("./assets/img/new_aviator_bg.jpg");
+    background-size: 100% 100%; }
 
 @keyframes coinsPosition_1 {
   0% {
@@ -986,6 +989,62 @@ input[type="radio"] {
       .lang-list ul li:before {
         display: none; }
 
+.fizz_aviator .header .container {
+  flex-direction: column-reverse;
+  justify-content: center;
+  align-items: center; }
+  @media (min-width: 769px) {
+    .fizz_aviator .header .container {
+      flex-direction: row; } }
+
+.fizz_aviator .logo-box {
+  max-width: 179px; }
+
+.fizz_nav.nav {
+  width: auto;
+  margin: 0 0 30px; }
+  @media (min-width: 769px) {
+    .fizz_nav.nav {
+      position: absolute;
+      right: 50px;
+      top: 59px;
+      margin: 0; } }
+
+.fizz_nav .lang-list,
+.fizz_nav .lang-list ul {
+  display: flex;
+  padding: 0; }
+  .fizz_nav .lang-list li,
+  .fizz_nav .lang-list ul li {
+    margin: 0 10px; }
+  .fizz_nav .lang-list button,
+  .fizz_nav .lang-list ul button {
+    padding: 0; }
+
+.fizz_nav .lang-toggle {
+  display: none; }
+
+.fizz_nav .lang {
+  margin-top: 0;
+  border: none;
+  position: static;
+  padding: 0;
+  border-radius: 0;
+  box-shadow: none; }
+
+.fizz_nav .lang-img {
+  display: none; }
+
+.fizz_nav .lang-cc {
+  margin: 0;
+  font-size: 24px;
+  color: rgba(255, 255, 255, 0.6) !important;
+  text-transform: capitalize;
+  min-width: 0; }
+
+.fizz_nav button.btn-active .lang-cc {
+  color: white !important; }
+
 @media screen and (max-width: 1099px) {
   .nav {
     padding: 8px 10px; }
@@ -1114,7 +1173,7 @@ a.terms {
   background-position: 0 0;
   background-size: contain;
   animation: flight 4s cubic-bezier(0, 0, 0, 0); }
-  @media (min-width: 768px) {
+  @media (min-width: 769px) {
     .airplane {
       width: 194px;
       height: 100px; } }
@@ -1480,6 +1539,12 @@ html[lang="hi"] [data-locale="promocod"] {
     box-shadow: 0 0 0 1px #d31b1b; }
   100% {
     box-shadow: 0 0 0 22px rgba(211, 27, 27, 0); } }
+
+@keyframes pulse-15 {
+  0% {
+    box-shadow: 0 0 0 1px #f1e158; }
+  100% {
+    box-shadow: 0 0 0 22px rgba(241, 225, 88, 0); } }
 
 @keyframes fadeLeft {
   0% {
@@ -2970,5 +3035,31 @@ html[lang="ko"] .luck h1 {
     .bonanza .btn-bonus {
       font-size: 44px;
       padding: 40px 15px; } }
+
+/* new pages */
+.fizz_aviator .main-holder {
+  margin: 0 auto; }
+
+.fizz_aviator .aviator_logo_holder {
+  max-width: 458px;
+  margin: 0 auto; }
+
+.fizz_aviator .airplane-holder {
+  margin-bottom: 44px; }
+
+.fizz_aviator .airplane-box {
+  max-width: 1122px;
+  width: 100%; }
+
+.fizz_aviator .btn-area {
+  margin: 0 0 50px; }
+
+.fizz_aviator .btn {
+  background: #f1e158;
+  color: #151410;
+  font-size: 30px;
+  border-radius: 10px;
+  font-weight: 700;
+  animation: pulse-15 1s infinite cubic-bezier(0.6, 0, 0, 1); }
 
 /*# sourceMappingURL=style.css.map */

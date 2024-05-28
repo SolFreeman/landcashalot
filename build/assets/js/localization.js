@@ -68,6 +68,8 @@ $.get("https://ipinfo.io", function (response) {
 
             "luck_title": "Try your luck <span>in the best online casino <br> with 150% deposit bonus </span>",
             "luck_promo": "By promo code <span>“WELC15”</span>",
+            "sign_in_text": "Sign in",
+
         },
 
         'de': {
@@ -96,6 +98,8 @@ $.get("https://ipinfo.io", function (response) {
             "live_login_link": "https://cashalot.bet/live-casino?login=true",
             "live_logo_link": "https://cashalot.bet/de/live-casino",
             "live_terms_link": "https://cashalot.bet/pages/terms-and-conditions",
+            "sign_in_text": "Anmeldung",
+
         },
 
         'it': {
@@ -124,6 +128,8 @@ $.get("https://ipinfo.io", function (response) {
             "live_login_link": "https://cashalot1.bet/live-casino?login=true",
             "live_logo_link": "https://cashalot01.bet/live-casino",
             "live_terms_link": "https://cashalot1.bet/pages/terms-and-conditions",
+            "sign_in_text": "Registrazione",
+
         },
 
         'es': {
@@ -152,6 +158,7 @@ $.get("https://ipinfo.io", function (response) {
             "live_login_link": "https://cashalot.bet/live-casino?login=true",
             "live_logo_link": "https://cashalot.bet/es/live-casino",
             "live_terms_link": "https://cashalot.bet/pages/terms-and-conditions",
+
         },
 
         'hu': {
@@ -208,6 +215,9 @@ $.get("https://ipinfo.io", function (response) {
             "live_login_link": "https://cashalot.bet/live-casino?login=true",
             "live_logo_link": "https://cashalot.bet/live-casino",
             "live_terms_link": "https://cashalot.bet/pages/terms-and-conditions",
+
+            "sign_in_text": "Cadastre-se",
+
         },
 
         'pt-br': {
@@ -339,6 +349,10 @@ $.get("https://ipinfo.io", function (response) {
             "luck_title": "150% 입금 <span>보너스가 제공되는 최고의 온라인 <br> 카지노에서 행운을 시험해보세요. </span>",
             "luck_promo": "프로모션 코드 <span>“WELC15”</span>",
         },
+
+        'sw': {
+            "sign_in_text": "Registraring",
+        },
     };
 
     let language;
@@ -388,6 +402,9 @@ $.get("https://ipinfo.io", function (response) {
         case 'PL':
             language = 'pl';
             break;
+        case 'SW':
+            language = 'SW';
+            break;
         case 'HI':
             language = 'hi';
             break;
@@ -436,7 +453,7 @@ $.get("https://ipinfo.io", function (response) {
 
         let langId = $('#' + language);
 
-        $('.lang-item').removeClass('btn-active');
+        $('.lang-item ').removeClass('btn-active');
 
         langId.addClass('btn-active');
         langId.parent('li').addClass('btn-active');

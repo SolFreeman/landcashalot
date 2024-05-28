@@ -77,7 +77,7 @@ a.terms {
 	background-size: contain;
 	animation: flight 4s cubic-bezier(0, 0, 0, 0);
 
-	@include media('>=tablet') {
+	@include media('>=769px') {
 		width: 194px;
 		height: 100px;
 	}
@@ -634,6 +634,16 @@ html[lang="hi"] [data-locale="promocod"] {
 
 	100% {
 		box-shadow: 0 0 0 22px rgba(211, 27, 27, 0);
+	}
+}
+
+@keyframes pulse-15 {
+	0% {
+		box-shadow: 0 0 0 1px rgba(241, 225, 88, 1);
+	}
+
+	100% {
+		box-shadow: 0 0 0 22px rgba(241, 225, 88, 0);
 	}
 }
 
@@ -2628,5 +2638,46 @@ html[lang="ko"] {
 			font-size: 44px;
 			padding: 40px 15px;
 		}
+	}
+}
+
+/* new pages */
+.fizz_aviator {
+
+	.main-holder {
+		margin: 0 auto;
+	}
+
+	.aviator_logo_holder {
+		max-width: 458px;
+		margin: 0 auto;
+	}
+
+	.airplane-holder {
+		margin-bottom: 44px;
+
+		@include media('>=tablet') {
+			
+		}
+	}
+
+	.airplane-box {
+		max-width: 1122px;
+		width: 100%;
+	}
+	
+
+	.btn-area {
+		margin: 0 0 50px;
+	}
+
+	.btn {
+		background: #f1e158;
+		color: #151410;
+		font-size: 30px;
+		border-radius: 10px;
+		font-weight: 700;
+		animation: pulse-15 1s infinite cubic-bezier(.6, 0, 0, 1);
+
 	}
 }

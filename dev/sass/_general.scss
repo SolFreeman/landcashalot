@@ -368,6 +368,11 @@ html {
 			background-image: url('./assets/img/bonanza_bg.jpg');
 		}
 	}
+
+	&.fizz_aviator {
+		background-image: url('./assets/img/new_aviator_bg.jpg');
+		background-size: 100% 100%;
+	}
 }
 
 @keyframes coinsPosition_1 {

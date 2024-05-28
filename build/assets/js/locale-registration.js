@@ -4,9 +4,12 @@ $.get("https://ipinfo.io", function (response) {
 
 	window.__countryCode = countryCode;
 	function addParams() {
+		window.__params_ajax = '?btag=cx_36942_478759';
+		
 		$('.params').attr('href', function () {
 			return $(this).attr("href") + window.__params_ajax;
 		});
+		console.log(window.__params_ajax)
 	}
 	addParams();
 
@@ -198,7 +201,7 @@ $.get("https://ipinfo.io", function (response) {
 				$(this).html(translateMessages[language][$(this).data('locale')]);
 			}
 		});
-		addParams()
+		// addParams();
 	}
 
 	//Country
